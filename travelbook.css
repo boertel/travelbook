@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.media-viewer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(18, 18, 18, .98);
+    z-index: 1000;
+}
+
+.content {
+    margin: 0 2em;
+    z-index: 1;
+    position: relative;
+    background: #fff;
+    width: 940px;
+    padding: 2em;
+}
+
+.timeline ul {
+    text-align: center;
+    padding: 0;
+}
+.timeline ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 0.2em 0.5em 0.2em;
+    opacity: 0.3;
+}
+
+.timeline ul li.active {
+    opacity: 0.9;
+}
+
+.timeline ul li a {
+    display: block;
+    text-decoration: none;
+    color: #434343;
+    background-color: #ccc;
+    width: 32px;
+    height: 32px;
+    line-height: 2em;
+    border-radius: 20px;
+}
+.timeline ul li:hover {
+    opacity: 1;
+}

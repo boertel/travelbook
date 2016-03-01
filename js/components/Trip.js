@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-refetch'
 
-import { Loading, Error, Timeline } from './'
+import { Loading, Error, Timeline, Map } from './'
 
 
 class Trip extends React.Component {
@@ -15,13 +15,16 @@ class Trip extends React.Component {
             var trip = tripFetch.value;
             return (
                     <div>
-                        <h1>{trip.title}</h1>
-                        <h2>{trip.date}</h2>
-                        <div>
-                            <Timeline name={params.name} days={trip.days} />
-                            {this.props.children}
-                            <Timeline name={params.name} days={trip.days} />
+                        <div className="content">
+                            <h1>{trip.title}</h1>
+                            <h2>{trip.date}</h2>
+                            <div>
+                                <Timeline name={params.name} days={trip.days} />
+                                {this.props.children}
+                                <Timeline name={params.name} days={trip.days} />
+                            </div>
                         </div>
+                        <Map></Map>
                     </div>
                    );
         }

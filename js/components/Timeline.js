@@ -4,9 +4,12 @@ import _ from 'lodash'
 
 
 export default function Timeline(props) {
-    var days = _.range(1, props.days).map((day) => {
+    var days = _.range(1, props.days + 1).map((day) => {
         var to = '/t/' + props.name + '/' +  day;
         return (<li key={day}><Link to={to}>{day}</Link></li>)
     })
-    return (<ul>{days}</ul>)
+    return (<div className="timeline">
+                <ul>{days}</ul>
+            </div>
+            )
 }

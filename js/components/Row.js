@@ -1,11 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Link } from 'react-router'
 
 import { Picture } from './'
+
 
 export default class Row extends React.Component {
     constructor(props) {
         super(props)
+        this.resize = this.resize.bind(this)
         this.state = {
             width: 0
         }
@@ -17,7 +20,10 @@ export default class Row extends React.Component {
     }
     componentDidMount() {
         this.resize();
-        window.addEventListener('resize', this.resize.bind(this));
+        window.addEventListener('resize', this.resize);
+    }
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.resize)
     }
     render() {
         const { images, ratio, margin } = this.props
@@ -32,14 +38,17 @@ export default class Row extends React.Component {
                     marginRight: (image === last)  ? 0 : margin + 'px',
                     marginBottom: margin + 'px'
                 };
+            var to = this.props.location.pathname + '/' + image.index;
             return (
                 <div className="picture" style={style} key={key}>
-                    <Picture
-                        margin={margin}
-                        src={image.src}
-                        width={width}
-                        height={height}
-                    />
+                    <Link to={to}>
+                        <Picture
+                            margin={margin}
+                            src={image.src}
+                            width={width}
+                            height={height}
+                        />
+                    </Link>
                 </div>
             );
         });
