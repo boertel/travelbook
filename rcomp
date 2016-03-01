@@ -1,0 +1,15 @@
+#!/bin/bash
+
+DIR=js/components
+NAME=$1
+FILE=$DIR/$NAME.js
+INDEX=$DIR/index.js
+
+if [ ! -f $FILE ]; then
+    echo "import React from 'react'" > $FILE
+    echo "export $NAME from './$NAME'" >> $INDEX
+    sort -o $INDEX $INDEX
+else
+    echo "$FILE already exists."
+    exit 1
+fi
