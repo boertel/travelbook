@@ -22,7 +22,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-    "start": "webpack-dev-server --history-api-fallback --no-info --open"
+    "start": "webpack-dev-server --history-api-fallback --no-info --open --host 0.0.0.0 --port 3001"
   },
   "author": "",
   "license": "ISC"

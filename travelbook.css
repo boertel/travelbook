@@ -1,10 +1,21 @@
-body, html {
-    margin: 0;
-    padding: 0;
-}
 * {
     box-sizing: border-box;
 }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: "PT Sans";
+}
+
+#root {
+    height: 100%;
+}
+
 .media-viewer {
     position: fixed;
     top: 0;
@@ -21,6 +32,7 @@ body, html {
     position: relative;
     background: #fff;
     width: 940px;
+    min-height: 100%;
     padding: 2em;
 }
 
@@ -32,10 +44,9 @@ body, html {
     list-style: none;
     display: inline-block;
     margin: 0 0.2em 0.5em 0.2em;
-    opacity: 0.3;
 }
 
-.timeline ul li.active {
+.timeline ul li a.active {
     opacity: 0.9;
 }
 
@@ -48,7 +59,8 @@ body, html {
     height: 32px;
     line-height: 2em;
     border-radius: 20px;
+    opacity: 0.3;
 }
-.timeline ul li:hover {
+.timeline ul li a:hover {
     opacity: 1;
 }

@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import store from '../store'
 
-/*
+
 var Marker = function (args, node) {
     this.properties = args;
     this.feature = L.mapbox.featureLayer({
@@ -39,7 +40,6 @@ Marker.prototype.attachTo = function (node) {
         //$(node).trigger('click');
     }).bind(this));
 };
-*/
 
 export default class Map extends React.Component {
     constructor(props) {
@@ -48,15 +48,54 @@ export default class Map extends React.Component {
             color: undefined,
             markers: []
         }
+
+        this.onchange = this.onchange.bind(this)
+        this.map = undefined
+        this.group = undefined
+    }
+
+    onchange() {
+        this.setState({
+            markers: store.get()
+        })
     }
 
     componentDidMount() {
+
+        store.bind(this.onchange);
+
+    }
+
+    componentWillUnmount() {
+        store.unbind(this.onchange)
+    }
+
+    componentDidUpdate() {
+
         var options = {
             zoomControl: false
         };
 
-        var map = L.mapbox.map(ReactDOM.findDOMNode(this), 'boertel.h95nl1fe', options);
-        new L.Control.Zoom({ position: 'topright' }).addTo(map);
+
+        var node = ReactDOM.findDOMNode(this)
+
+        if (this.map === undefined) {
+            this.map = L.mapbox.map(node, 'mapbox.streets', options);
+            new L.Control.Zoom({ position: 'topright' }).addTo(this.map);
+        }
+
+        if (this.group !== undefined) {
+            this.group.clearLayers();
+        }
+
+        var markers = this.state.markers.map((marker) => {
+            marker.color = this.state.color
+            return new Marker(marker)
+        })
+
+        var features = markers.map((marker) => marker.feature)
+        this.group = L.featureGroup(features).addTo(this.map)
+        this.map.fitBounds(this.group.getBounds(), { maxZoom: 14, paddingTopLeft: [950, 0] })
     }
 
     render() {
@@ -69,18 +108,6 @@ export default class Map extends React.Component {
             width: '100%',
             height: '100%'
         }
-
-        /*
-        var markers = this.state.markers.map((marker) => {
-            marker.color = this.state.color
-            return new Marker(marker)
-        })
-
-        var features = markers.map((marker) => marker.feature)
-        var group = L.featureGroup(features).addTo(this.map)
-        this.map.fitBounds(group.getBounds(), { maxZoom: 14 })
-        */
-
-        return <div style={style}></div>
+        return <div style={style}/>
     }
 }

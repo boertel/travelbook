@@ -68,6 +68,7 @@ class Day extends React.Component {
                     <div>
                         <div className="boxes">{this.renderBlocks(blocks)}</div>
                         {viewer}
+                        {markers}
                     </div>
                    )
         }

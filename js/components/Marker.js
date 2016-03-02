@@ -1,5 +1,18 @@
 import React from 'react'
 
-export default function Marker(props) {
-    return (<div></div>)
+import store from '../store'
+
+
+export default class Marker extends React.Component {
+    componentDidMount() {
+        store.push(this.props.marker)
+    }
+
+    componentWillUnmount() {
+        store.remove(this.props.marker)
+    }
+
+    render() {
+        return null
+    }
 }

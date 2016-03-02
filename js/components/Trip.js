@@ -14,7 +14,7 @@ class Trip extends React.Component {
         } else if (tripFetch.fulfilled) {
             var trip = tripFetch.value;
             return (
-                    <div>
+                    <div style={{height: '100%'}}>
                         <div className="content">
                             <h1>{trip.title}</h1>
                             <h2>{trip.date}</h2>
