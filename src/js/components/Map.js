@@ -45,7 +45,6 @@ export default class Map extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            color: undefined,
             markers: []
         }
 
@@ -89,7 +88,6 @@ export default class Map extends React.Component {
         }
 
         var markers = this.state.markers.map((marker) => {
-            marker.color = this.state.color
             return new Marker(marker)
         })
 

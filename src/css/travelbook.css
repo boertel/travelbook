@@ -64,3 +64,18 @@ body {
 .timeline ul li a:hover {
     opacity: 1;
 }
+
+.dot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    opacity: 0.8;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #ccc;
+    border-color: #ccc;
+}

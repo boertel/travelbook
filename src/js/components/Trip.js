@@ -13,16 +13,15 @@ class Trip extends React.Component {
             return <Error error={tripFetch.reason} />
         } else if (tripFetch.fulfilled) {
             var trip = tripFetch.value;
+            var childrenWithProps = React.Children.map(this.props.children, (child) => {
+                return React.cloneElement(child, {trip: trip})
+            })
             return (
                     <div style={{height: '100%'}}>
                         <div className="content">
-                            <h1>{trip.title}</h1>
-                            <h2>{trip.date}</h2>
-                            <div>
-                                <Timeline name={params.name} days={trip.days} />
-                                {this.props.children}
-                                <Timeline name={params.name} days={trip.days} />
-                            </div>
+                            <Timeline name={params.name} days={trip.days} />
+                            {childrenWithProps}
+                            <Timeline name={params.name} days={trip.days} />
                         </div>
                         <Map></Map>
                     </div>

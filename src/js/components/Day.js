@@ -1,14 +1,12 @@
 import React from 'react'
 import { connect } from 'react-refetch'
 
-import { Loading, Error, Title, Text, Row, Viewer, Marker } from './'
+import { Loading, Error, Title, Text, Row, Viewer, Marker, Link } from './'
 
 
 function getMarkers(blocks) {
     var authorized = ['image'];
-    return blocks.filter((block) => authorized.indexOf(block.type) !== -1)
-        .map((block) => block.args.images)
-        .reduce((next, block, []) => next.concat(block))
+    return items(blocks)
         .map((image) => image.marker)
         .filter((marker) => marker !== undefined)
 }
@@ -21,15 +19,19 @@ function items(blocks) {
 }
 
 class Day extends React.Component {
+    constructor(props) {
+        super(props)
+        this.components = {
+            'title': Title,
+            'text': Text,
+            'link': Link,
+        }
+    }
     renderBlocks(blocks) {
         var n = 0;
         return blocks.map((block, i) => {
             block.args.key = i;
             switch (block.type) {
-                case 'title':
-                    return <Title {...block.args} />
-                case 'text':
-                    return <Text {...block.args} />
                 case 'image':
                     var ratio = 0;
                     block.args.images.map(image => {
@@ -39,12 +41,20 @@ class Day extends React.Component {
                         ratio += image.aspect_ratio
                     })
                     return <Row {...block.args} location={this.props.location} ratio={ratio} margin={10} />
+                default:
+                    var component = this.components[block.type]
+                    if (component !== undefined) {
+                        return React.createElement(component, block.args)
+                    } else {
+                        console.log('Unsupported type: ' + block.type)
+                    }
             }
         })
     }
 
     render() {
-        const { dayFetch, params } = this.props
+        const { dayFetch, params, trip } = this.props
+        var day = parseInt(params.day, 10)
 
         if (dayFetch.pending) {
             return <Loading />
@@ -52,7 +62,7 @@ class Day extends React.Component {
             console.log(dayFetch);
             return <Error error={dayFetch.reason} />
         } else if (dayFetch.fulfilled) {
-            const { blocks, color } = dayFetch.value
+            const { blocks } = dayFetch.value
             let media = undefined
             let viewer = null
             if (params.index !== undefined) {
@@ -62,6 +72,7 @@ class Day extends React.Component {
             }
 
             var markers = getMarkers(blocks).map((marker, key) => {
+                marker.color = trip.days[day].color;
                 return <Marker marker={marker} key={key} />
             })
             return (

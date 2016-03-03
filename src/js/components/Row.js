@@ -34,6 +34,7 @@ export default class Row extends React.Component {
             var width = Math.floor((widthContainer / ratio) * image.aspect_ratio),
                 height = Math.floor(widthContainer / ratio),
                 style = {
+                    position: 'relative',
                     display: 'inline-block',
                     marginRight: (image === last)  ? 0 : margin + 'px',
                     marginBottom: margin + 'px'
@@ -47,6 +48,7 @@ export default class Row extends React.Component {
                             src={image.src}
                             width={width}
                             height={height}
+                            marker={image.marker}
                         />
                     </Link>
                 </div>
