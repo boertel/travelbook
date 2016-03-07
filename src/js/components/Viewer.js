@@ -1,6 +1,6 @@
 import React from 'react'
-import { browserHistory } from 'react-router'
 
+import history from '../history'
 import { Medium } from './'
 
 
@@ -18,7 +18,7 @@ export default class Viewer extends React.Component {
     }
     close(e) {
         e.preventDefault()
-        browserHistory.replace(this.root())
+        history.replace(this.root())
         return false
     }
 
@@ -27,7 +27,7 @@ export default class Viewer extends React.Component {
         e.preventDefault()
         var index = (this.props.index + 1) % (this.props.media.length + 1)
         // and show next day or loop back at the end
-        browserHistory.push(this.root() + '/' + index)
+        history.push(this.root() + '/' + index)
         return false;
     }
 
@@ -38,7 +38,7 @@ export default class Viewer extends React.Component {
         if (index < 0) {
             index = this.props.media.length
         }
-        browserHistory.push(this.root() + '/' + index)
+        history.push(this.root() + '/' + index)
         return false;
     }
 
