@@ -16,6 +16,49 @@ body {
     height: 100%;
 }
 
+
+
+.map {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.content {
+    margin: 0;
+    margin-top: 200px;
+    background: #fff;
+    z-index: 1;
+    position: relative;
+    min-height: 100%;
+    padding: 2em 0;
+    /* last timeline component is at the bottom */
+    padding-bottom: 80px;
+}
+
+.content, .bar {
+    width: 100%;
+}
+
+@media screen and (min-width: 64em) {
+    .map {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .content {
+        margin: 0 2em;
+    }
+    .content, .bar {
+        width: 940px;
+    }
+}
+
 .media-viewer {
     position: fixed;
     top: 0;
@@ -24,18 +67,6 @@ body {
     left: 0;
     background: rgba(18, 18, 18, .98);
     z-index: 1000;
-}
-
-.content {
-    margin: 0 2em;
-    z-index: 1;
-    position: relative;
-    background: #fff;
-    min-height: 100%;
-    padding: 2em 0;
-}
-.content, .bar {
-    width: 940px;
 }
 
 .bar {
@@ -50,6 +81,12 @@ body {
     padding: 0 2em;
 }
 
+
+.timeline:last-child {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 .timeline ul {
     text-align: center;
     padding: 0;
@@ -77,6 +114,11 @@ body {
 }
 .timeline ul li a:hover {
     opacity: 1;
+}
+
+.loading {
+    width: 100%;
+    text-align: center;
 }
 
 .dot {

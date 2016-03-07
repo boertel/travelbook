@@ -54,21 +54,14 @@ export default class Map extends React.Component {
             return marker
         })
 
-        var features = markers.map((marker) => marker.feature)
-        this.group = L.featureGroup(features).addTo(this.map)
-        this.map.fitBounds(this.group.getBounds(), { maxZoom: 14, paddingTopLeft: [950, 0] })
+        var features = markers.map((marker) => marker.feature);
+        if (features.length > 0) {
+            this.group = L.featureGroup(features).addTo(this.map)
+            this.map.fitBounds(this.group.getBounds(), { maxZoom: 14, paddingTopLeft: [950, 0] })
+        }
     }
 
     render() {
-        var style = {
-            position: 'fixed',
-            top: 0,
-            bottom: 0,
-            left: 0,
-            right: 0,
-            width: '100%',
-            height: '100%'
-        }
-        return <div style={style}/>
+        return <div className="map"/>
     }
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 import { connect } from 'react-refetch'
 
 import { Loading } from '.'
@@ -10,7 +11,11 @@ class Trips extends React.Component {
         if (tripsFetch.pending) {
             return <Loading />
         } else if (tripsFetch.fulfilled) {
-            return <div></div>
+            var trips = tripsFetch.value.map(function(trip, key) {
+                var to = '/'  + trip.id + '/1';
+                return (<li key={key}><Link to={to}>{trip.title}</Link></li>);
+            });
+            return <ul>{trips}</ul>
         }
 
     }

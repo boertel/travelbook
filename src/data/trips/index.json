@@ -1,5 +1,5 @@
 [
-     { "title": "East Coast" }
+     { "title": "East Coast", "id": "newyork" }
     ,{ "title": "Vancouver" }
     ,{ "title": "Hong Kong" }
     ,{ "title": "Indonesia" }
