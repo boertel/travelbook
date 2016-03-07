@@ -4,42 +4,7 @@ import ReactDOM from 'react-dom'
 import store from '../store'
 
 
-var Marker = function (args, node) {
-    this.properties = args;
-    this.feature = L.mapbox.featureLayer({
-        // this feature is in the GeoJSON format: see geojson.org
-        // for the full specification
-        type: 'Feature',
-        geometry: {
-            type: 'Point',
-            // coordinates here are in longitude, latitude order because
-            // x, y is the standard for GeoJSON and many formats
-            coordinates: this.properties.coordinates
-        },
-        properties: {
-            title: this.properties.title,
-            description: this.properties.description,
-            // one can customize markers by adding simplestyle properties
-            // https://www.mapbox.com/foundations/an-open-platform/#simplestyle
-            'marker-size': this.properties.size,
-            'marker-color': this.properties.color,
-            'marker-symbol': this.properties.symbol
-        }
-    });
-};
 
-Marker.prototype.attachTo = function (node) {
-    this.feature.addEventListener('mouseover', (function () {
-        node.style.borderWidth = '10px'
-        node.style.borderColor = this.properties.color
-    }).bind(this));
-    this.feature.addEventListener('mouseout', (function () {
-        node.style.borderWidth = '0px';
-    }).bind(this));
-    this.feature.addEventListener('click', (function () {
-        //$(node).trigger('click');
-    }).bind(this));
-};
 
 export default class Map extends React.Component {
     constructor(props) {
@@ -60,9 +25,7 @@ export default class Map extends React.Component {
     }
 
     componentDidMount() {
-
         store.bind(this.onchange);
-
     }
 
     componentWillUnmount() {
@@ -88,7 +51,7 @@ export default class Map extends React.Component {
         }
 
         var markers = this.state.markers.map((marker) => {
-            return new Marker(marker)
+            return marker
         })
 
         var features = markers.map((marker) => marker.feature)

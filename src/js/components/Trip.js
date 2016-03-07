@@ -12,13 +12,15 @@ class Trip extends React.Component {
         } else if (tripFetch.rejected) {
             return <Error error={tripFetch.reason} />
         } else if (tripFetch.fulfilled) {
-            var trip = tripFetch.value;
+            var trip = tripFetch.value,
+                day = params.day !==undefined ? trip.days[params.day] : {}
             var childrenWithProps = React.Children.map(this.props.children, (child) => {
-                return React.cloneElement(child, {trip: trip})
+                return React.cloneElement(child, {trip: trip, day: day})
             })
             return (
                     <div style={{height: '100%'}}>
                         <div className="content">
+                            <div className="bar" style={{backgroundColor: day.color}}></div>
                             <Timeline name={params.name} days={trip.days} />
                             {childrenWithProps}
                             <Timeline name={params.name} days={trip.days} />

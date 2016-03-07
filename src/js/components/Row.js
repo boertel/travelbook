@@ -26,7 +26,7 @@ export default class Row extends React.Component {
         window.removeEventListener('resize', this.resize)
     }
     render() {
-        const { images, ratio, margin } = this.props
+        const { images, ratio, margin, color } = this.props
         var widthContainer = this.state.width - (images.length - 1) * margin,
             last = images[images.length - 1];
 
@@ -40,10 +40,14 @@ export default class Row extends React.Component {
                     marginBottom: margin + 'px'
                 };
             var to = this.props.location.pathname + '/' + image.index;
+            if (image.marker) {
+                image.marker.color = color;
+            }
             return (
                 <div className="picture" style={style} key={key}>
                     <Link to={to}>
                         <Picture
+                            color={color}
                             margin={margin}
                             src={image.src}
                             width={width}

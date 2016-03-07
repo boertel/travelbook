@@ -1,15 +1,8 @@
 import React from 'react'
 import { connect } from 'react-refetch'
 
-import { Loading, Error, Title, Text, Row, Viewer, Marker, Link } from './'
+import { Loading, Error, Title, Text, Row, Viewer, Link } from './'
 
-
-function getMarkers(blocks) {
-    var authorized = ['image'];
-    return items(blocks)
-        .map((image) => image.marker)
-        .filter((marker) => marker !== undefined)
-}
 
 function items(blocks) {
     var authorized = ['image'];
@@ -40,7 +33,7 @@ class Day extends React.Component {
                         n += 1
                         ratio += image.aspect_ratio
                     })
-                    return <Row {...block.args} location={this.props.location} ratio={ratio} margin={10} />
+                    return <Row {...block.args} location={this.props.location} ratio={ratio} margin={10} color={this.props.day.color} />
                 default:
                     var component = this.components[block.type]
                     if (component !== undefined) {
@@ -53,8 +46,7 @@ class Day extends React.Component {
     }
 
     render() {
-        const { dayFetch, params, trip } = this.props
-        var day = parseInt(params.day, 10)
+        const { dayFetch, params, trip, day } = this.props
 
         if (dayFetch.pending) {
             return <Loading />
@@ -71,15 +63,10 @@ class Day extends React.Component {
                 viewer = <div className="viewer"><Viewer media={media} index={index} back={this.props.location.pathname} /></div>
             }
 
-            var markers = getMarkers(blocks).map((marker, key) => {
-                marker.color = trip.days[day].color;
-                return <Marker marker={marker} key={key} />
-            })
             return (
-                    <div>
+                    <div className="components">
                         <div className="boxes">{this.renderBlocks(blocks)}</div>
                         {viewer}
-                        {markers}
                     </div>
                    )
         }

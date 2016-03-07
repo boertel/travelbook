@@ -1,11 +1,28 @@
 import React from 'react'
 
-export default function Picture(props) {
-    var dot = props.marker ? <div className="dot"></div> : null
-    return (
-            <div>
-                <img src={'http://travelbook.oertel.fr/' + props.src} width={props.width} height={props.height} />
-                {dot}
-            </div>
+// TODO why './' isn't working?
+import Marker from './Marker'
+
+
+export default class Picture extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+
+        var child = (
+                <img src={'http://travelbook.oertel.fr/' + this.props.src} width={this.props.width} height={this.props.height} />
             )
+
+        if (this.props.marker) {
+            // dot = <div className="dot" style={color}></div>;
+            return (
+                <Marker marker={this.props.marker}>
+                    {child}
+                </Marker>
+               )
+        }
+        return (<div className="picture">{child}</div>);
+    }
 }

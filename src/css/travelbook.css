@@ -31,9 +31,23 @@ body {
     z-index: 1;
     position: relative;
     background: #fff;
-    width: 940px;
     min-height: 100%;
-    padding: 2em;
+    padding: 2em 0;
+}
+.content, .bar {
+    width: 940px;
+}
+
+.bar {
+    position: fixed;
+    background-color: #ccc;
+    top: 0;
+    height: 6px;
+    z-index: 1;
+}
+
+.components {
+    padding: 0 2em;
 }
 
 .timeline ul {
@@ -69,10 +83,10 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    margin: 10px;
-    width: 8px;
-    height: 8px;
-    border-radius: 8px;
+    margin: 15px 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
     opacity: 0.8;
     border-width: 2px;
     border-style: solid;
