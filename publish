@@ -1,7 +1,9 @@
 #!/bin/bash
 
+BRANCH=gh-pages
+
 make copy
-git checkout gh-pages
+git checkout $BRANCH
 
 DIST=./dist/
 if [ -d "$DIST" ]; then
@@ -11,5 +13,5 @@ fi
 
 git add -A
 git reset publish
-git commit -m "new version"
-
+git commit -m "new version" && git push origin $BRANCH
+git checkout master
