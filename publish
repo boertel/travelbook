@@ -12,6 +12,6 @@ if [ -d "$DIST" ]; then
 fi
 
 git add -A
-git reset publish
+git reset -- publish
 git commit -m "new version" && git push origin $BRANCH
 git checkout -
