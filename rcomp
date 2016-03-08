@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR=js/components
+DIR=src/js/components
 NAME=$1
 FILE=$DIR/$NAME.js
 INDEX=$DIR/index.js
