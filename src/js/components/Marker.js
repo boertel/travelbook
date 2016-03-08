@@ -1,36 +1,7 @@
 import React from 'react'
-import hexRgb from 'hex-rgb'
+import Color from 'color'
 
 import store from '../store'
-
-
-function LightenDarkenColor(col, amt) {
-    var usePound = false;
-
-    if (col[0] == "#") {
-        col = col.slice(1);
-        usePound = true;
-    }
-
-    var num = parseInt(col,16);
-
-    var r = (num >> 16) + amt;
-
-    if (r > 255) r = 255;
-    else if  (r < 0) r = 0;
-
-    var b = ((num >> 8) & 0x00FF) + amt;
-
-    if (b > 255) b = 255;
-    else if  (b < 0) b = 0;
-
-    var g = (num & 0x0000FF) + amt;
-
-    if (g > 255) g = 255;
-
-    else if (g < 0) g = 0;
-    return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
-}
 
 
 var Point = function (args) {
@@ -68,8 +39,8 @@ Point.prototype.updateFeature = function(color, size) {
 };
 
 Point.prototype.highlight = function() {
-    var newColor = LightenDarkenColor(this.properties.color, -40);
-    return this.updateFeature(newColor, 'large')
+    var newColor = new Color(this.properties.color).darken(0.4);
+    return this.updateFeature(newColor.hexString(), 'large')
 };
 
 Point.prototype.unhighlight = function() {
@@ -103,11 +74,10 @@ export default class Marker extends React.Component {
     }
 
     render() {
-        var rgb = hexRgb(this.props.marker.color);
-        var fadedColor = 'rgba(' + rgb[0] + ', ' + rgb[1] + ', ' + rgb[2] + ', 0.5)';
+        var color = new Color(this.props.marker.color);
         var color = {
             borderColor: this.props.marker.color,
-            backgroundColor: fadedColor
+            backgroundColor: color.clearer(0.5).rgbString()
         };
 
         return (<div onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>

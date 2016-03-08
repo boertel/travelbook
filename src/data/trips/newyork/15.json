@@ -30,7 +30,7 @@
                             "size": "small",
                             "symbol": "restaurant"
                         },
-                        "src": "./static/images/newyork/15/img_4106.jpg",
+                        "src": {"farm": 2, "secret": "5902d4022a", "type": "flickr", "id": "25505730272", "server": "1478"},
                         "width": 750
                     },
                     {
@@ -46,7 +46,7 @@
                             "size": "small",
                             "symbol": "restaurant"
                         },
-                        "src": "./static/images/newyork/15/img_4107.jpg",
+                        "src": {"farm": 2, "secret": "18c9bfb4fc", "type": "flickr", "id": "24993880494", "server": "1674"},
                         "width": 1000
                     }
                 ]
@@ -69,7 +69,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/15/cyril-restroom.gif",
+                        "src": {"farm": 2, "secret": "dce0fdc9f4", "type": "flickr", "id": "24993883274", "server": "1690", "extension": "gif"},
                         "width": 750
                     },
                     {
@@ -85,7 +85,7 @@
                             "size": "small",
                             "symbol": "airport"
                         },
-                        "src": "./static/images/newyork/15/img_4109.jpg",
+                        "src": {"farm": 2, "secret": "ef138ae55f", "type": "flickr", "id": "25624393665", "server": "1605"},
                         "width": 612
                     },
                     {
@@ -101,7 +101,7 @@
                             "size": "small",
                             "symbol": "airport"
                         },
-                        "src": "./static/images/newyork/15/img_4112.jpg",
+                        "src": {"farm": 2, "secret": "55f900a531", "type": "flickr", "id": "25505727132", "server": "1695"},
                         "width": 640
                     }
                 ]

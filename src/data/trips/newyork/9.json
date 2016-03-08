@@ -44,7 +44,7 @@
                             "size": "small",
                             "symbol": "bicycle"
                         },
-                        "src": "./static/images/newyork/9/img_3848.jpg",
+                        "src": {"farm": 2, "secret": "717edfeabc", "type": "flickr", "id": "24997356793", "server": "1450"},
                         "width": 2800
                     }
                 ]
@@ -79,7 +79,7 @@
                             "size": "small",
                             "symbol": "restaurant"
                         },
-                        "src": "./static/images/newyork/9/img_3849.jpg",
+                        "src": {"farm": 2, "secret": "1be3dd3b60", "type": "flickr", "id": "25624079135", "server": "1459"},
                         "width": 750
                     },
                     {
@@ -95,7 +95,7 @@
                             "size": "small",
                             "symbol": "beer"
                         },
-                        "src": "./static/images/newyork/9/img_3850.jpg",
+                        "src": {"farm": 2, "secret": "e8c7489fd6", "type": "flickr", "id": "25328438220", "server": "1505"},
                         "width": 750
                     }
                 ]

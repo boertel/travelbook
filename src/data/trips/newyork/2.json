@@ -30,7 +30,7 @@
                             "symbol": "",
                             "title": ""
                         },
-                        "src": "./static/images/newyork/2/img_2800.jpg",
+                        "src": {"farm": 2, "secret": "2895bcd835", "type": "flickr", "id": "25574763796", "server": "1583"},
                         "width": 1000
                     },
                     {
@@ -46,7 +46,7 @@
                             "symbol": "",
                             "title": ""
                         },
-                        "src": "./static/images/newyork/2/img_2803.jpg",
+                        "src": {"farm": 2, "secret": "1e41fc739a", "type": "flickr", "id": "25600865345", "server": "1704"},
                         "width": 1000
                     },
                     {
@@ -62,7 +62,7 @@
                             "symbol": "",
                             "title": ""
                         },
-                        "src": "./static/images/newyork/2/img_2824.jpg",
+                        "src": {"farm": 2, "secret": "9acc527a04", "type": "flickr", "id": "25482268012", "server": "1674"},
                         "width": 750
                     }
                 ]
@@ -84,7 +84,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/2/img_2822.jpg",
+                        "src": {"farm": 2, "secret": "27d8e5bddd", "type": "flickr", "id": "25233342929", "server": "1685"},
                         "width": 750
                     },
                     {
@@ -100,7 +100,7 @@
                             "symbol": "",
                             "title": ""
                         },
-                        "src": "./static/images/newyork/2/img_2844.jpg",
+                        "src": {"farm": 2, "secret": "4a43fb683b", "type": "flickr", "id": "25508180351", "server": "1635"},
                         "width": 1000
                     }
                 ]
@@ -134,7 +134,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/2/img_2853.jpg",
+                        "src": {"farm": 2, "secret": "7820c460f7", "type": "flickr", "id": "25305263030", "server": "1603"},
                         "width": 750
                     },
                     {
@@ -149,7 +149,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/2/img_2852.jpg",
+                        "src": {"farm": 2, "secret": "8ebb34c733", "type": "flickr", "id": "25233341419", "server": "1535"},
                         "width": 750
                     }
                 ]
@@ -184,7 +184,7 @@
                             "symbol": "",
                             "title": ""
                         },
-                        "src": "./static/images/newyork/2/img_2866.jpg",
+                        "src": {"farm": 2, "secret": "a965ac0bc0", "type": "flickr", "id": "25482265152", "server": "1594"},
                         "width": 750
                     },
                     {
@@ -199,7 +199,7 @@
                             "size": "small",
                             "symbol": "water"
                         },
-                        "src": "./static/images/newyork/2/img_2868.jpg",
+                        "src": {"farm": 2, "secret": "788389a5b8", "type": "flickr", "id": "25600860625", "server": "1574"},
                         "width": 1000
                     }
                 ]
@@ -221,7 +221,7 @@
                             "size": "small",
                             "symbol": "city"
                         },
-                        "src": "./static/images/newyork/2/img_2870.jpg",
+                        "src": {"farm": 2, "secret": "55e21990de", "type": "flickr", "id": "24974173693", "server": "1657"},
                         "width": 750
                     },
                     {
@@ -236,7 +236,7 @@
                             "size": "small",
                             "symbol": "park"
                         },
-                        "src": "./static/images/newyork/2/img_2876.jpg",
+                        "src": {"farm": 2, "secret": "d209656017", "type": "flickr", "id": "25305259340", "server": "1575"},
                         "width": 750
                     },
                     {
@@ -251,7 +251,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/2/img_2881.jpg",
+                        "src": {"farm": 2, "secret": "3503d9c0ab", "type": "flickr", "id": "25574754586", "server": "1713"},
                         "width": 750
                     }
                 ]
@@ -273,7 +273,7 @@
                             "size": "small",
                             "symbol": "beer"
                         },
-                        "src": "./static/images/newyork/2/img_2891.jpg",
+                        "src": {"farm": 2, "secret": "3a7e202d99", "type": "flickr", "id": "25574753126", "server": "1677"},
                         "width": 750
                     },
                     {
@@ -288,7 +288,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/2/img_2897.jpg",
+                        "src": {"farm": 2, "secret": "167129febe", "type": "flickr", "id": "25600854735", "server": "1482"},
                         "width": 750
                     }
                 ]
@@ -322,7 +322,7 @@
                             "size": "small",
                             "symbol": "bakery"
                         },
-                        "src": "./static/images/newyork/2/img_2880.jpg",
+                        "src": {"farm": 2, "secret": "6b90955bf0", "type": "flickr", "id": "25574755476", "server": "1657"},
                         "width": 1000
                     },
                     {
@@ -337,7 +337,7 @@
                             "size": "small",
                             "symbol": "waste-basket"
                         },
-                        "src": "./static/images/newyork/2/img_2904.jpg",
+                        "src": {"farm": 2, "secret": "94791cb8cc", "type": "flickr", "id": "25482257922", "server": "1706"},
                         "width": 1000
                     }
                 ]

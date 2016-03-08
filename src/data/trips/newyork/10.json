@@ -69,7 +69,7 @@
                             "size": "small",
                             "symbol": "beer"
                         },
-                        "src": "./static/images/newyork/10/img_3875.jpg",
+                        "src": {"farm": 2, "secret": "003f15a2bc", "type": "flickr", "id": "25624098135", "server": "1664"},
                         "width": 750
                     },
                     {
@@ -85,7 +85,7 @@
                             "size": "small",
                             "symbol": "restaurant"
                         },
-                        "src": "./static/images/newyork/10/img_3876.jpg",
+                        "src": {"farm": 2, "secret": "a089a0db5f", "type": "flickr", "id": "25328457230", "server": "1500"},
                         "width": 1000
                     }
                 ]
@@ -108,7 +108,7 @@
                             "size": "small",
                             "symbol": "restaurant"
                         },
-                        "src": "./static/images/newyork/10/img_3877.jpg",
+                        "src": {"farm": 2, "secret": "c4f1dc82db", "type": "flickr", "id": "24993581664", "server": "1714"},
                         "width": 1000
                     },
                     {
@@ -124,7 +124,7 @@
                             "size": "small",
                             "symbol": "lodging"
                         },
-                        "src": "./static/images/newyork/10/img_3879.jpg",
+                        "src": {"farm": 2, "secret": "54fe49f764", "type": "flickr", "id": "25505431692", "server": "1660"},
                         "width": 708
                     }
                 ]

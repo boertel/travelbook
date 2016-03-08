@@ -1,9 +1,12 @@
 import React from 'react'
 
 
-function buildFlickrUrl(photo, size, extension) {
-    extension = extension || 'jpg';
-    var base = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}`
+function buildFlickrUrl(photo, size) {
+    var extension = photo.extension || 'jpg';
+    var base = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}`;
+    if (extension === 'gif') {
+        size = 'o_d';
+    }
     if (size !== undefined) {
         base += '_' + size;
     }

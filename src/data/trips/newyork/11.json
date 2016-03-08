@@ -30,7 +30,7 @@
                             "size": "small",
                             "symbol": "park"
                         },
-                        "src": "./static/images/newyork/11/img_3890.jpg",
+                        "src": {"farm": 2, "secret": "a31eccf173", "type": "flickr", "id": "24993622244", "server": "1705"},
                         "width": 1000
                     },
                     {
@@ -46,7 +46,7 @@
                             "size": "small",
                             "symbol": "park"
                         },
-                        "src": "./static/images/newyork/11/img_3886.jpg",
+                        "src": {"farm": 2, "secret": "f001c4b534", "type": "flickr", "id": "25624139805", "server": "1496"},
                         "width": 1000
                     },
                     {
@@ -62,7 +62,7 @@
                             "size": "small",
                             "symbol": "park"
                         },
-                        "src": "./static/images/newyork/11/img_3888.jpg",
+                        "src": {"farm": 2, "secret": "8f05944aaf", "type": "flickr", "id": "25505474542", "server": "1459"},
                         "width": 1000
                     },
                     {
@@ -78,7 +78,7 @@
                             "size": "small",
                             "symbol": "park"
                         },
-                        "src": "./static/images/newyork/11/img_3897.jpg",
+                        "src": {"farm": 2, "secret": "7bc0fa6356", "type": "flickr", "id": "25505471882", "server": "1661"},
                         "width": 1000
                     }
                 ]
@@ -101,7 +101,7 @@
                             "size": "small",
                             "symbol": "park"
                         },
-                        "src": "./static/images/newyork/11/img_3899.jpg",
+                        "src": {"farm": 2, "secret": "7703773101", "type": "flickr", "id": "24997408333", "server": "1473"},
                         "width": 1000
                     },
                     {
@@ -117,7 +117,7 @@
                             "size": "small",
                             "symbol": "restaurant"
                         },
-                        "src": "./static/images/newyork/11/img_3902.jpg",
+                        "src": {"farm": 2, "secret": "98abed947b", "type": "flickr", "id": "25505462102", "server": "1505"},
                         "width": 750
                     }
                 ]
@@ -140,7 +140,7 @@
                             "size": "small",
                             "symbol": "park"
                         },
-                        "src": "./static/images/newyork/11/img_3900.jpg",
+                        "src": {"farm": 2, "secret": "95fb9fdee4", "type": "flickr", "id": "24993616674", "server": "1706"},
                         "width": 3000
                     }
                 ]
@@ -169,7 +169,7 @@
                             "size": "small",
                             "symbol": "park"
                         },
-                        "src": "./static/images/newyork/11/img_3906.jpg",
+                        "src": {"farm": 2, "secret": "aa55b6d6b1", "type": "flickr", "id": "25256560739", "server": "1456"},
                         "width": 3000
                     }
                 ]
@@ -192,7 +192,7 @@
                             "size": "small",
                             "symbol": "park"
                         },
-                        "src": "./static/images/newyork/11/img_3910.jpg",
+                        "src": {"farm": 2, "secret": "33e5ca88f2", "type": "flickr", "id": "25531434831", "server": "1705"},
                         "width": 3000
                     }
                 ]
@@ -207,7 +207,7 @@
                         "credit": "Parc de la Mauricie",
                         "datetime": "2014:09:02 15:32:32",
                         "height": 1062,
-                        "src": "./static/images/newyork/11/img_3911.jpg",
+                        "src": {"farm": 2, "secret": "0f9c81f85f", "type": "flickr", "id": "25328474270", "server": "1689"},
                         "width": 2800
                     },
                     {
@@ -215,7 +215,7 @@
                         "credit": "Parc de la Mauricie",
                         "datetime": "2014:09:02 15:58:33",
                         "height": 1000,
-                        "src": "./static/images/newyork/11/img_3913.jpg",
+                        "src": {"farm": 2, "secret": "9af7695af4", "type": "flickr", "id": "25624109795", "server": "1621"},
                         "width": 1000
                     }
                 ]
@@ -236,7 +236,7 @@
                         "credit": "Parc de la MauricieQuébec",
                         "datetime": "2014:09:02 21:12:10",
                         "height": 750,
-                        "src": "./static/images/newyork/11/img_3917.jpg",
+                        "src": {"farm": 2, "secret": "5847282b81", "type": "flickr", "id": "24993593794", "server": "1493"},
                         "width": 1000
                     }
                 ]

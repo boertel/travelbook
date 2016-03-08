@@ -30,7 +30,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/13/img_3993.jpg",
+                        "src": {"farm": 2, "secret": "cffa71c3aa", "type": "flickr", "id": "25256677859", "server": "1636"},
                         "width": 3000
                     }
                 ]
@@ -53,7 +53,7 @@
                             "size": "small",
                             "symbol": "park2"
                         },
-                        "src": "./static/images/newyork/13/img_3995.jpg",
+                        "src": {"farm": 2, "secret": "5fd9259046", "type": "flickr", "id": "24993723164", "server": "1689"},
                         "width": 1000
                     }
                 ]
@@ -76,7 +76,7 @@
                             "size": "small",
                             "symbol": "park2"
                         },
-                        "src": "./static/images/newyork/13/img_4007.jpg",
+                        "src": {"farm": 2, "secret": "2a193c01ed", "type": "flickr", "id": "25531552401", "server": "1461"},
                         "width": 2000
                     }
                 ]
@@ -99,7 +99,7 @@
                             "size": "small",
                             "symbol": "park2"
                         },
-                        "src": "./static/images/newyork/13/img_4011.jpg",
+                        "src": {"farm": 2, "secret": "bf2d30e58d", "type": "flickr", "id": "25598090696", "server": "1468"},
                         "width": 2500
                     }
                 ]
@@ -122,7 +122,7 @@
                             "size": "small",
                             "symbol": "park2"
                         },
-                        "src": "./static/images/newyork/13/img_4012.jpg",
+                        "src": {"farm": 2, "secret": "f348d9f2eb", "type": "flickr", "id": "25598086186", "server": "1720"},
                         "width": 1000
                     },
                     {
@@ -138,7 +138,7 @@
                             "size": "small",
                             "symbol": "park2"
                         },
-                        "src": "./static/images/newyork/13/img_4013.jpg",
+                        "src": {"farm": 2, "secret": "e3bfafa723", "type": "flickr", "id": "25624227375", "server": "1587"},
                         "width": 1000
                     },
                     {
@@ -154,7 +154,7 @@
                             "size": "small",
                             "symbol": "car"
                         },
-                        "src": "./static/images/newyork/13/img_4020.jpg",
+                        "src": {"farm": 2, "secret": "553ed8abd3", "type": "flickr", "id": "25328583970", "server": "1663"},
                         "width": 1000
                     }
                 ]
@@ -183,7 +183,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/13/img_4022.jpg",
+                        "src": {"farm": 2, "secret": "36a17db005", "type": "flickr", "id": "24997497853", "server": "1685"},
                         "width": 1000
                     },
                     {
@@ -199,7 +199,7 @@
                             "size": "small",
                             "symbol": "restaurant"
                         },
-                        "src": "./static/images/newyork/13/img_4021.jpg",
+                        "src": {"farm": 2, "secret": "2a502ab296", "type": "flickr", "id": "24997499153", "server": "1711"},
                         "width": 750
                     }
                 ]

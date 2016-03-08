@@ -30,7 +30,7 @@
                             "size": "small",
                             "symbol": "restaurant"
                         },
-                        "src": "./static/images/newyork/7/img_3713.jpg",
+                        "src": {"farm": 2, "secret": "1ed8649643", "type": "flickr", "id": "24993389434", "server": "1562"},
                         "width": 750
                     },
                     {
@@ -46,7 +46,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/7/img_3715.jpg",
+                        "src": {"farm": 2, "secret": "f71f77a663", "type": "flickr", "id": "25256337329", "server": "1631"},
                         "width": 750
                     }
                 ]
@@ -75,7 +75,7 @@
                             "size": "small",
                             "symbol": "car"
                         },
-                        "src": "./static/images/newyork/7/img_3717.jpg",
+                        "src": {"farm": 2, "secret": "9835f6fe9e", "type": "flickr", "id": "24993387544", "server": "1555"},
                         "width": 1000
                     },
                     {
@@ -91,7 +91,7 @@
                             "size": "small",
                             "symbol": "car"
                         },
-                        "src": "./static/images/newyork/7/img_3718.jpg",
+                        "src": {"farm": 2, "secret": "3d0a89774c", "type": "flickr", "id": "24997174523", "server": "1550"},
                         "width": 1000
                     },
                     {
@@ -107,7 +107,7 @@
                             "size": "small",
                             "symbol": "car"
                         },
-                        "src": "./static/images/newyork/7/img_3719.jpg",
+                        "src": {"farm": 2, "secret": "023b5b7fdc", "type": "flickr", "id": "25256335239", "server": "1501"},
                         "width": 1000
                     }
                 ]
@@ -142,7 +142,7 @@
                             "size": "small",
                             "symbol": "restaurant"
                         },
-                        "src": "./static/images/newyork/7/img_3728.jpg",
+                        "src": {"farm": 2, "secret": "dcaef064fe", "type": "flickr", "id": "25623896845", "server": "1578"},
                         "width": 750
                     },
                  {
@@ -158,7 +158,7 @@
                             "size": "small",
                             "symbol": "restaurant"
                         },
-                        "src": "./static/images/newyork/7/img_3729.jpg",
+                        "src": {"farm": 2, "secret": "a1f444d505", "type": "flickr", "id": "24993384814", "server": "1568"},
                         "width": 750
                     }
                 ]

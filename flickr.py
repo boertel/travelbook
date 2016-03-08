@@ -37,6 +37,6 @@ if __name__ == '__main__':
     response = get('photosets.getPhotos', {'photoset_id': photoset_id})
     out = ''
     for photo in response['photoset']['photo']:
-        out += '"src": "./static/images/newyork/1/%s.jpg",;"src": %s,\n' % (photo['title'], json.dumps(interesting(photo)))
+        out += '"src": ".*%s.jpg",;"src": %s,\n' % (photo['title'], json.dumps(interesting(photo)))
     print out
 
