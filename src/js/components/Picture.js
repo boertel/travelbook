@@ -1,8 +1,6 @@
 import React from 'react'
 
-// TODO why './' isn't working?
-import Marker from './Marker'
-
+import { Photo, Marker } from './'
 
 export default class Picture extends React.Component {
     constructor(props) {
@@ -12,7 +10,7 @@ export default class Picture extends React.Component {
     render() {
 
         var child = (
-                <img src={'http://travelbook.oertel.fr/' + this.props.src} width={this.props.width} height={this.props.height} />
+                <Photo {...this.props} />
             )
 
         if (this.props.marker) {

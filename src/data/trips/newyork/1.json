@@ -18,7 +18,13 @@
             "args": {
                 "images": [
                     {
-                        "src": "./static/images/newyork/1/img_2657.jpg",
+                        "src": {
+                            "type": "flickr",
+                            "farm": 2,
+                            "secret": "86590dea9e",
+                            "id": "25600848825",
+                            "server": "1495"
+                        },
                         "caption": "1. se faire petit déjeuner de luxe",
                         "credit": "JFK Terminal 7",
                         "width": 563,

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Photo } from './'
+
 
 export default class Medium extends React.Component {
     constructor(props) {
@@ -66,7 +68,7 @@ export default class Medium extends React.Component {
         return (
                 <div className="media-viewer-wrapper">
                     <div className="media-viewer-asset" style={figureStyle}>
-                        <img src={'http://travelbook.oertel.fr/' + current.src} />
+                        <Photo src={current.src} />
                         <nav className="image-navigation previous">
                             <span className="visually-hidden">Go to previous image</span>
                         </nav>
