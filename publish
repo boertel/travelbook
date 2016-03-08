@@ -1,5 +1,8 @@
 #!/bin/bash
 
+make copy
+git checkout gh-pages
+
 DIST=./dist/
 if [ -d "$DIST" ]; then
     mv $DIST* .
