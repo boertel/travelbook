@@ -13,7 +13,7 @@ class Trip extends React.Component {
             return <Error error={tripFetch.reason} />
         } else if (tripFetch.fulfilled) {
             var trip = tripFetch.value,
-                day = params.day !==undefined ? trip.days[params.day] : {}
+                day = params.day !==undefined ? trip.days[parseInt(params.day, 10) - 1] : {}
             var childrenWithProps = React.Children.map(this.props.children, (child) => {
                 return React.cloneElement(child, {trip: trip, day: day})
             })
