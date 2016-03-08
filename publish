@@ -5,11 +5,11 @@ git checkout gh-pages
 
 DIST=./dist/
 if [ -d "$DIST" ]; then
-    mv $DIST* .
+    rsync -av $DIST* .
     rm -rf $DIST
 fi
 
-git add .
+git add -A
 git reset publish
 git commit -m "new version"
 
