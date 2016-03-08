@@ -23,7 +23,7 @@ watch:
 	${BIN_DIR}/watchify ${WATCH_FLAGS}
 
 start:
-	${MAKE} watch & ${MAKE} serve
+	${MAKE} serve & ${MAKE} watch
 
 serve:
 	${BIN_DIR}/ecstatic ${SERVER_FLAGS}

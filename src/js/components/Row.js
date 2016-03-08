@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Link } from 'react-router'
 
 import { Picture } from './'
 
@@ -25,38 +24,27 @@ export default class Row extends React.Component {
     componentWillUnmount() {
         window.removeEventListener('resize', this.resize)
     }
+    shouldComponentUpdate(nextProps, nextState) {
+        return nextState.width > 0;
+    }
     render() {
-        const { images, ratio, margin, color } = this.props
-        var widthContainer = this.state.width - (images.length - 1) * margin,
-            last = images[images.length - 1];
+        if (this.state.width === 0) {
+            return <div></div>;
+        }
+        const { images, ratio, margin, color } = this.props;
+        var widthContainer = this.state.width - (images.length - 1) * margin;
 
         var imagesListItem = images.map((image, key) => {
-            var width = Math.floor((widthContainer / ratio) * image.aspect_ratio),
-                height = Math.floor(widthContainer / ratio),
-                style = {
-                    position: 'relative',
-                    display: 'inline-block',
-                    marginRight: (image === last)  ? 0 : margin + 'px',
-                    marginBottom: margin + 'px'
-                };
-            var to = this.props.location.pathname + '/' + image.index;
-            if (image.marker) {
-                image.marker.color = color;
-            }
-            return (
-                <div className="picture" style={style} key={key}>
-                    <Link to={to}>
-                        <Picture
-                            color={color}
-                            margin={margin}
-                            src={image.src}
-                            width={width}
-                            height={height}
-                            marker={image.marker}
-                        />
-                    </Link>
-                </div>
-            );
+            var last = image === _.last(images);
+            return <Picture
+                        image={image}
+                        key={key}
+                        location={this.props.location}
+                        widthContainer={widthContainer}
+                        last={last}
+                        ratio={ratio}
+                        color={color}
+                        margin={margin} />
         });
 
         return <div className="row">{imagesListItem}</div>;

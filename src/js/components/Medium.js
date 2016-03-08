@@ -64,11 +64,13 @@ export default class Medium extends React.Component {
                 paddingLeft: '20px'
             };
         }
+        console.log(width, height);
 
+        // FIXME BUG when navigating between images the previous one shows up
         return (
                 <div className="media-viewer-wrapper">
                     <div className="media-viewer-asset" style={figureStyle}>
-                        <Photo src={current.src} />
+                        <Photo src={current.src} width={width} height={height} />
                         <nav className="image-navigation previous">
                             <span className="visually-hidden">Go to previous image</span>
                         </nav>

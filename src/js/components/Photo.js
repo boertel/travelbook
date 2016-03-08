@@ -10,17 +10,46 @@ function buildFlickrUrl(photo, size, extension) {
     return base + '.' + extension;
 }
 
+function threshold(width, height) {
+    var limits = [
+        { ext: 't', pixels: 100 },
+        { ext: 'm', pixels: 240 },
+        { ext: 'n', pixels: 320 },
+        { ext: undefined, pixels: 500 },
+        { ext: 'z', pixels: 640 },
+        { ext: 'c', pixels: 800 },
+        { ext: 'b', pixels: 1024 },
+        { ext: 'h', pixels: 1600 },
+        { ext: 'k', pixels: 2048 },
+    ]
+    var max = Math.max(width, height),
+        i = 0;
 
-export default function Photo(props) {
-    var url;
-    if (typeof props.src === 'string') {
-        url = props.src;
-    } else {
-        if (props.src.type === 'flickr') {
-            url = buildFlickrUrl(props.src);
-        }
+    while (i > limits.length - 1 || max >= limits[i].pixels) {
+        i += 1;
+    }
+    return limits[i].ext;
+}
+
+
+export default class Photo extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            size: threshold(props.width, props.height)
+        };
     }
 
-    return <img src={url} width={props.width} height={props.height} />
+    render() {
+        var url;
+        if (typeof this.props.src === 'string') {
+            url = this.props.src;
+        } else {
+            if (this.props.src.type === 'flickr') {
+                url = buildFlickrUrl(this.props.src, this.state.size);
+            }
+        }
 
+        return <img src={url} width={this.props.width} height={this.props.height} />
+    }
 }

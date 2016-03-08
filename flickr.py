@@ -18,7 +18,9 @@ def photo_source_url(photo, size=None, extension='jpg'):
 
 def interesting(photo):
     attributes = ['farm', 'server', 'id', 'secret']
-    return { key: value for key, value in photo.iteritems() if key in attributes }
+    output = { key: value for key, value in photo.iteritems() if key in attributes }
+    output['type'] = 'flickr'
+    return output
 
 def get(method, params):
     params.update({
@@ -33,6 +35,8 @@ def get(method, params):
 
 if __name__ == '__main__':
     response = get('photosets.getPhotos', {'photoset_id': photoset_id})
+    out = ''
     for photo in response['photoset']['photo']:
-        print photo['title'], json.dumps(interesting(photo))
+        out += '"src": "./static/images/newyork/1/%s.jpg",;"src": %s,\n' % (photo['title'], json.dumps(interesting(photo)))
+    print out
 
