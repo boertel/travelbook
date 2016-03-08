@@ -18,7 +18,13 @@
             "args": {
                 "images": [
                     {
-                        "src": "./static/images/newyork/1/img_2657.jpg",
+                        "src": {
+                            "type": "flickr",
+                            "farm": 2,
+                            "secret": "86590dea9e",
+                            "id": "25600848825",
+                            "server": "1495"
+                        },
                         "caption": "1. se faire petit déjeuner de luxe",
                         "credit": "JFK Terminal 7",
                         "width": 563,
@@ -31,7 +37,7 @@
                         }
                     },
                     {
-                        "src": "./static/images/newyork/1/img_2659.jpg",
+                        "src": {"farm": 2, "secret": "59338ee5de", "type": "flickr", "id": "25233326369", "server": "1641"},
                         "caption": "2. regarder des séries",
                         "width": 750,
                         "height": 1000
@@ -49,7 +55,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/1/img_2666.jpg",
+                        "src": {"farm": 2, "secret": "b750142cc7", "type": "flickr", "id": "25482251032", "server": "1660"},
                         "width": 750
                     },
                     {
@@ -57,7 +63,7 @@
                         "credit": "mais à 8h, on sent un peu seul dans l'aéroport http://vimeo.com/97634383",
                         "datetime": "2014:08:23 10:23:49",
                         "height": 1000,
-                        "src": "./static/images/newyork/1/img_2664.jpg",
+                        "src": {"farm": 2, "secret": "07d8e9311f", "type": "flickr", "id": "24970371034", "server": "1658"},
                         "width": 563
                     }
                 ]
@@ -80,16 +86,16 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/1/img_2668.jpg",
+                        "src": {"farm": 2, "secret": "523b2b42a9", "type": "flickr", "id": "25233323929", "server": "1695"},
                         "width": 1000
                     },
                     {
-                        "src": "./static/images/newyork/1/img_2671.jpg",
+                        "src": {"farm": 2, "secret": "7e42333a00", "type": "flickr", "id": "25574743056", "server": "1560"},
                         "width": 1000,
                         "height": 735
                     },
                     {
-                        "src": "./static/images/newyork/1/img_2672.jpg",
+                        "src": {"farm": 2, "secret": "b11aef8944", "type": "flickr", "id": "25600844715", "server": "1678"},
                         "width": 563,
                         "height": 1000,
                         "caption": "Les retrouvailles",
@@ -127,7 +133,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/1/img_2684.jpg",
+                        "src": {"farm": 2, "secret": "ea32ca0bb7", "type": "flickr", "id": "25305245680", "server": "1556"},
                         "width": 1000
                     },
                     {
@@ -143,7 +149,7 @@
                             "size": "small",
                             "symbol": "park2"
                         },
-                        "src": "./static/images/newyork/1/img_2688.jpg",
+                        "src": {"farm": 2, "secret": "92d87cdf43", "type": "flickr", "id": "25574740756", "server": "1562"},
                         "width": 1000
                     },
                     {
@@ -159,7 +165,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/1/img_2721.jpg",
+                        "src": {"farm": 2, "secret": "bd4af7291c", "type": "flickr", "id": "25305243630", "server": "1591"},
                         "width": 3060
                     },
                     {
@@ -175,7 +181,7 @@
                             "size": "small",
                             "symbol": "commercial"
                         },
-                        "src": "./static/images/newyork/1/img_2733.jpg",
+                        "src": {"farm": 2, "secret": "1a6552d542", "type": "flickr", "id": "24970356844", "server": "1455"},
                         "width": 750
                     }
                 ]
@@ -198,7 +204,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/1/img_2744.jpg",
+                        "src": {"farm": 2, "secret": "0fa61a5454", "type": "flickr", "id": "25508149371", "server": "1476"},
                         "width": 750
                     },
                     {
@@ -214,7 +220,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/1/img_2746.jpg",
+                        "src": {"farm": 2, "secret": "2b734a9b23", "type": "flickr", "id": "25508148391", "server": "1651"},
                         "width": 750
                     },
                     {
@@ -230,7 +236,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/1/img_2749.jpg",
+                        "src": {"farm": 2, "secret": "72619b0713", "type": "flickr", "id": "25233308209", "server": "1497"},
                         "width": 1000
                     }
                 ]
@@ -253,7 +259,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/1/img_2754.jpg",
+                        "src": {"farm": 2, "secret": "b68d604bd2", "type": "flickr", "id": "25574727176", "server": "1642"},
                         "width": 750
                     },
                     {
@@ -269,7 +275,7 @@
                             "size": "small",
                             "symbol": ""
                         },
-                        "src": "./static/images/newyork/1/img_2760.jpg",
+                        "src": {"farm": 2, "secret": "3049218527", "type": "flickr", "id": "24974143903", "server": "1474"},
                         "width": 1000
                     }
                 ]
@@ -298,7 +304,7 @@
                             "size": "small",
                             "symbol": "rail"
                         },
-                        "src": "./static/images/newyork/1/img_2771.jpg",
+                        "src": {"farm": 2, "secret": "4c4158e984", "type": "flickr", "id": "24970352424", "server": "1561"},
                         "width": 1000
                     },
                     {
@@ -314,7 +320,7 @@
                             "size": "small",
                             "symbol": "rail"
                         },
-                        "src": "./static/images/newyork/1/img_2775.jpg",
+                        "src": {"farm": 2, "secret": "99f897e62a", "type": "flickr", "id": "25508144411", "server": "1534"},
                         "width": 1000
                     }
                 ]

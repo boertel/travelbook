@@ -1,0 +1,105 @@
+{
+    "blocks": [
+        {
+            "type": "title",
+            "args": {
+                "title": "Dimanche 31 Août",
+                "subtitle": "Aujourd'hui: c'est vélo, pas photo"
+            }
+        },
+        {
+            "type": "text",
+            "args": {
+                "text": "Promenade en vélo de Montréal Centre à Lachine en longeant le canal de Lachine. 30 kilomètres de vélo, l'allée avec vent de face et retour vent de dos."
+            }
+        },
+        {
+            "type": "iframe",
+            "args": {
+                "src": "http://www.strava.com/activities/188014625/embed/48449640de25e7eaab8f455be31675db16e2abb9",
+                "width": 590,
+                "height": 405
+            }
+        },
+        {
+            "type": "text",
+            "args": {
+                "text": "On est rendu à la moitié, vue nuageuse sur le lac Saint-Louis. Maintenant, il faut faire le chemin inverse."
+            }
+        },
+        {
+            "type": "image",
+            "args": {
+                "images": [
+                    {
+                        "caption": "",
+                        "credit": "",
+                        "datetime": "2014:08:31 12:31:00",
+                        "height": 996,
+                        "marker": {
+                            "coordinates": [
+                                -73.6881638888889,
+                                45.428875
+                            ],
+                            "size": "small",
+                            "symbol": "bicycle"
+                        },
+                        "src": {"farm": 2, "secret": "717edfeabc", "type": "flickr", "id": "24997356793", "server": "1450"},
+                        "width": 2800
+                    }
+                ]
+            }
+        },
+        {
+            "type": "title",
+            "args": {
+                "subtitle": "Et repos aussi"
+            }
+        },
+        {
+            "type": "text",
+            "args": {
+                "text": "Retour dans la ville dans l'après-midi et voilà qu'une averse pointe le bout de son nez, ça sera donc pause café et cartes postales en attendant."
+            }
+        },
+        {
+            "type": "image",
+            "args": {
+                "images": [
+                    {
+                        "caption": "Dégustation de cidre québecois",
+                        "credit": "Chez Juliette et chocolat",
+                        "datetime": "2014:08:31 20:44:39",
+                        "height": 1000,
+                        "marker": {
+                            "coordinates": [
+                                -73.56279722222222,
+                                45.514919444444445
+                            ],
+                            "size": "small",
+                            "symbol": "restaurant"
+                        },
+                        "src": {"farm": 2, "secret": "1be3dd3b60", "type": "flickr", "id": "25624079135", "server": "1459"},
+                        "width": 750
+                    },
+                    {
+                        "caption": "Et évidemment de bières québecoises",
+                        "credit": "Le Saint Bock",
+                        "datetime": "2014:08:31 21:33:13",
+                        "height": 1000,
+                        "marker": {
+                            "coordinates": [
+                                -73.56478888888888,
+                                45.51562777777778
+                            ],
+                            "size": "small",
+                            "symbol": "beer"
+                        },
+                        "src": {"farm": 2, "secret": "e8c7489fd6", "type": "flickr", "id": "25328438220", "server": "1505"},
+                        "width": 750
+                    }
+                ]
+            }
+        }
+    ]
+}

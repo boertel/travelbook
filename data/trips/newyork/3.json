@@ -1,0 +1,542 @@
+{
+    "blocks": [
+        {
+            "type": "title",
+            "args": {
+                "title": "Lundi 25 Août"
+            }
+        },
+        {
+            "type": "text",
+            "args": {
+                "text": "Aujourd'hui, une des seules attractions prévues: l'US Open mais c'est dans la soirée donc pendant la matinée ça sera Central Park et le MoMa et une longue pause dans Central Park l'après midi."
+            }
+        },
+        {
+            "type": "title",
+            "args": {
+                "subtitle": "Subway"
+            }
+        },
+        {
+            "type": "text",
+            "args": {
+                "text": "Après avoir passé 2 jours à utiliser les jambes, il est temps de découvrir le métro new yorkais."
+            }
+        },
+        {
+            "type": "image",
+            "args": {
+                "images": [
+                    {
+                        "caption": "33",
+                        "credit": "",
+                        "datetime": "2014:08:25 09:31:47",
+                        "height": 750,
+                        "marker": {
+                            "coordinates": [
+                                -73.98181111111111,
+                                40.746375
+                            ],
+                            "size": "small",
+                            "symbol": "rail-metro"
+                        },
+                        "src": {"farm": 2, "secret": "b142086bec", "type": "flickr", "id": "25622736135", "server": "1568"},
+                        "width": 817
+                    },
+                    {
+                        "caption": "XXIe siècle",
+                        "credit": "Subway",
+                        "datetime": "2014:08:25 09:37:25",
+                        "height": 750,
+                        "src": {"farm": 2, "secret": "043efa38cf", "type": "flickr", "id": "25327096740", "server": "1492"},
+                        "width": 1000
+                    },
+                    {
+                        "caption": "",
+                        "credit": "",
+                        "datetime": "2014:08:25 09:45:35",
+                        "height": 1000,
+                        "marker": {
+                            "coordinates": [
+                                -73.96600277777777,
+                                40.76861111111111
+                            ],
+                            "size": "small",
+                            "symbol": "rail-metro"
+                        },
+                        "src": {"farm": 2, "secret": "95e31014fb", "type": "flickr", "id": "25327096150", "server": "1502"},
+                        "width": 750
+                    }
+                ]
+            }
+        },
+        {
+            "type": "title",
+            "args": {
+                "subtitle": "Central Park"
+            }
+        },
+        {
+            "type": "text",
+            "args": {
+                "text": "Le MoMa ouvre aux alentours de 10h, donc étant donné notre rythme de vacances effréné, il faut trouver une activité à faire avant. Ça sera Central Park et très bonne décision: peu de monde et les pelouses s'ouvrent donc à nous les grandes étendues d'herbe."
+            }
+        },
+        {
+            "type": "image",
+            "args": {
+                "images": [
+                    {
+                        "caption": "",
+                        "credit": "Central Park",
+                        "datetime": "2014:08:25 10:10:16",
+                        "height": 1000,
+                        "marker": {
+                            "coordinates": [
+                                -73.97185555555556,
+                                40.77654722222222
+                            ],
+                            "size": "small",
+                            "symbol": "park2"
+                        },
+                        "src": {"farm": 2, "secret": "dc9ba989ba", "type": "flickr", "id": "25530052741", "server": "1573"},
+                        "width": 750
+                    },
+                    {
+                        "caption": "",
+                        "credit": "Central Park",
+                        "datetime": "2014:08:25 10:20:39",
+                        "height": 750,
+                        "marker": {
+                            "coordinates": [
+                                -73.97177222222223,
+                                40.77847777777777
+                            ],
+                            "size": "small",
+                            "symbol": "park2"
+                        },
+                        "src": {"farm": 2, "secret": "db7f295ee9", "type": "flickr", "id": "24992224054", "server": "1584"},
+                        "width": 1000
+                    },
+                    {
+                        "caption": "",
+                        "credit": "Central Park",
+                        "datetime": "2014:08:25 10:21:00",
+                        "height": 1000,
+                        "marker": {
+                            "coordinates": [
+                                -73.97174166666667,
+                                40.77846944444445
+                            ],
+                            "size": "small",
+                            "symbol": "park2"
+                        },
+                        "src": {"farm": 2, "secret": "00fa2a1cb4", "type": "flickr", "id": "25255172319", "server": "1614"},
+                        "width": 750
+                    },
+                    {
+                        "caption": "",
+                        "credit": "Central Park",
+                        "datetime": "2014:08:25 10:21:51",
+                        "height": 1000,
+                        "marker": {
+                            "coordinates": [
+                                -73.97157222222222,
+                                40.778705555555554
+                            ],
+                            "size": "small",
+                            "symbol": "park2"
+                        },
+                        "src": {"farm": 2, "secret": "96883be574", "type": "flickr", "id": "25530049481", "server": "1469"},
+                        "width": 750
+                    },
+                    {
+                        "caption": "",
+                        "credit": "Central Park",
+                        "datetime": "2014:08:25 10:22:02",
+                        "height": 750,
+                        "marker": {
+                            "coordinates": [
+                                -73.97165555555556,
+                                40.778708333333334
+                            ],
+                            "size": "small",
+                            "symbol": "park2"
+                        },
+                        "src": {"farm": 2, "secret": "64caf9484e", "type": "flickr", "id": "25596599966", "server": "1492"},
+                        "width": 1000
+                    },
+                    {
+                        "caption": "Sheep Meadow",
+                        "credit": "Central Park",
+                        "datetime": "2014:08:25 10:29:28",
+                        "height": 750,
+                        "marker": {
+                            "coordinates": [
+                                -73.97309166666666,
+                                40.77772222222222
+                            ],
+                            "size": "small",
+                            "symbol": "park2"
+                        },
+                        "src": {"farm": 2, "secret": "c40526fe24", "type": "flickr", "id": "25596598796", "server": "1693"},
+                        "width": 1000
+                    },
+                    {
+                        "caption": "",
+                        "credit": "Central Park",
+                        "datetime": "2014:08:25 11:00:18",
+                        "height": 336,
+                        "marker": {
+                            "coordinates": [
+                                -73.97483055555556,
+                                40.771972222222225
+                            ],
+                            "size": "small",
+                            "symbol": "park2"
+                        },
+                        "src": {"farm": 2, "secret": "c1884e933b", "type": "flickr", "id": "25327088210", "server": "1539"},
+                        "width": 1000
+                    },
+                    {
+                        "caption": "Vert et Verre",
+                        "credit": "Central Park",
+                        "datetime": "2014:08:25 11:11:33",
+                        "height": 750,
+                        "marker": {
+                            "coordinates": [
+                                -73.97351944444445,
+                                40.768425
+                            ],
+                            "size": "small",
+                            "symbol": "park2"
+                        },
+                        "src": {"farm": 2, "secret": "5d49b3bd82", "type": "flickr", "id": "25255167379", "server": "1614"},
+                        "width": 1000
+                    },
+                    {
+                        "caption": "Enjoying the sun",
+                        "credit": "Central Park",
+                        "datetime": "2014:08:25 15:15:17",
+                        "height": 742,
+                        "marker": {
+                            "coordinates": [
+                                -73.97418888888889,
+                                40.77068611111111
+                            ],
+                            "size": "small",
+                            "symbol": "park2"
+                        },
+                        "src": {"farm": 2, "secret": "326ccaff03", "type": "flickr", "id": "25622721385", "server": "1504"},
+                        "width": 990
+                    }
+                ]
+            }
+        },
+        {
+            "type": "title",
+            "args": {
+                "subtitle": "MoMa"
+            }
+        },
+        {
+            "type": "text",
+            "args": {
+                "text": "Après avoir explorer la ville pendant 2 jours, il est temps de faire un peu de culture avec le Museum Of Modern Art."
+            }
+        },
+        {
+            "type": "image",
+            "args": {
+                "images": [
+                    {
+                        "caption": "L'attaque des patates",
+                        "credit": "MoMa",
+                        "datetime": "2014:08:25 12:12:19",
+                        "height": 596,
+                        "marker": {
+                            "coordinates": [
+                                -73.97718888888889,
+                                40.761136111111114
+                            ],
+                            "size": "small",
+                            "symbol": "museum"
+                        },
+                        "src": {"farm": 2, "secret": "2769dd9e76", "type": "flickr", "id": "25622724665", "server": "1578"},
+                        "width": 970
+                    },
+                    {
+                        "caption": "#pollock",
+                        "credit": "MoMa",
+                        "datetime": "2014:08:25 12:52:34",
+                        "height": 750,
+                        "marker": {
+                            "coordinates": [
+                                -73.97683611111111,
+                                40.7615
+                            ],
+                            "size": "small",
+                            "symbol": "museum"
+                        },
+                        "src": {"farm": 2, "secret": "f3bb4c29b9", "type": "flickr", "id": "25327084870", "server": "1690"},
+                        "width": 1000
+                    },
+                    {
+                        "caption": "",
+                        "credit": "MoMa",
+                        "datetime": "2014:08:25 13:06:54",
+                        "height": 978,
+                        "marker": {
+                            "coordinates": [
+                                -73.97760833333334,
+                                40.761672222222224
+                            ],
+                            "size": "small",
+                            "symbol": "museum"
+                        },
+                        "src": {"farm": 2, "secret": "b94ca098cc", "type": "flickr", "id": "25596593876", "server": "1612"},
+                        "width": 733
+                    },
+                    {
+                        "caption": "L'art même aux toilettes",
+                        "credit": "MoMa",
+                        "datetime": "2014:08:25 13:54:22",
+                        "height": 750,
+                        "marker": {
+                            "coordinates": [
+                                -73.97728055555555,
+                                40.76155555555555
+                            ],
+                            "size": "small",
+                            "symbol": "museum"
+                        },
+                        "src": {"farm": 2, "secret": "75610d2643", "type": "flickr", "id": "25530041341", "server": "1548"},
+                        "width": 1000
+                    }
+                ]
+            }
+        },
+        {
+            "type": "title",
+            "args": {
+                "subtitle": "En Transit"
+            }
+        },
+        {
+            "type": "text",
+            "args": {
+                "text": "Il est enfin l'heure de se diriger vers l'US Open situé à l'ouest de Manhattan dans le Queens (Flushing Meadows)."
+            }
+        },
+        {
+            "type": "image",
+            "args": {
+                "images": [
+                    {
+                        "caption": "#selfie",
+                        "credit": "",
+                        "datetime": "2014:08:25 11:20:10",
+                        "height": 750,
+                        "marker": {
+                            "coordinates": [
+                                -73.97381666666666,
+                                40.76453055555555
+                            ],
+                            "size": "small",
+                            "symbol": ""
+                        },
+                        "src": {"farm": 2, "secret": "c86b996215", "type": "flickr", "id": "25327086350", "server": "1542"},
+                        "width": 1000
+                    },
+                    {
+                        "caption": "On 6th and W 53th St",
+                        "credit": "The Halal Guys",
+                        "datetime": "2014:08:25 14:22:54",
+                        "height": 1000,
+                        "marker": {
+                            "coordinates": [
+                                -73.9786388888889,
+                                40.761922222222225
+                            ],
+                            "size": "small",
+                            "symbol": ""
+                        },
+                        "src": {"farm": 2, "secret": "37b9e27e9e", "type": "flickr", "id": "25255162669", "server": "1493"},
+                        "width": 750
+                    },
+                    {
+                        "caption": "",
+                        "credit": "",
+                        "datetime": "2014:08:25 17:26:53",
+                        "height": 680,
+                        "marker": {
+                            "coordinates": [
+                                -73.940675,
+                                40.75107222222222
+                            ],
+                            "size": "small",
+                            "symbol": "rail-metro"
+                        },
+                        "src": {"farm": 2, "secret": "844db926f0", "type": "flickr", "id": "24995994913", "server": "1584"},
+                        "width": 1000
+                    },
+                    {
+                        "caption": "Commute",
+                        "credit": "Brooklyn Subway Station",
+                        "datetime": "2014:08:25 17:27:03",
+                        "height": 750,
+                        "marker": {
+                            "coordinates": [
+                                -73.94065,
+                                40.750908333333335
+                            ],
+                            "size": "small",
+                            "symbol": "rail-metro"
+                        },
+                        "src": {"farm": 2, "secret": "9a14120d55", "type": "flickr", "id": "24992209994", "server": "1530"},
+                        "width": 1000
+                    }
+                ]
+            }
+        },
+        {
+            "type": "title",
+            "args": {
+                "subtitle": "US Open"
+            }
+        },
+        {
+            "type": "text",
+            "args": {
+                "text": "Enfin assis dans l'Arthur Ashe Stadium (plus grand stade de tennis au monde), après des contrôles de sécurité compliqués où les agents de sécurité ne savent pas les différences et similitudes entre un appareil photo, un smartphone, une gopro et un ipad. Le programme des matchs de la soirée sera: Sharapova vs. Kirilenko et ensuite Djokovic vs. Schwartzman."
+            }
+        },
+        {
+            "type": "image",
+            "args": {
+                "images": [
+                    {
+                        "caption": "Couché du soleil sur Manhattan",
+                        "credit": "Arthur Ashe Stadium",
+                        "datetime": "2014:08:25 19:30:54",
+                        "height": 750,
+                        "marker": {
+                            "coordinates": [
+                                -73.84702920913696,
+                                40.74989855122141
+                            ],
+                            "size": "small",
+                            "symbol": "tennis"
+                        },
+                        "src": {"farm": 2, "secret": "1fb1e12afe", "type": "flickr", "id": "25255158899", "server": "1560"},
+                        "width": 1000
+                    },
+                    {
+                        "caption": "Vue du stade",
+                        "credit": "Arthur Ashe Stadium",
+                        "datetime": "2014:08:25 19:31:57",
+                        "height": 397,
+                        "marker": {
+                            "coordinates": [
+                                -73.84702920913696,
+                                40.74989855122141
+                            ],
+                            "size": "small",
+                            "symbol": "tennis"
+                        },
+                        "src": {"farm": 2, "secret": "240c1f4ec0", "type": "flickr", "id": "24995992533", "server": "1695"},
+                        "width": 1000
+                    },
+                    {
+                        "caption": "Show à l'américaine pour la cérémonie d'ouverture",
+                        "credit": "Arthur Ashe Stadium",
+                        "datetime": "2014:08:25 20:04:03",
+                        "height": 750,
+                        "marker": {
+                            "coordinates": [
+                                -73.84702920913696,
+                                40.74989855122141
+                            ],
+                            "size": "small",
+                            "symbol": "tennis"
+                        },
+                        "src": {"farm": 2, "secret": "46d7b4997d", "type": "flickr", "id": "25622717735", "server": "1685"},
+                        "width": 1000
+                    }
+                ]
+            }
+        },
+        {
+            "type": "image",
+            "args": {
+                "images": [
+                    {
+                        "caption": "Première nigth session de l'US Open 2014",
+                        "credit": "Arthur Ashe Stadium",
+                        "datetime": "2014:08:25 21:58:46",
+                        "height": 750,
+                        "marker": {
+                            "coordinates": [
+                                -73.84702920913696,
+                                40.74989855122141
+                            ],
+                            "size": "small",
+                            "symbol": "tennis"
+                        },
+                        "src": {"farm": 2, "secret": "d5978c9e5e", "type": "flickr", "id": "25596586706", "server": "1457"},
+                        "width": 1000
+                    },
+                    {
+                        "caption": "Avant et après les projecteurs",
+                        "credit": "Arthur Ashe Stadium",
+                        "datetime": null,
+                        "height": 1000,
+                        "marker": {
+                            "coordinates": [
+                                -73.84702920913696,
+                                40.74989855122141
+                            ],
+                            "size": "small",
+                            "symbol": "tennis"
+                        },
+                        "src": {"farm": 2, "secret": "dacabdc065", "type": "flickr", "id": "25622716855", "server": "1597"},
+                        "width": 600
+                    },
+                    {
+                        "caption": "",
+                        "credit": "Arthur Ashe Stadium",
+                        "datetime": "2014:08:25 22:13:06",
+                        "height": 1000,
+                        "marker": {
+                            "coordinates": [
+                                -73.84702920913696,
+                                40.74989855122141
+                            ],
+                            "size": "small",
+                            "symbol": "tennis"
+                        },
+                        "src": {"farm": 2, "secret": "5ed60087c7", "type": "flickr", "id": "25327075800", "server": "1705"},
+                        "width": 750
+                    },
+                    {
+                        "caption": "Descente près des joueurs pour les derniers jeux",
+                        "credit": "Arthur Ashe Stadium",
+                        "datetime": "2014:08:25 23:31:42",
+                        "height": 439,
+                        "marker": {
+                            "coordinates": [
+                                -73.84702920913696,
+                                40.74989855122141
+                            ],
+                            "size": "small",
+                            "symbol": "tennis"
+                        },
+                        "src": {"farm": 2, "secret": "384d24f939", "type": "flickr", "id": "24995988613", "server": "1617"},
+                        "width": 1000
+                    }
+                ]
+            }
+        }
+    ]
+}
