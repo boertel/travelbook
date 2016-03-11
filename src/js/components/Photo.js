@@ -1,4 +1,5 @@
 import React from 'react'
+import _ from 'lodash'
 
 
 function buildFlickrUrl(photo, size) {
@@ -41,6 +42,10 @@ export default class Photo extends React.Component {
         this.state = {
             size: threshold(props.width, props.height)
         };
+    }
+
+    shouldcomponentupdate(nextprops, nextstate) {
+        return !_.isequal(nextprops.src, this.props.src) || nextprops.width !== this.props.width || nextprops.height !== this.props.height;
     }
 
     render() {
