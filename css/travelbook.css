@@ -121,7 +121,25 @@ body {
     text-align: center;
 }
 
-.dot {
+.text {
+    position: relative;
+}
+.text .hasMarker:before {
+    position: absolute;
+    top: 0;
+    left: -8px;
+    content: " ";
+    height: 100%;
+    width: 4px;
+    background-color: transparent;
+}
+
+.text:hover .hasMarker:before {
+    background-color: #ccc;
+}
+
+.picture .hasMarker:before {
+    content: "";
     position: absolute;
     bottom: 0;
     right: 0;
@@ -132,6 +150,6 @@ body {
     opacity: 0.8;
     border-width: 2px;
     border-style: solid;
-    background-color: #ccc;
+    background-color: rgba(204, 204, 204, 0.75);
     border-color: #ccc;
 }

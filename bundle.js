@@ -41446,7 +41446,7 @@ function App(props) {
     return _react2.default.createElement(_.Trips, null);
 }
 
-},{".":247,"react":226,"react-refetch":60}],231:[function(require,module,exports){
+},{".":248,"react":226,"react-refetch":60}],231:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -41460,6 +41460,10 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
+
+var _color = require('color');
+
+var _color2 = _interopRequireDefault(_color);
 
 var _reactRefetch = require('react-refetch');
 
@@ -41505,13 +41509,23 @@ var Day = function (_React$Component) {
     }
 
     _createClass(Day, [{
+        key: 'getRules',
+        value: function getRules() {
+            var color = new _color2.default(this.props.day.color),
+                borderColor = this.props.day.color,
+                backgroundColor = color.clearer(0.5).rgbString();
+
+            return [".text:hover .hasMarker:before { background-color: " + this.props.day.color + " !important; }", ".picture .hasMarker:before { border-color: " + borderColor + " !important; background-color: " + backgroundColor + " !important; }"];
+        }
+    }, {
         key: 'renderBlocks',
         value: function renderBlocks(blocks) {
             var _this2 = this;
 
-            var n = 0;
-            return blocks.map(function (block, i) {
-                block.args.key = i;
+            var n = 0,
+                color = this.props.day.color;
+            return blocks.map(function (block, key) {
+                block.args.key = key;
                 switch (block.type) {
                     case 'image':
                         var ratio = 0;
@@ -41521,11 +41535,24 @@ var Day = function (_React$Component) {
                             n += 1;
                             ratio += image.aspect_ratio;
                         });
-                        return _react2.default.createElement(_.Row, _extends({}, block.args, { location: _this2.props.location, ratio: ratio, margin: 10, color: _this2.props.day.color }));
+                        return _react2.default.createElement(_.Row, _extends({}, block.args, { location: _this2.props.location, ratio: ratio, margin: 10, color: color }));
                     default:
                         var component = _this2.components[block.type];
                         if (component !== undefined) {
-                            return _react2.default.createElement(component, block.args);
+                            var child = _react2.default.createElement(component, block.args);
+                            if (block.marker) {
+                                block.marker.color = color;
+                                child = _react2.default.createElement(
+                                    _.Marker,
+                                    { key: key, marker: block.marker },
+                                    child
+                                );
+                            }
+                            return _react2.default.createElement(
+                                'div',
+                                { key: key, className: block.type },
+                                child
+                            );
                         } else {
                             console.log('Unsupported type: ' + block.type);
                         }
@@ -41565,6 +41592,7 @@ var Day = function (_React$Component) {
                 return _react2.default.createElement(
                     'div',
                     { className: 'components' },
+                    _react2.default.createElement(_.Style, { rules: this.getRules() }),
                     _react2.default.createElement(
                         'div',
                         { className: 'boxes' },
@@ -41587,7 +41615,7 @@ exports.default = (0, _reactRefetch.connect)(function (props) {
     };
 })(Day);
 
-},{"./":247,"react":226,"react-refetch":60}],232:[function(require,module,exports){
+},{"./":248,"color":3,"react":226,"react-refetch":60}],232:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -41774,13 +41802,10 @@ var Map = function (_React$Component) {
                 this.group.clearLayers();
             }
 
-            var markers = this.state.markers.map(function (marker) {
-                return marker;
-            });
-
-            var features = markers.map(function (marker) {
+            var features = this.state.markers.map(function (marker) {
                 return marker.feature;
             });
+
             if (features.length > 0) {
                 this.group = L.featureGroup(features).addTo(this.map);
                 this.map.fitBounds(this.group.getBounds(), { maxZoom: 14, paddingTopLeft: [950, 0] });
@@ -41798,7 +41823,7 @@ var Map = function (_React$Component) {
 
 exports.default = Map;
 
-},{"../store":250,"react":226,"react-dom":57}],236:[function(require,module,exports){
+},{"../store":251,"react":226,"react-dom":57}],236:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -41821,54 +41846,103 @@ var _store2 = _interopRequireDefault(_store);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Point = function Point(args) {
-    this.properties = args;
-    this.feature = L.mapbox.featureLayer({
-        // this feature is in the GeoJSON format: see geojson.org
-        // for the full specification
-        type: 'Feature',
-        geometry: {
-            type: 'Point',
-            // coordinates here are in longitude, latitude order because
-            // x, y is the standard for GeoJSON and many formats
-            coordinates: this.properties.coordinates
-        },
-        properties: {
-            title: this.properties.title,
-            description: this.properties.description,
-            // one can customize markers by adding simplestyle properties
-            // https://www.mapbox.com/foundations/an-open-platform/#simplestyle
-            'marker-size': this.properties.size,
-            'marker-color': this.properties.color,
-            'marker-symbol': this.properties.symbol
-        }
-    });
-};
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-Point.prototype.updateFeature = function (color, size) {
-    for (var key in this.feature._layers) {
-        this.feature._layers[key].setIcon(L.mapbox.marker.icon({
-            'marker-color': color,
-            'marker-symbol': this.properties.symbol,
-            'marker-size': size
-        })).setZIndexOffset(1000);
+var Point = function () {
+    function Point(args) {
+        _classCallCheck(this, Point);
+
+        this.properties = args;
+        this.feature = L.mapbox.featureLayer({
+            // this feature is in the GeoJSON format: see geojson.org
+            // for the full specification
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                // coordinates here are in longitude, latitude order because
+                // x, y is the standard for GeoJSON and many formats
+                coordinates: this.properties.coordinates
+            },
+            properties: {
+                title: this.properties.title,
+                description: this.properties.description,
+                // one can customize markers by adding simplestyle properties
+                // https://www.mapbox.com/foundations/an-open-platform/#simplestyle
+                'marker-size': this.properties.size,
+                'marker-color': this.properties.color,
+                'marker-symbol': this.properties.symbol
+            }
+        });
     }
-};
 
-Point.prototype.highlight = function () {
-    var newColor = new _color2.default(this.properties.color).darken(0.4);
-    return this.updateFeature(newColor.hexString(), 'large');
-};
+    _createClass(Point, [{
+        key: 'update',
+        value: function update(color, size) {
+            for (var key in this.feature._layers) {
+                this.feature._layers[key].setIcon(L.mapbox.marker.icon({
+                    'marker-color': color,
+                    'marker-symbol': this.properties.symbol,
+                    'marker-size': size
+                })).setZIndexOffset(1000);
+            }
+        }
+    }, {
+        key: 'highlight',
+        value: function highlight() {
+            var newColor = new _color2.default(this.properties.color).darken(0.4);
+            return this.update(newColor.hexString(), 'large');
+        }
+    }, {
+        key: 'unhighlight',
+        value: function unhighlight() {
+            return this.update(this.properties.color, 'small');
+        }
+    }]);
 
-Point.prototype.unhighlight = function () {
-    return this.updateFeature(this.properties.color, 'small');
-};
+    return Point;
+}();
+
+var Circle = function () {
+    function Circle(args) {
+        _classCallCheck(this, Circle);
+
+        this.properties = args;
+        var latLng = L.latLng(this.properties.coordinates[1], this.properties.coordinates[0]),
+            options = {
+            opacity: 1,
+            weight: 4,
+            fillOpacity: 0.4,
+            color: this.properties.color
+        };
+        this.feature = L.circle(latLng, this.properties.radius, options);
+    }
+
+    _createClass(Circle, [{
+        key: 'update',
+        value: function update(color) {
+            this.feature.setStyle({
+                color: color
+            });
+        }
+    }, {
+        key: 'highlight',
+        value: function highlight() {
+            var newColor = new _color2.default(this.properties.color).darken(0.4);
+            this.update(newColor.hexString());
+        }
+    }, {
+        key: 'unhighlight',
+        value: function unhighlight() {
+            this.update(this.properties.color);
+        }
+    }]);
+
+    return Circle;
+}();
 
 var Marker = function (_React$Component) {
     _inherits(Marker, _React$Component);
@@ -41878,7 +41952,11 @@ var Marker = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Marker).call(this, props));
 
-        _this.marker = new Point(_this.props.marker);
+        if (_this.props.marker.type === 'circle') {
+            _this.marker = new Circle(_this.props.marker);
+        } else {
+            _this.marker = new Point(_this.props.marker);
+        }
         _this.onMouseOver = _this.onMouseOver.bind(_this);
         _this.onMouseOut = _this.onMouseOut.bind(_this);
         return _this;
@@ -41907,17 +41985,10 @@ var Marker = function (_React$Component) {
     }, {
         key: 'render',
         value: function render() {
-            var color = new _color2.default(this.props.marker.color);
-            var color = {
-                borderColor: this.props.marker.color,
-                backgroundColor: color.clearer(0.5).rgbString()
-            };
-
             return _react2.default.createElement(
                 'div',
-                { onMouseOver: this.onMouseOver, onMouseOut: this.onMouseOut },
-                this.props.children,
-                _react2.default.createElement('div', { className: 'dot', style: color })
+                { className: 'hasMarker', onMouseOver: this.onMouseOver, onMouseOut: this.onMouseOut },
+                this.props.children
             );
         }
     }]);
@@ -41927,7 +41998,7 @@ var Marker = function (_React$Component) {
 
 exports.default = Marker;
 
-},{"../store":250,"color":3,"react":226}],237:[function(require,module,exports){
+},{"../store":251,"color":3,"react":226}],237:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -42076,7 +42147,7 @@ var Medium = function (_React$Component) {
 
 exports.default = Medium;
 
-},{"./":247,"react":226}],238:[function(require,module,exports){
+},{"./":248,"react":226}],238:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -42088,6 +42159,10 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
+
+var _lodash = require('lodash');
+
+var _lodash2 = _interopRequireDefault(_lodash);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -42135,6 +42210,11 @@ var Photo = function (_React$Component) {
     }
 
     _createClass(Photo, [{
+        key: 'shouldcomponentupdate',
+        value: function shouldcomponentupdate(nextprops, nextstate) {
+            return !_lodash2.default.isequal(nextprops.src, this.props.src) || nextprops.width !== this.props.width || nextprops.height !== this.props.height;
+        }
+    }, {
         key: 'render',
         value: function render() {
             var url;
@@ -42155,7 +42235,7 @@ var Photo = function (_React$Component) {
 
 exports.default = Photo;
 
-},{"react":226}],239:[function(require,module,exports){
+},{"lodash":54,"react":226}],239:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -42242,7 +42322,7 @@ var Picture = function (_React$Component) {
 
 exports.default = Picture;
 
-},{"./":247,"react":226,"react-router":91}],240:[function(require,module,exports){
+},{"./":248,"react":226,"react-router":91}],240:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -42349,7 +42429,76 @@ var Row = function (_React$Component) {
 
 exports.default = Row;
 
-},{"./":247,"react":226,"react-dom":57}],241:[function(require,module,exports){
+},{"./":248,"react":226,"react-dom":57}],241:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Style = function (_React$Component) {
+    _inherits(Style, _React$Component);
+
+    function Style(props) {
+        _classCallCheck(this, Style);
+
+        return _possibleConstructorReturn(this, Object.getPrototypeOf(Style).call(this, props));
+    }
+
+    _createClass(Style, [{
+        key: "componentDidMount",
+        value: function componentDidMount() {
+            this.style = function () {
+                // Create the <style> tag
+                var style = document.createElement("style");
+
+                // WebKit hack :(
+                style.appendChild(document.createTextNode(""));
+
+                // Add the <style> element to the page
+                document.head.appendChild(style);
+
+                return style;
+            }();
+
+            var sheet = this.style.sheet;
+
+            this.props.rules.forEach(function (rule) {
+                sheet.insertRule(rule, 0);
+            });
+        }
+    }, {
+        key: "componentWillUnmount",
+        value: function componentWillUnmount() {
+            document.head.removeChild(this.style);
+        }
+    }, {
+        key: "render",
+        value: function render() {
+            return null;
+        }
+    }]);
+
+    return Style;
+}(_react2.default.Component);
+
+exports.default = Style;
+
+},{"react":226}],242:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -42371,7 +42520,7 @@ function Text(props) {
     );
 }
 
-},{"react":226}],242:[function(require,module,exports){
+},{"react":226}],243:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -42418,7 +42567,7 @@ function Timeline(props) {
     );
 }
 
-},{"lodash":54,"react":226,"react-router":91}],243:[function(require,module,exports){
+},{"lodash":54,"react":226,"react-router":91}],244:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -42449,7 +42598,7 @@ function Title(props) {
     );
 }
 
-},{"react":226}],244:[function(require,module,exports){
+},{"react":226}],245:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -42526,7 +42675,7 @@ exports.default = (0, _reactRefetch.connect)(function (props) {
     };
 })(Trip);
 
-},{"./":247,"react":226,"react-refetch":60}],245:[function(require,module,exports){
+},{"./":248,"react":226,"react-refetch":60}],246:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -42600,7 +42749,7 @@ exports.default = (0, _reactRefetch.connect)(function (props) {
     };
 })(Trips);
 
-},{".":247,"react":226,"react-refetch":60,"react-router":91}],246:[function(require,module,exports){
+},{".":248,"react":226,"react-refetch":60,"react-router":91}],247:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -42759,13 +42908,13 @@ var Viewer = function (_React$Component) {
 
 exports.default = Viewer;
 
-},{"../history":248,"./":247,"react":226}],247:[function(require,module,exports){
+},{"../history":249,"./":248,"react":226}],248:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Viewer = exports.Trips = exports.Trip = exports.Title = exports.Timeline = exports.Text = exports.Row = exports.Picture = exports.Photo = exports.Medium = exports.Marker = exports.Map = exports.Loading = exports.Link = exports.Error = exports.Day = exports.App = undefined;
+exports.Viewer = exports.Trips = exports.Trip = exports.Title = exports.Timeline = exports.Text = exports.Style = exports.Row = exports.Picture = exports.Photo = exports.Medium = exports.Marker = exports.Map = exports.Loading = exports.Link = exports.Error = exports.Day = exports.App = undefined;
 
 var _App2 = require('./App');
 
@@ -42811,6 +42960,10 @@ var _Row2 = require('./Row');
 
 var _Row3 = _interopRequireDefault(_Row2);
 
+var _Style2 = require('./Style');
+
+var _Style3 = _interopRequireDefault(_Style2);
+
 var _Text2 = require('./Text');
 
 var _Text3 = _interopRequireDefault(_Text2);
@@ -42848,6 +43001,7 @@ exports.Medium = _Medium3.default;
 exports.Photo = _Photo3.default;
 exports.Picture = _Picture3.default;
 exports.Row = _Row3.default;
+exports.Style = _Style3.default;
 exports.Text = _Text3.default;
 exports.Timeline = _Timeline3.default;
 exports.Title = _Title3.default;
@@ -42855,7 +43009,7 @@ exports.Trip = _Trip3.default;
 exports.Trips = _Trips3.default;
 exports.Viewer = _Viewer3.default;
 
-},{"./App":230,"./Day":231,"./Error":232,"./Link":233,"./Loading":234,"./Map":235,"./Marker":236,"./Medium":237,"./Photo":238,"./Picture":239,"./Row":240,"./Text":241,"./Timeline":242,"./Title":243,"./Trip":244,"./Trips":245,"./Viewer":246}],248:[function(require,module,exports){
+},{"./App":230,"./Day":231,"./Error":232,"./Link":233,"./Loading":234,"./Map":235,"./Marker":236,"./Medium":237,"./Photo":238,"./Picture":239,"./Row":240,"./Style":241,"./Text":242,"./Timeline":243,"./Title":244,"./Trip":245,"./Trips":246,"./Viewer":247}],249:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -42866,7 +43020,7 @@ var _reactRouter = require('react-router');
 
 exports.default = _reactRouter.hashHistory;
 
-},{"react-router":91}],249:[function(require,module,exports){
+},{"react-router":91}],250:[function(require,module,exports){
 'use strict';
 
 var _react = require('react');
@@ -42902,7 +43056,7 @@ _reactDom2.default.render(_react2.default.createElement(
     )
 ), document.getElementById('root'));
 
-},{"./components":247,"./history":248,"react":226,"react-dom":57,"react-router":91}],250:[function(require,module,exports){
+},{"./components":248,"./history":249,"react":226,"react-dom":57,"react-router":91}],251:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -42948,4 +43102,4 @@ Store.prototype.unbind = function (l) {};
 
 exports.default = new Store();
 
-},{}]},{},[249]);
+},{}]},{},[250]);
