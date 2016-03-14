@@ -1,14 +1,28 @@
 #!/bin/bash
 
+which sponge &> /dev/null || { echo "missing sponge command. Run brew install moreutils"; exit 1; }
+
 DIR=src/js/components
 NAME=$1
 FILE=$DIR/$NAME.js
 INDEX=$DIR/index.js
 
+SHORT="\n\n\nexport default function $NAME(props) {\n}"
+LONG="\n\n\nexport default class $NAME extends React.Component {\n\tconstructor(props)\n\t\tsuper(props);\n\t}\n\trender() {}\n}"
+
+DEF=""
+if [[ $2 = "1" ]]; then
+    DEF=$SHORT
+elif [[ $2 = 2 ]]; then
+    DEF=$LONG
+fi
+
+
 if [ ! -f $FILE ]; then
-    echo "import React from 'react'" > $FILE
+    echo -ne "import React from 'react'$DEF" > $FILE
     echo "export $NAME from './$NAME'" >> $INDEX
-    sort -o $INDEX $INDEX
+    sort $INDEX | uniq | sponge $INDEX
+    echo $FILE
 else
     echo "$FILE already exists."
     exit 1
