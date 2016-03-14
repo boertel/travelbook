@@ -1,7 +1,8 @@
 import React from 'react'
+import Color from 'color'
 import { connect } from 'react-refetch'
 
-import { Loading, Error, Title, Text, Row, Viewer, Link } from './'
+import { Loading, Error, Title, Text, Row, Viewer, Link, Marker, Style } from './'
 
 
 function items(blocks) {
@@ -20,10 +21,23 @@ class Day extends React.Component {
             'link': Link,
         }
     }
+
+    getRules() {
+        var color = new Color(this.props.day.color),
+            borderColor = this.props.day.color,
+            backgroundColor = color.clearer(0.5).rgbString();
+
+        return [
+            ".text:hover .hasMarker:before { background-color: " + this.props.day.color + " !important; }",
+            ".picture .hasMarker:before { border-color: " + borderColor + " !important; background-color: " + backgroundColor + " !important; }"
+        ];
+    }
+
     renderBlocks(blocks) {
-        var n = 0;
-        return blocks.map((block, i) => {
-            block.args.key = i;
+        var n = 0,
+            color = this.props.day.color;
+        return blocks.map((block, key) => {
+            block.args.key = key;
             switch (block.type) {
                 case 'image':
                     var ratio = 0;
@@ -33,11 +47,16 @@ class Day extends React.Component {
                         n += 1
                         ratio += image.aspect_ratio
                     })
-                    return <Row {...block.args} location={this.props.location} ratio={ratio} margin={10} color={this.props.day.color} />
+                    return <Row {...block.args} location={this.props.location} ratio={ratio} margin={10} color={color} />
                 default:
                     var component = this.components[block.type]
                     if (component !== undefined) {
-                        return React.createElement(component, block.args)
+                        var child = React.createElement(component, block.args);
+                        if (block.marker) {
+                            block.marker.color = color;
+                            child = <Marker key={key} marker={block.marker}>{child}</Marker>
+                        }
+                        return <div key={key} className={block.type}>{child}</div>;
                     } else {
                         console.log('Unsupported type: ' + block.type)
                     }
@@ -65,6 +84,7 @@ class Day extends React.Component {
 
             return (
                     <div className="components">
+                        <Style rules={this.getRules()}></Style>
                         <div className="boxes">{this.renderBlocks(blocks)}</div>
                         {viewer}
                     </div>

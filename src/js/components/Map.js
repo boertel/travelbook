@@ -50,11 +50,8 @@ export default class Map extends React.Component {
             this.group.clearLayers();
         }
 
-        var markers = this.state.markers.map((marker) => {
-            return marker
-        })
+        var features = this.state.markers.map((marker) => marker.feature);
 
-        var features = markers.map((marker) => marker.feature);
         if (features.length > 0) {
             this.group = L.featureGroup(features).addTo(this.map)
             this.map.fitBounds(this.group.getBounds(), { maxZoom: 14, paddingTopLeft: [950, 0] })
