@@ -26,7 +26,7 @@ export default class Viewer extends React.Component {
         // TODO onEnter of viewer check if index if correct
         e.preventDefault()
         var index = (this.props.index + 1) % (this.props.media.length + 1)
-        // and show next day or loop back at the end
+        // and show next page or loop back at the end
         history.push(this.root() + '/' + index)
         return false;
     }

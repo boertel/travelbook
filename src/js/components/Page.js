@@ -12,7 +12,7 @@ function items(blocks) {
         .reduce((next, block, []) => next.concat(block))
 }
 
-class Day extends React.Component {
+class Page extends React.Component {
     constructor(props) {
         super(props)
         this.components = {
@@ -23,19 +23,19 @@ class Day extends React.Component {
     }
 
     getRules() {
-        var color = new Color(this.props.day.color),
-            borderColor = this.props.day.color,
+        var color = new Color(this.props.page.color),
+            borderColor = this.props.page.color,
             backgroundColor = color.clearer(0.5).rgbString();
 
         return [
-            ".text:hover .hasMarker:before { background-color: " + this.props.day.color + " !important; }",
+            ".text:hover .hasMarker:before { background-color: " + this.props.page.color + " !important; }",
             ".picture .hasMarker:before { border-color: " + borderColor + " !important; background-color: " + backgroundColor + " !important; }"
         ];
     }
 
     renderBlocks(blocks) {
         var n = 0,
-            color = this.props.day.color;
+            color = this.props.page.color;
         return blocks.map((block, key) => {
             block.args.key = key;
             switch (block.type) {
@@ -65,15 +65,14 @@ class Day extends React.Component {
     }
 
     render() {
-        const { dayFetch, params, trip, day } = this.props
+        const { pageFetch, params, trip, page } = this.props
 
-        if (dayFetch.pending) {
+        if (pageFetch.pending) {
             return <Loading />
-        } else if (dayFetch.rejected) {
-            console.log(dayFetch);
-            return <Error error={dayFetch.reason} />
-        } else if (dayFetch.fulfilled) {
-            const { blocks } = dayFetch.value
+        } else if (pageFetch.rejected) {
+            return <Error error={pageFetch.reason} />
+        } else if (pageFetch.fulfilled) {
+            const { blocks } = pageFetch.value
             let media = undefined
             let viewer = null
             if (params.index !== undefined) {
@@ -94,7 +93,7 @@ class Day extends React.Component {
 }
 
 export default connect(props => ({
-    dayFetch: {
-        url: `/data/trips/${props.params.name}/${props.params.day}.json`
+    pageFetch: {
+        url: `/data/trips/${props.params.name}/${props.params.page}.json`
     }
-}))(Day)
+}))(Page)
