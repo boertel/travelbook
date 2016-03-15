@@ -4,12 +4,45 @@ import Color from 'color'
 import history from '../history'
 import store from '../store'
 
-
-class Point {
+class MapComponent {
     constructor(args, to) {
         this.properties = args;
         this.to = to;
-        this.feature = L.mapbox.featureLayer({
+
+        this.feature = this.createFeature();
+        this.bind();
+    }
+
+    bind() {
+        this.onclick && this.feature.addEventListener('click', this.onclick.bind(this));
+        this.onmouseover && this.feature.addEventListener('mouseover', this.onmouseover.bind(this));
+        this.onmouseout && this.feature.addEventListener('mouseout', this.onmouseout.bind(this));
+    }
+
+    onclick() {
+        if (this.to !== undefined) {
+            history.push(this.to)
+        }
+    }
+
+    onmouseover() {
+        this.highlight();
+    }
+
+    onmouseout() {
+        this.unhighlight();
+    }
+
+    highlightedColor() {
+        return new Color(this.properties.color).darken(0.4);
+    }
+
+}
+
+
+class Point extends MapComponent {
+    createFeature() {
+        return L.mapbox.featureLayer({
             // this feature is in the GeoJSON format: see geojson.org
             // for the full specification
             type: 'Feature',
@@ -29,8 +62,6 @@ class Point {
                 'marker-symbol': this.properties.symbol
             }
         });
-
-        this.feature.addEventListener('click', this.onclick.bind(this));
     }
 
     update(color, size) {
@@ -44,23 +75,17 @@ class Point {
     }
 
     highlight() {
-        var newColor = new Color(this.properties.color).darken(0.4);
-        return this.update(newColor.hexString(), 'large')
+        return this.update(this.highlightedColor().hexString(), 'large')
     }
 
     unhighlight() {
         return this.update(this.properties.color, 'small')
     }
-
-    onclick() {
-        history.push(this.to);
-    }
 }
 
 
-class Circle {
-    constructor(args) {
-        this.properties = args;
+class Circle extends MapComponent {
+    createFeature() {
         var latLng = L.latLng(this.properties.coordinates[1], this.properties.coordinates[0]),
             options = {
                 opacity: 1,
@@ -68,8 +93,7 @@ class Circle {
                 fillOpacity: 0.4,
                 color: this.properties.color
             };
-        this.feature = L.circle(latLng, this.properties.radius, options);
-        this.feature.addEventListener('click', this.onclick.bind(this));
+        return L.circle(latLng, this.properties.radius, options);
     }
 
     update(color) {
@@ -79,15 +103,11 @@ class Circle {
     }
 
     highlight() {
-        var newColor = new Color(this.properties.color).darken(0.4);
-        this.update(newColor.hexString());
+        this.update(this.highlightedColor().hexString());
     }
 
     unhighlight() {
         this.update(this.properties.color);
-    }
-
-    onclick() {
     }
 
 }

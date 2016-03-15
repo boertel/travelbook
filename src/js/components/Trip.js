@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-refetch'
 
-import { Loading, Error, Timeline, Map } from './'
+import { Loading, Error, Timeline, Map, Marker } from './'
 
 
 class Trip extends React.Component {
@@ -17,6 +17,16 @@ class Trip extends React.Component {
             var childrenWithProps = React.Children.map(this.props.children, (child) => {
                 return React.cloneElement(child, {trip: trip, day: day})
             })
+
+            var markers = trip.days.filter((page) => {
+                return page.marker;
+            }).map((page, i) => {
+                page.marker.color = page.color;
+                var key = 'marker-' + i;
+                var to = '/' + params.name + '/' + params.day;
+                return <Marker key={key} marker={page.marker} to={to} />
+            });
+
             return (
                     <div style={{height: '100%'}}>
                         <div className="content">
@@ -26,6 +36,7 @@ class Trip extends React.Component {
                             <Timeline name={params.name} days={trip.days} />
                         </div>
                         <Map></Map>
+                        { markers }
                     </div>
                    );
         }
