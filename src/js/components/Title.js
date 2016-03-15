@@ -1,10 +1,15 @@
 import React from 'react'
 
-export default function Title(props) {
+import Section from './Section'
+
+
+function Title(props) {
     return (
-            <div className="title">
+            <div>
                 <h1>{props.title}</h1>
                 <h2>{props.subtitle}</h2>
             </div>
            )
 }
+
+export default Section(Title)

@@ -1,7 +1,12 @@
 import React from 'react'
 
-export default function Text(props) {
+import Section from './Section'
+
+
+function Text(props) {
     return (
             <p>{props.text}</p>
            )
 }
+
+export default Section(Text);

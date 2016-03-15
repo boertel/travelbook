@@ -28,8 +28,8 @@ class Page extends React.Component {
             backgroundColor = color.clearer(0.5).rgbString();
 
         return [
-            ".text:hover .hasMarker:before { background-color: " + this.props.page.color + " !important; }",
-            ".picture .hasMarker:before { border-color: " + borderColor + " !important; background-color: " + backgroundColor + " !important; }"
+            ".section:hover .marker:before { background-color: " + this.props.page.color + " !important; }",
+            ".picture .marker:before { border-color: " + borderColor + " !important; background-color: " + backgroundColor + " !important; }"
         ];
     }
 
@@ -37,25 +37,19 @@ class Page extends React.Component {
         var n = 0,
             color = this.props.page.color;
         return blocks.map((block, key) => {
+            block.args.color = color;
             block.args.key = key;
             switch (block.type) {
                 case 'image':
-                    var ratio = 0;
                     block.args.images.map(image => {
-                        image.aspect_ratio = image.width / image.height
                         image.index = n
                         n += 1
-                        ratio += image.aspect_ratio
                     })
-                    return <Row {...block.args} location={this.props.location} ratio={ratio} margin={10} color={color} />
+                    return <Row {...block.args} location={this.props.location} margin={10} />
                 default:
                     var component = this.components[block.type]
                     if (component !== undefined) {
-                        var child = React.createElement(component, block.args);
-                        if (block.marker) {
-                            block.marker.color = color;
-                            child = <Marker key={key} marker={block.marker}>{child}</Marker>
-                        }
+                        var child = React.createElement(component, {...block.args});
                         return <div key={key} className={block.type}>{child}</div>;
                     } else {
                         console.log('Unsupported type: ' + block.type)

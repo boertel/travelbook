@@ -147,7 +147,7 @@ export default class Marker extends React.Component {
     }
 
     render() {
-        return (<div className="hasMarker" onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>
+        return (<div className="marker" onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>
             {this.props.children}
         </div>)
     }
