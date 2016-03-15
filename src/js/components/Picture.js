@@ -24,7 +24,7 @@ export default class Picture extends React.Component {
 
         if (marker) {
             marker.color = color;
-            child =(<Marker marker={marker}>{photo}</Marker>);
+            child =(<Marker marker={marker} to={to}>{photo}</Marker>);
         }
 
         return (<div className="picture" style={style}>

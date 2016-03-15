@@ -1,12 +1,14 @@
 import React from 'react'
 import Color from 'color'
 
+import history from '../history'
 import store from '../store'
 
 
 class Point {
-    constructor(args) {
+    constructor(args, to) {
         this.properties = args;
+        this.to = to;
         this.feature = L.mapbox.featureLayer({
             // this feature is in the GeoJSON format: see geojson.org
             // for the full specification
@@ -27,6 +29,8 @@ class Point {
                 'marker-symbol': this.properties.symbol
             }
         });
+
+        this.feature.addEventListener('click', this.onclick.bind(this));
     }
 
     update(color, size) {
@@ -47,6 +51,10 @@ class Point {
     unhighlight() {
         return this.update(this.properties.color, 'small')
     }
+
+    onclick() {
+        history.push(this.to);
+    }
 }
 
 
@@ -61,6 +69,7 @@ class Circle {
                 color: this.properties.color
             };
         this.feature = L.circle(latLng, this.properties.radius, options);
+        this.feature.addEventListener('click', this.onclick.bind(this));
     }
 
     update(color) {
@@ -78,6 +87,9 @@ class Circle {
         this.update(this.properties.color);
     }
 
+    onclick() {
+    }
+
 }
 
 
@@ -86,9 +98,9 @@ export default class Marker extends React.Component {
     constructor(props) {
         super(props);
         if (this.props.marker.type === 'circle') {
-            this.marker = new Circle(this.props.marker);
+            this.marker = new Circle(this.props.marker, this.props.to);
         } else {
-            this.marker = new Point(this.props.marker)
+            this.marker = new Point(this.props.marker, this.props.to)
         }
         this.onMouseOver = this.onMouseOver.bind(this);
         this.onMouseOut = this.onMouseOut.bind(this);
@@ -108,6 +120,10 @@ export default class Marker extends React.Component {
 
     onMouseOut() {
         this.marker.unhighlight();
+    }
+
+    onClick() {
+        this.marker.onclick();
     }
 
     render() {
