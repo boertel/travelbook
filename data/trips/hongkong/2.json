@@ -4,7 +4,7 @@
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "caption": "0. boats",
                         "credit": "",
                         "date_taken": "2015-09-13 23:04:11",
                         "height": "3181",
@@ -18,7 +18,7 @@
                         "width": "4772"
                     },
                     {
-                        "caption": "",
+                        "caption": "1. bike",
                         "credit": "",
                         "date_taken": "2015-09-14 00:08:47",
                         "height": "3264",
@@ -32,7 +32,7 @@
                         "width": "4896"
                     },
                     {
-                        "caption": "",
+                        "caption": "2. AC",
                         "credit": "",
                         "date_taken": "2015-09-14 00:13:55",
                         "height": "3264",
@@ -46,7 +46,7 @@
                         "width": "4896"
                     },
                     {
-                        "caption": "",
+                        "caption": "3. workers",
                         "credit": "",
                         "date_taken": "2015-09-15 12:55:00",
                         "height": "3264",

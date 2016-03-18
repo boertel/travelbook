@@ -42276,7 +42276,8 @@ var Page = function (_React$Component) {
 
                 var index = 0;
                 media.forEach(function (medium) {
-                    medium.index = index + 1;
+                    medium.index = index;
+                    index += 1;
                 });
                 _store2.default.sections.push(media);
             }
@@ -42403,6 +42404,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var cache = {};
+
 function buildFlickrUrl(photo, size) {
     var extension = photo.extension || 'jpg';
     var base = 'https://farm' + photo.farm + '.staticflickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret;
@@ -42432,32 +42435,40 @@ var Photo = function (_React$Component) {
     function Photo(props) {
         _classCallCheck(this, Photo);
 
-        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Photo).call(this, props));
-
-        _this.state = {
-            size: threshold(props.width, props.height)
-        };
-        return _this;
+        return _possibleConstructorReturn(this, Object.getPrototypeOf(Photo).call(this, props));
     }
 
     _createClass(Photo, [{
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps(nextProps) {}
+    }, {
         key: 'shouldComponentUpdate',
         value: function shouldComponentUpdate(nextProps, nextState) {
             return !_lodash2.default.isEqual(nextProps.src, this.props.src) || nextProps.width !== this.props.width || nextProps.height !== this.props.height;
         }
     }, {
+        key: 'getOptimizedUrl',
+        value: function getOptimizedUrl(size) {
+            if (typeof this.props.src === 'string') {
+                return this.props.src;
+            } else if (this.props.src.type === 'flickr') {
+                var state = this.state || {};
+                size = size || state.size;
+                return buildFlickrUrl(this.props.src, size);
+            }
+        }
+    }, {
+        key: 'getSize',
+        value: function getSize() {
+            return threshold(this.props.width, this.props.height);
+        }
+    }, {
         key: 'render',
         value: function render() {
-            var url;
-            if (typeof this.props.src === 'string') {
-                url = this.props.src;
-            } else {
-                if (this.props.src.type === 'flickr') {
-                    url = buildFlickrUrl(this.props.src, this.state.size);
-                }
-            }
-
-            return _react2.default.createElement('img', { src: url, width: this.props.width, height: this.props.height });
+            var url = this.getOptimizedUrl(this.getSize());
+            return _react2.default.createElement('img', { src: url,
+                width: this.props.width,
+                height: this.props.height });
         }
     }]);
 
@@ -43150,6 +43161,11 @@ var Viewer = function (_React$Component) {
             return parseInt(this.props.params.index, 10);
         }
     }, {
+        key: 'getCount',
+        value: function getCount() {
+            return this.getIndex() + 1;
+        }
+    }, {
         key: 'next',
         value: function next(e) {
             // TODO onEnter of viewer check if index if correct
@@ -43200,7 +43216,7 @@ var Viewer = function (_React$Component) {
             var index = this.getIndex();
 
             var medium = index < media.length ? _react2.default.createElement(_.Medium, media[index]) : null;
-            var counter = index + 1 + ' of ' + media.length;
+            var counter = this.getCount() + ' of ' + media.length;
 
             return _react2.default.createElement(
                 'aside',
