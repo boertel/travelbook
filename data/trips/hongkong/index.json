@@ -1,0 +1,51 @@
+{
+    "title": "Hong Kong",
+    "date": "summer 2015",
+    "pages": [
+        {
+            "color": "#f1f075",
+            "type": "title",
+            "args": {
+                "title": "Sai Kung"
+            },
+            "marker": {
+                "color": "red",
+                "type": "circle",
+                "coordinates": [114.173795, 22.294024],
+                "radius": 800
+            }
+        },
+        {
+            "color": "#eaf7ca",
+            "marker": {
+                "type": "circle",
+                "coordinates": [114.152627, 22.284588],
+                "radius": 800
+            }
+        },
+        {
+            "color": "#c5e96f",
+            "marker": {
+                "type": "circle",
+                "coordinates": [114.144183, 22.274521],
+                "radius": 500
+            }
+        },
+        {
+            "color": "#a3e46b",
+            "marker": {
+                "type": "circle",
+                "coordinates": [114.166424, 22.326702],
+                "radius": 1500
+            }
+        },
+        {
+            "color": "#7ec9b1",
+            "marker": {
+                "type": "circle",
+                "coordinates": [114.274765, 22.382395],
+                "radius": 1000
+            }
+        }
+    ]
+}
