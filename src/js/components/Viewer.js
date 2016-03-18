@@ -1,5 +1,6 @@
 import React from 'react'
 
+import store from '../store'
 import history from '../history'
 import { Medium } from './'
 
@@ -14,7 +15,8 @@ export default class Viewer extends React.Component {
     }
 
     root() {
-        return this.props.back.substring(0, this.props.back.lastIndexOf('/'))
+        var pathname = this.props.pathname;
+        return pathname.substring(0, pathname.lastIndexOf('/'))
     }
     close(e) {
         e.preventDefault()
@@ -22,10 +24,14 @@ export default class Viewer extends React.Component {
         return false
     }
 
+    getIndex() {
+        return parseInt(this.props.params.index, 10);
+    }
+
     next(e) {
         // TODO onEnter of viewer check if index if correct
         e.preventDefault()
-        var index = (this.props.index + 1) % (this.props.media.length + 1)
+        var index = (this.getIndex() + 1) % (this.props.media.length + 1)
         // and show next page or loop back at the end
         history.push(this.root() + '/' + index)
         return false;
@@ -34,7 +40,7 @@ export default class Viewer extends React.Component {
     previous(e) {
         // TODO onEnter of viewer check if index if correct
         e.preventDefault()
-        var index = (this.props.index - 1) % this.props.media.length
+        var index = (this.getIndex() - 1) % this.props.media.length
         if (index < 0) {
             index = this.props.media.length
         }
@@ -63,7 +69,9 @@ export default class Viewer extends React.Component {
     }
 
     render() {
-        const { media, index } = this.props
+        const { media } = this.props;
+        var index = this.getIndex();
+
         const medium = (index < media.length) ? <Medium {...media[index]} /> : null
         const counter = (index + 1) + ' of ' + media.length
 

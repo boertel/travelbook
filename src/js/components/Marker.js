@@ -127,11 +127,11 @@ export default class Marker extends React.Component {
     }
 
     componentDidMount() {
-        store.push(this.marker)
+        store.markers.push(this.marker)
     }
 
     componentWillUnmount() {
-        store.remove(this.marker)
+        store.markers.remove(this.marker)
     }
 
     onMouseOver() {

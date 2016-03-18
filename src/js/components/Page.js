@@ -2,15 +2,9 @@ import React from 'react'
 import Color from 'color'
 import { connect } from 'react-refetch'
 
+import store from '../store'
 import { Loading, Error, Title, Text, Row, Viewer, Link, Marker, Style } from './'
 
-
-function items(blocks) {
-    var authorized = ['image'];
-    return blocks.filter((block) => authorized.indexOf(block.type) !== -1)
-        .map((block) => block.args.images)
-        .reduce((next, block, []) => next.concat(block))
-}
 
 class Page extends React.Component {
     constructor(props) {
@@ -20,6 +14,30 @@ class Page extends React.Component {
             'text': Text,
             'link': Link,
         }
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.pageFetch.fulfilled) {
+            store.sections.clean();
+            var media = nextProps.pageFetch.value.blocks
+                .filter((section) => {
+                    return section.type === 'image';
+                }).map((section) => {
+                    return section.args.images;
+                }).reduce((previous, current) => {
+                    return previous.concat(current);
+                }, [])
+
+            var index = 0;
+            media.forEach((medium) => {
+                medium.index = index + 1;
+            });
+            store.sections.push(media);
+        }
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        return true;
     }
 
     getRules() {
@@ -34,18 +52,13 @@ class Page extends React.Component {
     }
 
     renderBlocks(blocks) {
-        var n = 0,
-            color = this.props.page.color;
+        var color = this.props.page.color;
         return blocks.map((block, key) => {
             block.args.color = color;
             block.args.key = key;
             switch (block.type) {
                 case 'image':
-                    block.args.images.map(image => {
-                        image.index = n
-                        n += 1
-                    })
-                    return <Row {...block.args} location={this.props.location} margin={10} />
+                    return <Row {...block.args} location={this.props.location} />
                 default:
                     var component = this.components[block.type]
                     if (component !== undefined) {
@@ -67,12 +80,15 @@ class Page extends React.Component {
             return <Error error={pageFetch.reason} />
         } else if (pageFetch.fulfilled) {
             const { blocks } = pageFetch.value
-            let media = undefined
             let viewer = null
             if (params.index !== undefined) {
-                const index = parseInt(params.index, 10)
-                media = items(blocks)
-                viewer = <div className="viewer"><Viewer media={media} index={index} back={this.props.location.pathname} /></div>
+                viewer = (<div className="viewer">
+                            <Viewer
+                                media={store.sections.get()}
+                                params={this.props.params}
+                                pathname={this.props.location.pathname}
+                            />
+                        </div>);
             }
 
             return (

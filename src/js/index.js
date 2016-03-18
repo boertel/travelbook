@@ -5,6 +5,7 @@ import { Router, Route, Link } from 'react-router'
 import history from './history'
 import { Trips, Trip, Page, Viewer } from './components'
 
+
 ReactDOM.render((
             <Router history={history}>
                 <Route path="/" component={Trips}></Route>

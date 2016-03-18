@@ -81,6 +81,9 @@ body {
     padding: 0 2em;
 }
 
+.row .section {
+    display: inline-block;
+}
 
 .timeline:last-child {
     position: absolute;
@@ -121,10 +124,10 @@ body {
     text-align: center;
 }
 
-.text {
+.section {
     position: relative;
 }
-.text .hasMarker:before {
+.section .marker:before {
     position: absolute;
     top: 0;
     left: -8px;
@@ -134,13 +137,16 @@ body {
     background-color: transparent;
 }
 
-.text:hover .hasMarker:before {
+.section:hover .marker:before {
     background-color: #ccc;
 }
 
-.picture .hasMarker:before {
+.row .marker:before {
+    z-index: 1;
     content: "";
     position: absolute;
+    top: auto;
+    left: auto;
     bottom: 0;
     right: 0;
     margin: 15px 10px;

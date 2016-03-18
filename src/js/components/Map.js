@@ -4,8 +4,6 @@ import ReactDOM from 'react-dom'
 import store from '../store'
 
 
-
-
 export default class Map extends React.Component {
     constructor(props) {
         super(props)
@@ -20,16 +18,16 @@ export default class Map extends React.Component {
 
     onchange() {
         this.setState({
-            markers: store.get()
+            markers: store.markers.get()
         })
     }
 
     componentDidMount() {
-        store.bind(this.onchange);
+        store.markers.bind(this.onchange);
     }
 
     componentWillUnmount() {
-        store.unbind(this.onchange)
+        store.markers.unbind(this.onchange)
     }
 
     componentDidUpdate() {

@@ -43,18 +43,20 @@ class Row extends React.Component {
         if (this.state.width === 0) {
             return <div></div>;
         }
-        const { images, margin, color } = this.props;
+        const { images, color } = this.props;
+        const margin = 10;
         var ratio = this.getRatio()
         var widthContainer = this.state.width - (images.length - 1) * margin;
 
         var imagesListItem = images.map((image, key) => {
-            var last = image === _.last(images);
+            var last = image === _.last(images),
+                to = this.props.location.pathname + '/' + image.index;
             return <Picture
                         image={image}
                         color={color}
                         marker={image.marker}
                         key={key}
-                        location={this.props.location}
+                        to={to}
                         widthContainer={widthContainer}
                         last={last}
                         ratio={ratio}

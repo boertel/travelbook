@@ -44,8 +44,8 @@ export default class Photo extends React.Component {
         };
     }
 
-    shouldcomponentupdate(nextprops, nextstate) {
-        return !_.isequal(nextprops.src, this.props.src) || nextprops.width !== this.props.width || nextprops.height !== this.props.height;
+    shouldComponentUpdate(nextProps, nextState) {
+        return !_.isEqual(nextProps.src, this.props.src) || nextProps.width !== this.props.width || nextProps.height !== this.props.height;
     }
 
     render() {

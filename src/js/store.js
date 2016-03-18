@@ -1,5 +1,5 @@
 
-function Store() {
+export function Store() {
     this.clean()
     this.listeners = [];
 }
@@ -9,7 +9,11 @@ Store.prototype.clean = function() {
 }
 
 Store.prototype.push = function(value) {
-    this.storage.push(value)
+    if (_.isArray(value)) {
+        this.storage = this.storage.concat(value);
+    } else {
+        this.storage.push(value)
+    }
     this.change()
 }
 
@@ -38,4 +42,7 @@ Store.prototype.unbind = function (l) {
 }
 
 
-export default new Store()
+export default {
+    markers: new Store(),
+    sections: new Store()
+}
