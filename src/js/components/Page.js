@@ -30,7 +30,8 @@ class Page extends React.Component {
 
             var index = 0;
             media.forEach((medium) => {
-                medium.index = index + 1;
+                medium.index = index;
+                index += 1;
             });
             store.sections.push(media);
         }

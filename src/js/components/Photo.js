@@ -1,6 +1,7 @@
 import React from 'react'
 import _ from 'lodash'
 
+var cache = {};
 
 function buildFlickrUrl(photo, size) {
     var extension = photo.extension || 'jpg';
@@ -39,25 +40,33 @@ function threshold(width, height) {
 export default class Photo extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            size: threshold(props.width, props.height)
-        };
+    }
+
+    componentWillReceiveProps(nextProps) {
     }
 
     shouldComponentUpdate(nextProps, nextState) {
         return !_.isEqual(nextProps.src, this.props.src) || nextProps.width !== this.props.width || nextProps.height !== this.props.height;
     }
 
-    render() {
-        var url;
+    getOptimizedUrl(size) {
         if (typeof this.props.src === 'string') {
-            url = this.props.src;
-        } else {
-            if (this.props.src.type === 'flickr') {
-                url = buildFlickrUrl(this.props.src, this.state.size);
-            }
+            return this.props.src;
+        } else if (this.props.src.type === 'flickr') {
+            var state = this.state || {}
+            size = size || state.size;
+            return buildFlickrUrl(this.props.src, size);
         }
+    }
 
-        return <img src={url} width={this.props.width} height={this.props.height} />
+    getSize() {
+        return threshold(this.props.width, this.props.height);
+    }
+
+    render() {
+        var url = this.getOptimizedUrl(this.getSize());
+        return <img src={url}
+                    width={this.props.width}
+                    height={this.props.height} />
     }
 }

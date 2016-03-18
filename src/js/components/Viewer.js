@@ -28,6 +28,10 @@ export default class Viewer extends React.Component {
         return parseInt(this.props.params.index, 10);
     }
 
+    getCount() {
+        return this.getIndex() + 1;
+    }
+
     next(e) {
         // TODO onEnter of viewer check if index if correct
         e.preventDefault()
@@ -51,11 +55,9 @@ export default class Viewer extends React.Component {
     navigate(e) {
         if (e.which === 74 || e.which === 37) {
             this.previous(e);
-        }
-        else if (e.which === 75 || e.which === 39) {
+        } else if (e.which === 75 || e.which === 39) {
             this.next(e);
-        }
-        else if (e.which === 27) {
+        } else if (e.which === 27) {
             this.close(e);
         }
     }
@@ -73,7 +75,7 @@ export default class Viewer extends React.Component {
         var index = this.getIndex();
 
         const medium = (index < media.length) ? <Medium {...media[index]} /> : null
-        const counter = (index + 1) + ' of ' + media.length
+        const counter = (this.getCount()) + ' of ' + media.length
 
         return (
                 <aside className="media-viewer theme-dark">

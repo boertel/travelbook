@@ -50,7 +50,7 @@ class Row extends React.Component {
 
         var imagesListItem = images.map((image, key) => {
             var last = image === _.last(images),
-                to = this.props.location.pathname + '/' + image.index;
+                to = this.props.location.pathname + '/' + (image.index);
             return <Picture
                         image={image}
                         color={color}
