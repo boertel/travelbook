@@ -1,5 +1,6 @@
 import React from 'react'
 import Color from 'color'
+import _ from 'lodash'
 
 import history from '../history'
 import store from '../store'
@@ -89,7 +90,7 @@ class Circle extends MapComponent {
         var latLng = L.latLng(this.properties.coordinates[1], this.properties.coordinates[0]),
             options = {
                 opacity: 1,
-                weight: 4,
+                weight: 2,
                 fillOpacity: 0.4,
                 color: this.properties.color
             };
@@ -99,7 +100,7 @@ class Circle extends MapComponent {
     update(color) {
         this.feature.setStyle({
             color: color
-        });
+        }).setRadius(this.properties.radius * 1.2);
     }
 
     highlight() {
@@ -117,10 +118,10 @@ class Circle extends MapComponent {
 export default class Marker extends React.Component {
     constructor(props) {
         super(props);
-        if (this.props.marker.type === 'circle') {
-            this.marker = new Circle(this.props.marker, this.props.to);
+        if (this.props.type === 'circle') {
+            this.marker = new Circle(this.props, this.props.to);
         } else {
-            this.marker = new Point(this.props.marker, this.props.to)
+            this.marker = new Point(this.props, this.props.to)
         }
         this.onMouseOver = this.onMouseOver.bind(this);
         this.onMouseOut = this.onMouseOut.bind(this);
@@ -147,8 +148,12 @@ export default class Marker extends React.Component {
     }
 
     render() {
+        var childrenWithProps = React.Children.map(this.props.children, (child) => {
+            _.merge(child.props.args, this.props.inheritance);
+            return React.cloneElement(child, child.props);
+        })
         return (<div className="marker" onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>
-            {this.props.children}
+            {childrenWithProps}
         </div>)
     }
 }

@@ -2,28 +2,29 @@ import React from 'react'
 import { Link } from 'react-router'
 
 import { Photo, Marker } from './'
-import Section from './Section'
+import Wrap from './Wrap'
 
 
 class Picture extends React.Component {
     render() {
-        const { image, widthContainer, ratio, last, margin } = this.props;
+        const { ratio, widthContainer, last, margin, src } = this.props;
+        let { width, height } = this.props;
 
-        var aspect_ratio = image.width / image.height;
+        var aspect_ratio = width / height;
 
-        var width = Math.floor((widthContainer / ratio) * aspect_ratio),
-            height = Math.floor(widthContainer / ratio),
-            style = {
-                position: 'relative',
-                display: 'inline-block',
-                marginRight: (last)  ? 0 : margin + 'px',
-                marginBottom: margin + 'px'
-            };
+        width = Math.floor((widthContainer / ratio) * aspect_ratio);
+        height = Math.floor(widthContainer / ratio);
+        const style = {
+            position: 'relative',
+            display: 'inline-block',
+            marginRight: (last)  ? 0 : margin + 'px',
+            marginBottom: margin + 'px'
+        };
 
-        var photo = (<Photo src={image.src} width={width} height={height} />);
+        const photo = (<Photo src={src} width={width} height={height} />);
 
         return (<div className="picture" style={style}>{photo}</div>);
     }
 }
 
-export default Section(Picture);
+export default Wrap(Picture);

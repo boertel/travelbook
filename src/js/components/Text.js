@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Section from './Section'
+import Wrap from './Wrap'
 
 
 function Text(props) {
-    return (
-            <p>{props.text}</p>
-           )
+    return (<div className="text">
+                <p>{props.text}</p>
+            </div>)
 }
 
-export default Section(Text);
+export default Wrap(Text);

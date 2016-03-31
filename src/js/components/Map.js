@@ -36,7 +36,6 @@ export default class Map extends React.Component {
             zoomControl: false
         };
 
-
         var node = ReactDOM.findDOMNode(this)
 
         if (this.map === undefined) {

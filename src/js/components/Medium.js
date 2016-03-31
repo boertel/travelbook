@@ -70,10 +70,10 @@ export default class Medium extends React.Component {
                 <div className="media-viewer-wrapper">
                     <div className="media-viewer-asset" style={figureStyle}>
                         <Photo src={current.src} width={width} height={height} />
-                        <nav className="image-navigation previous">
+                        <nav className="image-navigation previous" onClick={this.props.previous}>
                             <span className="visually-hidden">Go to previous image</span>
                         </nav>
-                        <nav className="image-navigation next">
+                        <nav className="image-navigation next" onClick={this.props.next}>
                             <span className="visually-hidden">Go to next image</span>
                         </nav>
                         <figcaption className="caption" style={figcaptionStyle}>

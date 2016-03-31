@@ -25,7 +25,7 @@ Store.prototype.remove = function(value) {
 }
 
 Store.prototype.get = function() {
-    return this.storage
+    return this.storage;
 }
 
 Store.prototype.change = function() {

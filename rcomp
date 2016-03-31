@@ -8,7 +8,7 @@ FILE=$DIR/$NAME.js
 INDEX=$DIR/index.js
 
 SHORT="\n\n\nexport default function $NAME(props) {\n}"
-LONG="\n\n\nexport default class $NAME extends React.Component {\n\tconstructor(props)\n\t\tsuper(props);\n\t}\n\trender() {}\n}"
+LONG="\n\n\nexport default class $NAME extends React.Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t}\n\trender() {\n\t}\n}"
 
 DEF=""
 if [[ $2 = "1" ]]; then

@@ -1,5 +1,6 @@
 {
-    "blocks": [
+    "type": "root",
+    "children": [
         {
             "type": "title",
             "args": {
@@ -14,51 +15,73 @@
             }
         },
         {
-            "type": "image",
-            "args": {
-                "images": [
-                    {
-                        "src": {
-                            "type": "flickr",
-                            "farm": 2,
-                            "secret": "86590dea9e",
-                            "id": "25600848825",
-                            "server": "1495"
-                        },
-                        "caption": "1. se faire petit déjeuner de luxe",
-                        "credit": "JFK Terminal 7",
-                        "width": 563,
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [-73.7877805556, 40.6446583333],
-                            "title": "Airport",
-                            "size": "small",
-                            "symbol": "airport"
-                        }
+            "type": "images",
+            "args": {},
+            "children": [
+                {
+                    "type": "marker",
+                    "args": {
+                        "coordinates": [-73.7877805556, 40.6446583333],
+                        "title": "Airport",
+                        "size": "small",
+                        "symbol": "airport"
                     },
-                    {
+                    "children": [
+                        {
+                            "type": "image",
+                            "args": {
+                                "viewer": true,
+                                "src": {
+                                    "type": "flickr",
+                                    "farm": 2,
+                                    "secret": "86590dea9e",
+                                    "id": "25600848825",
+                                    "server": "1495"
+                                },
+                                "caption": "1. se faire petit déjeuner de luxe",
+                                "credit": "JFK Terminal 7",
+                                "width": 563,
+                                "height": 1000
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "image",
+                    "args": {
                         "src": {"farm": 2, "secret": "59338ee5de", "type": "flickr", "id": "25233326369", "server": "1641"},
                         "caption": "2. regarder des séries",
                         "width": 750,
                         "height": 1000
+                    }
+                },
+                {
+                    "type": "marker",
+                    "args": {
+                        "coordinates": [
+                            -73.80670833333333,
+                            40.65416666666667
+                        ],
+                        "size": "small",
+                        "symbol": ""
                     },
-                    {
-                        "caption": "",
-                        "credit": "",
-                        "datetime": "2014:08:23 10:23:49",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.80670833333333,
-                                40.65416666666667
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "b750142cc7", "type": "flickr", "id": "25482251032", "server": "1660"},
-                        "width": 750
-                    },
-                    {
+                    "children": [
+                        {
+                            "type": "image",
+                            "args": {
+                                "caption": "",
+                                "credit": "",
+                                "datetime": "2014:08:23 10:23:49",
+                                "height": 1000,
+                                "src": {"farm": 2, "secret": "b750142cc7", "type": "flickr", "id": "25482251032", "server": "1660"},
+                                "width": 750
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "image",
+                    "args": {
                         "caption": "",
                         "credit": "mais à 8h, on sent un peu seul dans l'aéroport http://vimeo.com/97634383",
                         "datetime": "2014:08:23 10:23:49",
@@ -66,11 +89,11 @@
                         "src": {"farm": 2, "secret": "07d8e9311f", "type": "flickr", "id": "24970371034", "server": "1658"},
                         "width": 563
                     }
-                ]
-            }
+                }
+            ]
         },
         {
-            "type": "image",
+            "type": "unknow",
             "args": {
                 "images": [
                     {
@@ -117,7 +140,7 @@
             }
         },
         {
-            "type": "image",
+            "type": "unknow",
             "args": {
                 "images": [
                     {
@@ -188,9 +211,9 @@
             }
         },
         {
-            "type": "image",
+            "type": "unknow",
             "args": {
-                "images": [
+                "children": [
                     {
                         "caption": "",
                         "credit": "",
@@ -243,7 +266,7 @@
             }
         },
         {
-            "type": "image",
+            "type": "unknow",
             "args": {
                 "images": [
                     {
@@ -288,7 +311,7 @@
             }
         },
         {
-            "type": "image",
+            "type": "unknow",
             "args": {
                 "images": [
                     {

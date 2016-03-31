@@ -1,40 +1,59 @@
 import React from 'react'
-import PureRenderMixin from 'react-addons-pure-render-mixin';
-import { Link } from 'react-router'
+import _ from 'lodash'
 
-import { Marker, Picture } from './'
+import { Title, Text, Row, Link, Marker, Picture } from './'
 
 
-export default function (Component) {
-    class Section extends React.Component {
-        constructor(props) {
-            super(props);
-            this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
+export default class Section extends React.Component {
+	constructor(props) {
+		super(props);
+
+        this.components = {
+            'title': Title,
+            'text': Text,
+            'link': Link,
+            'images': Row,
+            'image': Picture,
+            'marker': Marker,
+            'root': 'div'
         }
+	}
 
-        render() {
-            var props = this.props,
-                child = <Component {...props} />;
 
-            if (props.marker !== undefined) {
-                var marker = props.marker;
-                marker.color = this.props.color;
-                child = <Marker marker={props.marker}>{child}</Marker>;
+	render() {
+        var { type, args, children } = this.props;
+        var component = this.components[type];
+
+        children = children || [];
+
+        if (component !== undefined) {
+            var children = children.map((child, key) => {
+                return <Section {...child} pathname={this.props.pathname} key={key} />;
+            });
+
+            var section = children;
+            if (args !== undefined) {
+                args.pathname = this.props.pathname;
+                if (children.length === 0) {
+                    _.merge(args, args.inheritance);
+                }
+                section = React.createElement(component, {...args}, children);
             }
 
-            if (props.to !== undefined) {
-                var to = props.to;
-                child = <Link to={to}>{child}</Link>;
-            }
-
-            return (<div className="section">{child}</div>);
+            var className = 'section ' + (type);
+            return (<div className={className}>{section}</div>);
+        } else {
+            console.log('Unsupported type: ' + type)
+            return null;
         }
     }
 
-    Section.propTypes = {
-        marker: React.PropTypes.object,
-        color: React.PropTypes.string
-    };
-
-    return Section
 }
+
+Section.propTypes = {
+    type: React.PropTypes.string,
+    args: React.PropTypes.object,
+    children: React.PropTypes.array,
+    // TODO remove, it's a pain to get to Wrap component
+    pathname: React.PropTypes.string,
+};

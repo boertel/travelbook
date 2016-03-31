@@ -1,5 +1,6 @@
 {
-    "blocks": [
+    "type": "root",
+    "children": [
         {
             "type": "title",
             "args": {

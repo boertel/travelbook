@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import _ from 'lodash'
 
 import { Picture } from './'
-import Section from './Section'
+import Wrap from './Wrap'
 
 
 class Row extends React.Component {
@@ -20,7 +21,15 @@ class Row extends React.Component {
     }
 
     getRatio() {
-        var ratio = this.props.images.reduce((previous, current) => {
+        var ratio = this.props.children.reduce((previous, child) => {
+            var current = child.props.args,
+                children = child.props.children || [];
+
+            if (children.length > 0) {
+                // FIXME, deep lookup
+                current = children[0].args;
+            }
+
             return previous + (current.width / current.height);
         }, 0)
         return ratio;
@@ -43,28 +52,25 @@ class Row extends React.Component {
         if (this.state.width === 0) {
             return <div></div>;
         }
-        const { images, color } = this.props;
-        const margin = 10;
-        var ratio = this.getRatio()
-        var widthContainer = this.state.width - (images.length - 1) * margin;
 
-        var imagesListItem = images.map((image, key) => {
-            var last = image === _.last(images),
-                to = this.props.location.pathname + '/' + (image.index);
-            return <Picture
-                        image={image}
-                        color={color}
-                        marker={image.marker}
-                        key={key}
-                        to={to}
-                        widthContainer={widthContainer}
-                        last={last}
-                        ratio={ratio}
-                        margin={margin} />
-        });
+        const margin = 10,
+            widthContainer = this.state.width - (this.props.children.length - 1) * margin;
 
-        return <div className="row">{imagesListItem}</div>;
+        var inheritance = {
+            widthContainer: widthContainer,
+            ratio: this.getRatio(),
+            pathname: this.props.pathname,
+            margin: margin
+        };
+
+        var childrenWithProps = React.Children.map(this.props.children, (child, i) => {
+            inheritance.last = (i === this.props.children.length - 1);
+            _.merge(child.props.args, {inheritance: inheritance});
+            return React.cloneElement(child, child.props);
+        })
+
+        return <div className="row">{childrenWithProps}</div>
     }
 }
 
-export default Section(Row)
+export default (Row)

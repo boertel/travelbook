@@ -7,17 +7,29 @@ import { Medium } from './'
 
 export default class Viewer extends React.Component {
     constructor(props) {
-        super(props)
-        this.navigate = this.navigate.bind(this)
-        this.previous = this.previous.bind(this)
-        this.next = this.next.bind(this)
-        this.close = this.close.bind(this)
+        super(props);
+        ['navigate', 'previous', 'next', 'close', 'onchange'].forEach((method) => {
+            this[method] = this[method].bind(this);
+        });
+
+        this.state = {
+            media: this.props.media
+        };
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        return nextState.media.length > 0;
+    }
+
+    onchange() {
+        var media = store.sections.get();
+        this.setState({ media: media });
     }
 
     root() {
-        var pathname = this.props.pathname;
-        return pathname.substring(0, pathname.lastIndexOf('/'))
+        return history.pathname.substring(0, history.pathname.lastIndexOf('/'));
     }
+
     close(e) {
         e.preventDefault()
         history.replace(this.root())
@@ -35,7 +47,7 @@ export default class Viewer extends React.Component {
     next(e) {
         // TODO onEnter of viewer check if index if correct
         e.preventDefault()
-        var index = (this.getIndex() + 1) % (this.props.media.length + 1)
+        var index = (this.getIndex() + 1) % (this.state.media.length + 1)
         // and show next page or loop back at the end
         history.push(this.root() + '/' + index)
         return false;
@@ -44,9 +56,9 @@ export default class Viewer extends React.Component {
     previous(e) {
         // TODO onEnter of viewer check if index if correct
         e.preventDefault()
-        var index = (this.getIndex() - 1) % this.props.media.length
+        var index = (this.getIndex() - 1) % this.state.media.length
         if (index < 0) {
-            index = this.props.media.length
+            index = this.state.media.length
         }
         history.push(this.root() + '/' + index)
         return false;
@@ -63,18 +75,23 @@ export default class Viewer extends React.Component {
     }
 
     componentDidMount() {
-        window.addEventListener('keydown', this.navigate)
+        window.addEventListener('keydown', this.navigate);
+        store.sections.bind(this.onchange);
     }
 
     componentWillUnmount() {
         window.removeEventListener('keydown', this.navigate)
+        store.sections.remove(this.onchange);
     }
 
     render() {
-        const { media } = this.props;
+        var media = this.state.media;
+        if (media.length === 0) {
+            return <div></div>
+        }
         var index = this.getIndex();
 
-        const medium = (index < media.length) ? <Medium {...media[index]} /> : null
+        const medium = (index < media.length) ? <Medium {...media[index]} next={this.next} previous={this.previous} /> : null
         const counter = (this.getCount()) + ' of ' + media.length
 
         return (

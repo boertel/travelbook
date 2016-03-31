@@ -1,15 +1,15 @@
 import React from 'react'
 
-import Section from './Section'
+import Wrap from './Wrap'
 
 
 function Title(props) {
     return (
-            <div>
+            <div className="title">
                 <h1>{props.title}</h1>
                 <h2>{props.subtitle}</h2>
             </div>
            )
 }
 
-export default Section(Title)
+export default Wrap(Title)
