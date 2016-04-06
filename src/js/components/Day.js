@@ -1,25 +1,14 @@
 import React from 'react'
 import Color from 'color'
-import { connect } from 'react-refetch'
 
-import { Loading, Error, Title, Text, Row, Viewer, Link, Marker, Style } from './'
+import asynchronous from '../asynchronous'
+import { Loading, Error, Style, Viewer, Section } from './'
 
 
-function items(blocks) {
-    var authorized = ['image'];
-    return blocks.filter((block) => authorized.indexOf(block.type) !== -1)
-        .map((block) => block.args.images)
-        .reduce((next, block, []) => next.concat(block))
-}
 
 class Day extends React.Component {
     constructor(props) {
         super(props)
-        this.components = {
-            'title': Title,
-            'text': Text,
-            'link': Link,
-        }
     }
 
     getRules() {
@@ -33,68 +22,74 @@ class Day extends React.Component {
         ];
     }
 
-    renderBlocks(blocks) {
-        var n = 0,
-            color = this.props.day.color;
-        return blocks.map((block, key) => {
-            block.args.key = key;
-            switch (block.type) {
-                case 'image':
-                    var ratio = 0;
-                    block.args.images.map(image => {
-                        image.aspect_ratio = image.width / image.height
-                        image.index = n
-                        n += 1
-                        ratio += image.aspect_ratio
-                    })
-                    return <Row {...block.args} location={this.props.location} ratio={ratio} margin={10} color={color} />
-                default:
-                    var component = this.components[block.type]
-                    if (component !== undefined) {
-                        var child = React.createElement(component, block.args);
-                        if (block.marker) {
-                            block.marker.color = color;
-                            child = <Marker key={key} marker={block.marker}>{child}</Marker>
-                        }
-                        return <div key={key} className={block.type}>{child}</div>;
-                    } else {
-                        console.log('Unsupported type: ' + block.type)
-                    }
-            }
+    renderSections(sections, markers) {
+        var color = this.props.day.color;
+        return sections.map((section, key) => {
+            var marker = section.args.marker !== undefined ? markers[section.args.marker] : undefined;
+            return <Section {...section} marker={marker} key={key} color={color} location={this.props.location} />;
         })
     }
 
     render() {
-        const { dayFetch, params, trip, day } = this.props
+        const { dayFetch, params, trip, day } = this.props;
 
         if (dayFetch.pending) {
             return <Loading />
         } else if (dayFetch.rejected) {
-            console.log(dayFetch);
             return <Error error={dayFetch.reason} />
         } else if (dayFetch.fulfilled) {
-            const { blocks } = dayFetch.value
-            let media = undefined
+            const { sections, media, markers } = dayFetch.value;
             let viewer = null
             if (params.index !== undefined) {
                 const index = parseInt(params.index, 10)
-                media = items(blocks)
                 viewer = <div className="viewer"><Viewer media={media} index={index} back={this.props.location.pathname} /></div>
             }
 
             return (
                     <div className="components">
                         <Style rules={this.getRules()}></Style>
-                        <div className="boxes">{this.renderBlocks(blocks)}</div>
+                        <div className="boxes">{this.renderSections(sections, markers)}</div>
                         {viewer}
                     </div>
                    )
-        }
+        }k
     }
 }
 
-export default connect(props => ({
-    dayFetch: {
-        url: `/data/trips/${props.params.name}/${props.params.day}.json`
-    }
+
+function items(sections) {
+    var authorized = ['image'];
+    var n = 0;
+    return sections.filter((section) => authorized.indexOf(section.type) !== -1)
+        .map((section) => {
+            section.args.images.forEach((image) => {
+                image.index = n;
+                n += 1;
+            })
+            return section.args.images;
+        })
+        .reduce((next, section, []) => next.concat(section))
+}
+
+function transform(data) {
+    data.media = items(data.sections);
+
+    data.sections.filter((section) => section.type === 'image')
+        .map((section) => {
+            var ratio = 0;
+            section.args.images.map(image => {
+                image.aspect_ratio = image.width / image.height;
+                if (image.marker !== undefined) {
+                    image.marker = data.markers[image.marker];
+                }
+                ratio += image.aspect_ratio;
+            })
+            section.args.ratio = ratio;
+        });
+    console.log(data)
+    return data;
+}
+
+export default asynchronous(transform)(props => ({
+    dayFetch: `/data/trips/${props.params.name}/${props.params.day}.json`
 }))(Day)

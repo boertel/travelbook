@@ -1,474 +1,629 @@
 {
-    "blocks": [
+    "sections": [
         {
-            "type": "title",
             "args": {
-                "title": "Mercredi 27 Août",
-                "subtitle": "Brooklyn"
-            }
+                "subtitle": "Brooklyn",
+                "title": "Mercredi 27 Ao\u00fbt"
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "New York, ce n'est pas seulement Manhattan. Après avoir explorer Manhattan, il est temps d'aller faire un tour à Brooklyn, à l'est de Manhattan. Avant de commencer cette promenade, profitons encore de la \"bonne bouffe\" et ça sera italien."
-            }
+                "text": "New York, ce n'est pas seulement Manhattan. Apr\u00e8s avoir explorer Manhattan, il est temps d'aller faire un tour \u00e0 Brooklyn, \u00e0 l'est de Manhattan. Avant de commencer cette promenade, profitons encore de la \"bonne bouffe\" et \u00e7a sera italien."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Pizza pour l'apéro",
+                        "src": {
+                            "farm": 2,
+                            "secret": "f23fbee67c",
+                            "type": "flickr",
+                            "id": "24993047084",
+                            "server": "1663"
+                        },
                         "credit": "Italian Market / Restaurant: Eataly",
+                        "height": 750,
+                        "caption": "Pizza pour l'ap\u00e9ro",
+                        "marker": 0,
                         "datetime": "2014:08:27 13:09:39",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.99420277777777,
-                                40.745577777777775
-                            ],
-                            "size": "small",
-                            "symbol": "restaurant"
-                        },
-                        "src": {"farm": 2, "secret": "f23fbee67c", "type": "flickr", "id": "24993047084", "server": "1663"},
                         "width": 1000
                     },
                     {
-                        "caption": "Pasta pour le repas",
+                        "src": {
+                            "farm": 2,
+                            "secret": "d4092c25fc",
+                            "type": "flickr",
+                            "id": "25504901092",
+                            "server": "1495"
+                        },
                         "credit": "Italian Market / Restaurant: Eataly",
+                        "height": 1000,
+                        "caption": "Pasta pour le repas",
+                        "marker": 1,
                         "datetime": "2014:08:27 13:19:13",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.99425555555555,
-                                40.74561666666667
-                            ],
-                            "size": "small",
-                            "symbol": "restaurant"
-                        },
-                        "src": {"farm": 2, "secret": "d4092c25fc", "type": "flickr", "id": "25504901092", "server": "1495"},
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Sorti du métro du côté de Brooklyn, et le premier pont que nous apercevons, est le Manhattan Bridge. La suite est de marcher le long de l'eau dans le Brooklyn Bridge Park et de rentrer dans les terres un peu plus loin."
-            }
+                "text": "Sorti du m\u00e9tro du c\u00f4t\u00e9 de Brooklyn, et le premier pont que nous apercevons, est le Manhattan Bridge. La suite est de marcher le long de l'eau dans le Brooklyn Bridge Park et de rentrer dans les terres un peu plus loin."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "a405d1085b",
+                            "type": "flickr",
+                            "id": "25597422066",
+                            "server": "1560"
+                        },
                         "credit": "",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 2,
                         "datetime": "2014:08:27 14:27:25",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.98780000000001,
-                                40.70429166666667
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "a405d1085b", "type": "flickr", "id": "25597422066", "server": "1560"},
                         "width": 1000
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "3c47cd0131",
+                            "type": "flickr",
+                            "id": "25255989989",
+                            "server": "1503"
+                        },
                         "credit": "",
-                        "datetime": "2014:08:27 14:44:00",
                         "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.99291944444444,
-                                40.704575000000006
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "3c47cd0131", "type": "flickr", "id": "25255989989", "server": "1503"},
+                        "caption": "",
+                        "marker": 3,
+                        "datetime": "2014:08:27 14:44:00",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Brooklyn Bridge sur la gauche, Manhattan Bridge sur la droite",
+                        "src": {
+                            "farm": 2,
+                            "secret": "99245422b0",
+                            "type": "flickr",
+                            "id": "25597421196",
+                            "server": "1561"
+                        },
                         "credit": "Brooklyn",
-                        "datetime": "2014:08:27 14:34:40",
                         "height": 1067,
-                        "marker": {
-                            "coordinates": [
-                                -73.99105,
-                                40.70393055555556
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "99245422b0", "type": "flickr", "id": "25597421196", "server": "1561"},
+                        "caption": "Brooklyn Bridge sur la gauche, Manhattan Bridge sur la droite",
+                        "marker": 4,
+                        "datetime": "2014:08:27 14:34:40",
                         "width": 3000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Mickey vs. Sponge Bob",
-                        "credit": "Brooklyn",
-                        "datetime": "2014:08:27 18:41:09",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.99265277777778,
-                                40.701769444444444
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "aabd3c6006",
+                            "type": "flickr",
+                            "id": "25255984209",
+                            "server": "1616"
                         },
-                        "src": {"farm": 2, "secret": "aabd3c6006", "type": "flickr", "id": "25255984209", "server": "1616"},
+                        "credit": "Brooklyn",
+                        "height": 1000,
+                        "caption": "Mickey vs. Sponge Bob",
+                        "marker": 5,
+                        "datetime": "2014:08:27 18:41:09",
                         "width": 750
                     }
-            ]
-            }
+                ]
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
-                        "credit": "Brooklyn Bridge Park",
-                        "datetime": "2014:08:27 15:06:02",
-                        "height": 748,
-                        "marker": {
-                            "coordinates": [
-                                -73.99649722222222,
-                                40.70308333333334
-                            ],
-                            "size": "small",
-                            "symbol": "park2"
+                        "src": {
+                            "farm": 2,
+                            "secret": "22ec9ccfc8",
+                            "type": "flickr",
+                            "id": "24996826593",
+                            "server": "1567"
                         },
-                        "src": {"farm": 2, "secret": "22ec9ccfc8", "type": "flickr", "id": "24996826593", "server": "1567"},
+                        "credit": "Brooklyn Bridge Park",
+                        "height": 748,
+                        "caption": "",
+                        "marker": 6,
+                        "datetime": "2014:08:27 15:06:02",
                         "width": 3000
                     },
                     {
-                        "caption": "",
-                        "credit": "Brooklyn Bridge Park",
-                        "datetime": "2014:08:27 15:38:55",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.9991611111111,
-                                40.69985555555555
-                            ],
-                            "size": "small",
-                            "symbol": "park2"
+                        "src": {
+                            "farm": 2,
+                            "secret": "550df939c7",
+                            "type": "flickr",
+                            "id": "25255971499",
+                            "server": "1540"
                         },
-                        "src": {"farm": 2, "secret": "550df939c7", "type": "flickr", "id": "25255971499", "server": "1540"},
+                        "credit": "Brooklyn Bridge Park",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 7,
+                        "datetime": "2014:08:27 15:38:55",
                         "width": 750
                     },
                     {
-                        "caption": "",
-                        "credit": "Brooklyn Bridge Park",
-                        "datetime": "2014:08:27 15:19:23",
-                        "height": 486,
-                        "marker": {
-                            "coordinates": [
-                                -73.99775833333334,
-                                40.70147777777778
-                            ],
-                            "size": "small",
-                            "symbol": "park2"
+                        "src": {
+                            "farm": 2,
+                            "secret": "c21ae35d5a",
+                            "type": "flickr",
+                            "id": "25327909780",
+                            "server": "1453"
                         },
-                        "src": {"farm": 2, "secret": "c21ae35d5a", "type": "flickr", "id": "25327909780", "server": "1453"},
+                        "credit": "Brooklyn Bridge Park",
+                        "height": 486,
+                        "caption": "",
+                        "marker": 8,
+                        "datetime": "2014:08:27 15:19:23",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "title",
             "args": {
                 "subtitle": "Brooklyn Bridge"
-            }
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Après une pause qui commence à être une habitude quotidienne, nous commençons à traverser le Brooklyn Bridge."
-            }
+                "text": "Apr\u00e8s une pause qui commence \u00e0 \u00eatre une habitude quotidienne, nous commen\u00e7ons \u00e0 traverser le Brooklyn Bridge."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
+                        "src": {
+                            "farm": 2,
+                            "secret": "7404a69e49",
+                            "type": "flickr",
+                            "id": "25504885762",
+                            "server": "1488"
+                        },
+                        "credit": "Brooklyn Bridge",
+                        "height": 1000,
                         "caption": "",
-                        "credit": "Brooklyn Bridge",
+                        "marker": 9,
                         "datetime": "2014:08:27 19:01:31",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.99394166666667,
-                                40.703786111111114
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "7404a69e49", "type": "flickr", "id": "25504885762", "server": "1488"},
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "\"You stink really bad. Take shower\"",
-                        "credit": "Brooklyn Bridge",
-                        "datetime": "2014:08:27 19:24:14",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.99610833333334,
-                                40.705508333333334
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "f02d932307",
+                            "type": "flickr",
+                            "id": "24993027104",
+                            "server": "1655"
                         },
-                        "src": {"farm": 2, "secret": "f02d932307", "type": "flickr", "id": "24993027104", "server": "1655"},
+                        "credit": "Brooklyn Bridge",
+                        "height": 1000,
+                        "caption": "\"You stink really bad. Take shower\"",
+                        "marker": 10,
+                        "datetime": "2014:08:27 19:24:14",
                         "width": 750
                     },
                     {
-                        "caption": "As they said in Brooklyn, \"Bagel\"",
-                        "credit": "Brooklyn Bridge",
-                        "datetime": "2014:08:27 19:25:04",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.99610833333334,
-                                40.705508333333334
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "1eb2a291d8",
+                            "type": "flickr",
+                            "id": "24993025684",
+                            "server": "1565"
                         },
-                        "src": {"farm": 2, "secret": "1eb2a291d8", "type": "flickr", "id": "24993025684", "server": "1565"},
+                        "credit": "Brooklyn Bridge",
+                        "height": 750,
+                        "caption": "As they said in Brooklyn, \"Bagel\"",
+                        "marker": 11,
+                        "datetime": "2014:08:27 19:25:04",
                         "width": 1000
                     },
                     {
-                        "caption": "Les frères attendent le couché du soleil",
-                        "credit": "Brooklyn Bridge",
-                        "datetime": "2014:08:27 19:27:58",
-                        "height": 831,
-                        "marker": {
-                            "coordinates": [
-                                -73.99611666666667,
-                                40.70547777777778
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "b7e236da6d",
+                            "type": "flickr",
+                            "id": "25504879932",
+                            "server": "1536"
                         },
-                        "src": {"farm": 2, "secret": "b7e236da6d", "type": "flickr", "id": "25504879932", "server": "1536"},
+                        "credit": "Brooklyn Bridge",
+                        "height": 831,
+                        "caption": "Les fr\u00e8res attendent le couch\u00e9 du soleil",
+                        "marker": 12,
+                        "datetime": "2014:08:27 19:27:58",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "video",
             "args": {
                 "videos": [
                     {
                         "url": "//player.vimeo.com/video/108511228",
-                        "title": "Piétons sur le Brooklyn Bridge",
                         "width": 500,
-                        "height": 281
+                        "height": 281,
+                        "title": "Pi\u00e9tons sur le Brooklyn Bridge"
                     }
                 ]
-            }
+            },
+            "type": "video"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "e7846242cd",
+                            "type": "flickr",
+                            "id": "24996808293",
+                            "server": "1473"
+                        },
                         "credit": "Brooklyn Bridge",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 13,
                         "datetime": "2014:08:27 19:15:49",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.99585833333333,
-                                40.70544166666667
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "e7846242cd", "type": "flickr", "id": "24996808293", "server": "1473"},
                         "width": 1000
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "71185097be",
+                            "type": "flickr",
+                            "id": "25255979979",
+                            "server": "1600"
+                        },
                         "credit": "Brooklyn Bridge",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 14,
                         "datetime": "2014:08:27 19:11:20",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.99571944444445,
-                                40.70504722222223
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "71185097be", "type": "flickr", "id": "25255979979", "server": "1600"},
                         "width": 1000
                     },
                     {
+                        "src": {
+                            "farm": 2,
+                            "secret": "241179793b",
+                            "type": "flickr",
+                            "id": "24996819533",
+                            "server": "1576"
+                        },
+                        "credit": "Brooklyn Bridge",
+                        "height": 1000,
                         "caption": "Big Apple",
-                        "credit": "Brooklyn Bridge",
+                        "marker": 15,
                         "datetime": "2014:08:27 19:10:16",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.99531666666667,
-                                40.704875
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "241179793b", "type": "flickr", "id": "24996819533", "server": "1576"},
                         "width": 750
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "6e9afb05c0",
+                            "type": "flickr",
+                            "id": "25255982269",
+                            "server": "1475"
+                        },
                         "credit": "Brooklyn Bridge",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 16,
                         "datetime": "2014:08:27 19:00:55",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.99379722222223,
-                                40.70365277777778
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "6e9afb05c0", "type": "flickr", "id": "25255982269", "server": "1475"},
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Et nous squattons sur le pont jusqu'à la tombée de la nuit pour apercevoir Manhattan de nuit."
-            }
+                "text": "Et nous squattons sur le pont jusqu'\u00e0 la tomb\u00e9e de la nuit pour apercevoir Manhattan de nuit."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "9f72a77667",
+                            "type": "flickr",
+                            "id": "25327899950",
+                            "server": "1478"
+                        },
                         "credit": "Brooklyn Bridge",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 17,
                         "datetime": "2014:08:27 19:55:47",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.99625277777778,
-                                40.70560555555556
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "9f72a77667", "type": "flickr", "id": "25327899950", "server": "1478"},
                         "width": 1000
                     },
                     {
-                        "caption": "Flou artistique",
-                        "credit": "Brooklyn Bridge",
-                        "datetime": "2014:08:27 20:10:07",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.99627777777778,
-                                40.705555555555556
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "143f5097ee",
+                            "type": "flickr",
+                            "id": "25327898320",
+                            "server": "1547"
                         },
-                        "src": {"farm": 2, "secret": "143f5097ee", "type": "flickr", "id": "25327898320", "server": "1547"},
+                        "credit": "Brooklyn Bridge",
+                        "height": 750,
+                        "caption": "Flou artistique",
+                        "marker": 18,
+                        "datetime": "2014:08:27 20:10:07",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Journée épuisante, métro et sushi bien merités mais faut-il encore pouvoir rentrer dans sa chambre."
-            }
+                "text": "Journ\u00e9e \u00e9puisante, m\u00e9tro et sushi bien merit\u00e9s mais faut-il encore pouvoir rentrer dans sa chambre."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Cyril a trouvé sa place",
+                        "src": {
+                            "farm": 2,
+                            "secret": "9cc57bbbd7",
+                            "type": "flickr",
+                            "id": "25255970559",
+                            "server": "1521"
+                        },
+                        "width": 750,
                         "credit": "Subway",
-                        "datetime": "2014:08:27 20:30:52",
                         "height": 1000,
-                        "src": {"farm": 2, "secret": "9cc57bbbd7", "type": "flickr", "id": "25255970559", "server": "1521"},
-                        "width": 750
+                        "caption": "Cyril a trouv\u00e9 sa place",
+                        "datetime": "2014:08:27 20:30:52"
                     },
                     {
-                        "caption": "",
-                        "credit": "Umi Sushi",
-                        "datetime": "2014:08:27 22:00:09",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.98210277777778,
-                                40.74480833333333
-                            ],
-                            "size": "small",
-                            "symbol": "restaurant"
+                        "src": {
+                            "farm": 2,
+                            "secret": "ea2dcbe120",
+                            "type": "flickr",
+                            "id": "25597398096",
+                            "server": "1673"
                         },
-                        "src": {"farm": 2, "secret": "ea2dcbe120", "type": "flickr", "id": "25597398096", "server": "1673"},
+                        "credit": "Umi Sushi",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 19,
+                        "datetime": "2014:08:27 22:00:09",
                         "width": 1000
                     },
                     {
-                        "caption": "Petit problème de serrure",
-                        "credit": "Ramada Inn Eastside, Lexington Avenue",
-                        "datetime": "2014:08:27 21:03:02",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.98144444444445,
-                                40.74391666666667
-                            ],
-                            "size": "small",
-                            "symbol": "lodging"
+                        "src": {
+                            "farm": 2,
+                            "secret": "e0952d95e6",
+                            "type": "flickr",
+                            "id": "24993021504",
+                            "server": "1504"
                         },
-                        "src": {"farm": 2, "secret": "e0952d95e6", "type": "flickr", "id": "24993021504", "server": "1504"},
+                        "credit": "Ramada Inn Eastside, Lexington Avenue",
+                        "height": 1000,
+                        "caption": "Petit probl\u00e8me de serrure",
+                        "marker": 20,
+                        "datetime": "2014:08:27 21:03:02",
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
+        }
+    ],
+    "markers": [
+        {
+            "symbol": "restaurant",
+            "coordinates": [
+                -73.99420277777777,
+                40.745577777777775
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "restaurant",
+            "coordinates": [
+                -73.99425555555555,
+                40.74561666666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.98780000000001,
+                40.70429166666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99291944444444,
+                40.704575000000006
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99105,
+                40.70393055555556
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99265277777778,
+                40.701769444444444
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "park2",
+            "coordinates": [
+                -73.99649722222222,
+                40.70308333333334
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "park2",
+            "coordinates": [
+                -73.9991611111111,
+                40.69985555555555
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "park2",
+            "coordinates": [
+                -73.99775833333334,
+                40.70147777777778
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99394166666667,
+                40.703786111111114
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99610833333334,
+                40.705508333333334
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99610833333334,
+                40.705508333333334
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99611666666667,
+                40.70547777777778
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99585833333333,
+                40.70544166666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99571944444445,
+                40.70504722222223
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99531666666667,
+                40.704875
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99379722222223,
+                40.70365277777778
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99625277777778,
+                40.70560555555556
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99627777777778,
+                40.705555555555556
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "restaurant",
+            "coordinates": [
+                -73.98210277777778,
+                40.74480833333333
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "lodging",
+            "coordinates": [
+                -73.98144444444445,
+                40.74391666666667
+            ],
+            "size": "small"
         }
     ]
 }

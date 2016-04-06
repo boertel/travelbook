@@ -1,502 +1,665 @@
 {
-    "blocks": [
+    "sections": [
         {
-            "type": "title",
             "args": {
-                "title": "Vendredi 5 Septembre",
-                "subtitle": "Boston"
-            }
+                "subtitle": "Boston",
+                "title": "Vendredi 5 Septembre"
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Dernier jour de vadrouille avant le retour sur New York et la fin des vacances. Ça se fera à Boston, escale pas prévu dans notre pseudo-organisation. Après quelques recherches sur Internet et avec les prospectus de l'hotel, nous suiverons le \"Freedom Trail\", chemin matérialiasé par une ligne en brique rouge dans les rues de la ville."
-            }
+                "text": "Dernier jour de vadrouille avant le retour sur New York et la fin des vacances. \u00c7a se fera \u00e0 Boston, escale pas pr\u00e9vu dans notre pseudo-organisation. Apr\u00e8s quelques recherches sur Internet et avec les prospectus de l'hotel, nous suiverons le \"Freedom Trail\", chemin mat\u00e9rialias\u00e9 par une ligne en brique rouge dans les rues de la ville."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
-                        "credit": "",
-                        "datetime": "2014:09:05 10:10:45",
-                        "height": 642,
-                        "marker": {
-                            "coordinates": [
-                                -71.059525,
-                                42.35722777777778
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "3af1a495b3",
+                            "type": "flickr",
+                            "id": "25624325705",
+                            "server": "1523"
                         },
-                        "src": {"farm": 2, "secret": "3af1a495b3", "type": "flickr", "id": "25624325705", "server": "1523"},
+                        "credit": "",
+                        "height": 642,
+                        "caption": "",
+                        "marker": 0,
+                        "datetime": "2014:09:05 10:10:45",
                         "width": 785
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Ça commence au centre ville, on retrouve les buildings américains perdus de vue à Québec mais plus petits que ceux de New York. La trail nous fait passer dans des parcs, différents quartiers. Très bonne manière de découvrir la ville et sans avoir besoin de suivre une carte."
-            }
+                "text": "\u00c7a commence au centre ville, on retrouve les buildings am\u00e9ricains perdus de vue \u00e0 Qu\u00e9bec mais plus petits que ceux de New York. La trail nous fait passer dans des parcs, diff\u00e9rents quartiers. Tr\u00e8s bonne mani\u00e8re de d\u00e9couvrir la ville et sans avoir besoin de suivre une carte."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
-                        "credit": "",
-                        "datetime": "2014:09:05 10:13:21",
-                        "height": 3264,
-                        "marker": {
-                            "coordinates": [
-                                -71.05831111111111,
-                                42.35705277777778
-                            ],
-                            "size": "small",
-                            "symbol": "religious-christian"
+                        "src": {
+                            "farm": 2,
+                            "secret": "03f5536592",
+                            "type": "flickr",
+                            "id": "25256759489",
+                            "server": "1446"
                         },
-                        "src": {"farm": 2, "secret": "03f5536592", "type": "flickr", "id": "25256759489", "server": "1446"},
+                        "credit": "",
+                        "height": 3264,
+                        "caption": "",
+                        "marker": 1,
+                        "datetime": "2014:09:05 10:13:21",
                         "width": 2448
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "8ff3472a19",
+                            "type": "flickr",
+                            "id": "25505643302",
+                            "server": "1530"
+                        },
                         "credit": "",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 2,
                         "datetime": "2014:09:05 10:19:03",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.0573111111111,
-                                42.35863055555556
-                            ],
-                            "size": "small",
-                            "symbol": "religious-christian"
-                        },
-                        "src": {"farm": 2, "secret": "8ff3472a19", "type": "flickr", "id": "25505643302", "server": "1530"},
                         "width": 1000
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "653d030323",
+                            "type": "flickr",
+                            "id": "24997582173",
+                            "server": "1496"
+                        },
                         "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 3,
                         "datetime": "2014:09:05 10:20:38",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -71.056825,
-                                42.35843333333334
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "653d030323", "type": "flickr", "id": "24997582173", "server": "1496"},
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "024c2a2e2f",
+                            "type": "flickr",
+                            "id": "25531621131",
+                            "server": "1445"
+                        },
                         "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 4,
                         "datetime": "2014:09:05 10:49:09",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -71.05313888888888,
-                                42.3656
-                            ],
-                            "size": "small",
-                            "symbol": "religious-christian"
-                        },
-                        "src": {"farm": 2, "secret": "024c2a2e2f", "type": "flickr", "id": "25531621131", "server": "1445"},
                         "width": 750
                     },
                     {
-                        "caption": "Boston à Boston ?",
+                        "src": {
+                            "farm": 2,
+                            "secret": "ba75bf705d",
+                            "type": "flickr",
+                            "id": "25328660700",
+                            "server": "1668"
+                        },
                         "credit": "Copps Hill Cemetery",
+                        "height": 1000,
+                        "caption": "Boston \u00e0 Boston ?",
+                        "marker": 5,
                         "datetime": "2014:09:05 10:54:47",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -71.05620555555555,
-                                42.367041666666665
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "ba75bf705d", "type": "flickr", "id": "25328660700", "server": "1668"},
                         "width": 750
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "bf897d2bec",
+                            "type": "flickr",
+                            "id": "24997577933",
+                            "server": "1588"
+                        },
                         "credit": "Copps Hill Cemetery",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 6,
                         "datetime": "2014:09:05 10:55:30",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.0561,
-                                42.36702777777778
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "bf897d2bec", "type": "flickr", "id": "24997577933", "server": "1588"},
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Freedom Trail en peinture rouge",
+                        "src": {
+                            "farm": 2,
+                            "secret": "2b406a569c",
+                            "type": "flickr",
+                            "id": "25624301225",
+                            "server": "1565"
+                        },
                         "credit": "Charles River",
+                        "height": 750,
+                        "caption": "Freedom Trail en peinture rouge",
+                        "marker": 7,
                         "datetime": "2014:09:05 11:05:00",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.05938611111111,
-                                42.368405555555555
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "2b406a569c", "type": "flickr", "id": "25624301225", "server": "1565"},
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Plus vieux vaisseau (encore actif) de l'US Navy",
+                        "src": {
+                            "farm": 2,
+                            "secret": "cf182c2463",
+                            "type": "flickr",
+                            "id": "25328656860",
+                            "server": "1499"
+                        },
                         "credit": "US Constitution",
-                        "datetime": "2014:09:05 11:29:36",
                         "height": 944,
-                        "marker": {
-                            "coordinates": [
-                                -71.05704444444444,
-                                42.37284722222222
-                            ],
-                            "size": "small",
-                            "symbol": "ferry"
-                        },
-                        "src": {"farm": 2, "secret": "cf182c2463", "type": "flickr", "id": "25328656860", "server": "1499"},
+                        "caption": "Plus vieux vaisseau (encore actif) de l'US Navy",
+                        "marker": 8,
+                        "datetime": "2014:09:05 11:29:36",
                         "width": 750
                     },
                     {
-                        "caption": "",
-                        "credit": "US Constitution",
-                        "datetime": "2014:09:05 11:33:04",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.05687777777777,
-                                42.37264166666667
-                            ],
-                            "size": "small",
-                            "symbol": "ferry"
+                        "src": {
+                            "farm": 2,
+                            "secret": "8d17171597",
+                            "type": "flickr",
+                            "id": "25256733489",
+                            "server": "1635"
                         },
-                        "src": {"farm": 2, "secret": "8d17171597", "type": "flickr", "id": "25256733489", "server": "1635"},
+                        "credit": "US Constitution",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 9,
+                        "datetime": "2014:09:05 11:33:04",
                         "width": 1000
                     },
                     {
-                        "caption": "",
-                        "credit": "US Constitution",
-                        "datetime": "2014:09:05 11:33:36",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -71.056825,
-                                42.372597222222225
-                            ],
-                            "size": "small",
-                            "symbol": "ferry"
+                        "src": {
+                            "farm": 2,
+                            "secret": "378279c59c",
+                            "type": "flickr",
+                            "id": "24997572183",
+                            "server": "1654"
                         },
-                        "src": {"farm": 2, "secret": "378279c59c", "type": "flickr", "id": "24997572183", "server": "1654"},
+                        "credit": "US Constitution",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 10,
+                        "datetime": "2014:09:05 11:33:36",
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Fin de la trail",
-                        "credit": "Monument Square",
-                        "datetime": "2014:09:05 12:19:33",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -71.06107222222222,
-                                42.37594166666667
-                            ],
-                            "size": "small",
-                            "symbol": "monument"
+                        "src": {
+                            "farm": 2,
+                            "secret": "f278b758ff",
+                            "type": "flickr",
+                            "id": "24997571243",
+                            "server": "1460"
                         },
-                        "src": {"farm": 2, "secret": "f278b758ff", "type": "flickr", "id": "24997571243", "server": "1460"},
+                        "credit": "Monument Square",
+                        "height": 1000,
+                        "caption": "Fin de la trail",
+                        "marker": 11,
+                        "datetime": "2014:09:05 12:19:33",
                         "width": 750
                     },
                     {
-                        "caption": "",
-                        "credit": "Monument Square",
-                        "datetime": "2014:09:05 12:27:25",
-                        "height": 3180,
-                        "marker": {
-                            "coordinates": [
-                                -71.06102777777778,
-                                42.37612222222222
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "0150c7b7b7",
+                            "type": "flickr",
+                            "id": "25328651860",
+                            "server": "1442"
                         },
-                        "src": {"farm": 2, "secret": "0150c7b7b7", "type": "flickr", "id": "25328651860", "server": "1442"},
+                        "credit": "Monument Square",
+                        "height": 3180,
+                        "caption": "",
+                        "marker": 12,
+                        "datetime": "2014:09:05 12:27:25",
                         "width": 2385
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "On a fini la Freedom Trail, c'est l'heure de manger un Lobster Roll et de faire une sieste dans un parc près de l'eau."
-            }
+                "text": "On a fini la Freedom Trail, c'est l'heure de manger un Lobster Roll et de faire une sieste dans un parc pr\u00e8s de l'eau."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
-                        "credit": "",
-                        "datetime": "2014:09:05 13:08:58",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -71.05838055555556,
-                                42.36521666666667
-                            ],
-                            "size": "small",
-                            "symbol": "restaurant"
+                        "src": {
+                            "farm": 2,
+                            "secret": "67228e5bed",
+                            "type": "flickr",
+                            "id": "24993763914",
+                            "server": "1535"
                         },
-                        "src": {"farm": 2, "secret": "67228e5bed", "type": "flickr", "id": "24993763914", "server": "1535"},
+                        "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 13,
+                        "datetime": "2014:09:05 13:08:58",
                         "width": 823
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "3253269aac",
+                            "type": "flickr",
+                            "id": "25505614542",
+                            "server": "1469"
+                        },
                         "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 14,
                         "datetime": "2014:09:05 14:21:02",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -71.0515361111111,
-                                42.360572222222224
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "3253269aac", "type": "flickr", "id": "25505614542", "server": "1469"},
                         "width": 750
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "ef3f59f277",
+                            "type": "flickr",
+                            "id": "25256712769",
+                            "server": "1474"
+                        },
                         "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 15,
                         "datetime": "2014:09:05 14:37:18",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -71.05583055555556,
-                                42.36069166666667
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "ef3f59f277", "type": "flickr", "id": "25256712769", "server": "1474"},
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Chaleur étouffante, on doit quand même continuer à avancer. Nous longeons la rivière pour explorer le sud est dans la ville."
-            }
+                "text": "Chaleur \u00e9touffante, on doit quand m\u00eame continuer \u00e0 avancer. Nous longeons la rivi\u00e8re pour explorer le sud est dans la ville."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
-                        "credit": "",
-                        "datetime": "2014:09:05 15:27:29",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.05521388888889,
-                                42.352961111111114
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "c628839434",
+                            "type": "flickr",
+                            "id": "25624276345",
+                            "server": "1553"
                         },
-                        "src": {"farm": 2, "secret": "c628839434", "type": "flickr", "id": "25624276345", "server": "1553"},
+                        "credit": "",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 16,
+                        "datetime": "2014:09:05 15:27:29",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Maison pour canards",
-                        "credit": "",
-                        "datetime": "2014:09:05 14:46:23",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.049325,
-                                42.36044722222223
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "6138fbd4c9",
+                            "type": "flickr",
+                            "id": "25598134296",
+                            "server": "1549"
                         },
-                        "src": {"farm": 2, "secret": "6138fbd4c9", "type": "flickr", "id": "25598134296", "server": "1549"},
+                        "credit": "",
+                        "height": 750,
+                        "caption": "Maison pour canards",
+                        "marker": 17,
+                        "datetime": "2014:09:05 14:46:23",
                         "width": 1000
                     },
                     {
-                        "caption": "",
-                        "credit": "",
-                        "datetime": "2014:09:05 15:34:32",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.05691666666667,
-                                42.35115833333334
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "30fbc4dbd2",
+                            "type": "flickr",
+                            "id": "25505610832",
+                            "server": "1555"
                         },
-                        "src": {"farm": 2, "secret": "30fbc4dbd2", "type": "flickr", "id": "25505610832", "server": "1555"},
+                        "credit": "",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 18,
+                        "datetime": "2014:09:05 15:34:32",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Boston est la ville où est situé le MIT, c'est de l'autre côté de la Charles River et à peu près au niveau de l'hôtel. Nous décidons d'aller faire un tour."
-            }
+                "text": "Boston est la ville o\u00f9 est situ\u00e9 le MIT, c'est de l'autre c\u00f4t\u00e9 de la Charles River et \u00e0 peu pr\u00e8s au niveau de l'h\u00f4tel. Nous d\u00e9cidons d'aller faire un tour."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
-                        "credit": "Harvard Bridge",
-                        "datetime": "2014:09:05 17:03:03",
-                        "height": 1306,
-                        "marker": {
-                            "coordinates": [
-                                -71.09230833333334,
-                                42.357055555555554
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "5ed58f3b29",
+                            "type": "flickr",
+                            "id": "25505607352",
+                            "server": "1624"
                         },
-                        "src": {"farm": 2, "secret": "5ed58f3b29", "type": "flickr", "id": "25505607352", "server": "1624"},
+                        "credit": "Harvard Bridge",
+                        "height": 1306,
+                        "caption": "",
+                        "marker": 19,
+                        "datetime": "2014:09:05 17:03:03",
                         "width": 3000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Optimists synchronisés",
-                        "credit": "Harvard Bridge",
-                        "datetime": "2014:09:05 16:58:02",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.09081388888889,
-                                42.35384444444445
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "5476be5180",
+                            "type": "flickr",
+                            "id": "24993756904",
+                            "server": "1610"
                         },
-                        "src": {"farm": 2, "secret": "5476be5180", "type": "flickr", "id": "24993756904", "server": "1610"},
+                        "credit": "Harvard Bridge",
+                        "height": 750,
+                        "caption": "Optimists synchronis\u00e9s",
+                        "marker": 20,
+                        "datetime": "2014:09:05 16:58:02",
                         "width": 1000
                     },
                     {
-                        "caption": "Great Dome",
-                        "credit": "MIT",
-                        "datetime": "2014:09:05 17:06:42",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.09114722222222,
-                                42.35834444444445
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "63f0d624bc",
+                            "type": "flickr",
+                            "id": "25256699649",
+                            "server": "1521"
                         },
-                        "src": {"farm": 2, "secret": "63f0d624bc", "type": "flickr", "id": "25256699649", "server": "1521"},
+                        "credit": "MIT",
+                        "height": 750,
+                        "caption": "Great Dome",
+                        "marker": 21,
+                        "datetime": "2014:09:05 17:06:42",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "link",
             "args": {
-                "type": "video",
                 "href": "https://www.youtube.com/watch?v=N3oS-2vYPrc",
-                "name": "OSS 117, Pédalo Canard",
-                "description": "OSS 117 ou Hubert Bonisseur de la Bath est passé par là"
-            }
+                "type": "video",
+                "name": "OSS 117, P\u00e9dalo Canard",
+                "description": "OSS 117 ou Hubert Bonisseur de la Bath est pass\u00e9 par l\u00e0"
+            },
+            "type": "link"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Inspiré par Hubert Bonisseur de la Bath",
-                        "credit": "",
-                        "datetime": "2014:09:05 09:43:54",
-                        "height": 568,
-                        "marker": {
-                            "coordinates": [
-                                -71.06991666666666,
-                                42.354058333333334
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "8d471e8c18",
+                            "type": "flickr",
+                            "id": "25505661752",
+                            "server": "1687"
                         },
-                        "src": {"farm": 2, "secret": "8d471e8c18", "type": "flickr", "id": "25505661752", "server": "1687"},
+                        "credit": "",
+                        "height": 568,
+                        "caption": "Inspir\u00e9 par Hubert Bonisseur de la Bath",
+                        "marker": 22,
+                        "datetime": "2014:09:05 09:43:54",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
+        }
+    ],
+    "markers": [
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.059525,
+                42.35722777777778
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "religious-christian",
+            "coordinates": [
+                -71.05831111111111,
+                42.35705277777778
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "religious-christian",
+            "coordinates": [
+                -71.0573111111111,
+                42.35863055555556
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.056825,
+                42.35843333333334
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "religious-christian",
+            "coordinates": [
+                -71.05313888888888,
+                42.3656
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.05620555555555,
+                42.367041666666665
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.0561,
+                42.36702777777778
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.05938611111111,
+                42.368405555555555
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "ferry",
+            "coordinates": [
+                -71.05704444444444,
+                42.37284722222222
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "ferry",
+            "coordinates": [
+                -71.05687777777777,
+                42.37264166666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "ferry",
+            "coordinates": [
+                -71.056825,
+                42.372597222222225
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "monument",
+            "coordinates": [
+                -71.06107222222222,
+                42.37594166666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.06102777777778,
+                42.37612222222222
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "restaurant",
+            "coordinates": [
+                -71.05838055555556,
+                42.36521666666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.0515361111111,
+                42.360572222222224
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.05583055555556,
+                42.36069166666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.05521388888889,
+                42.352961111111114
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.049325,
+                42.36044722222223
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.05691666666667,
+                42.35115833333334
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.09230833333334,
+                42.357055555555554
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.09081388888889,
+                42.35384444444445
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.09114722222222,
+                42.35834444444445
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.06991666666666,
+                42.354058333333334
+            ],
+            "size": "small"
         }
     ]
 }

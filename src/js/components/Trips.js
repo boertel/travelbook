@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router'
-import { connect } from 'react-refetch'
 
 import { Loading } from '.'
+import asynchronous from '../asynchronous'
 
 
 class Trips extends React.Component {
@@ -17,11 +17,9 @@ class Trips extends React.Component {
             });
             return <ul>{trips}</ul>
         }
-
     }
 }
 
-export default connect(props => ({
-    tripsFetch: { url: '/data/trips/index.json' }
+export default asynchronous()(props => ({
+    tripsFetch: '/data/trips/index.json',
 }))(Trips)
-

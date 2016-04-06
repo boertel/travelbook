@@ -1,7 +1,7 @@
 import React from 'react'
-import { connect } from 'react-refetch'
 
 import { Loading, Error, Timeline, Map } from './'
+import asynchronous from '../asynchronous'
 
 
 class Trip extends React.Component {
@@ -32,6 +32,6 @@ class Trip extends React.Component {
     }
 }
 
-export default connect(props => ({
-    tripFetch: `/data/trips/${props.params.name}/index.json`
+export default asynchronous()(props => ({
+    tripFetch:  `/data/trips/${props.params.name}/index.json`
 }))(Trip)
