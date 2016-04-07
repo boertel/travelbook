@@ -1,41 +1,39 @@
+import { createStore, combineReducers } from 'redux'
 
-function Store() {
-    this.clean()
-    this.listeners = [];
+import { reducer } from './asynchronous'
+
+
+const keys = {
+    'trips': {},
+    'trip': {},
+    'day': {}
 }
 
-Store.prototype.clean = function() {
-    this.storage = []
+// async reducers
+let reducers = {};
+for (var key in keys) {
+    var options = keys[key];
+    const r = reducer(key, options.success);
+    reducers[r.key] = r.reducer;
 }
 
-Store.prototype.push = function(value) {
-    this.storage.push(value)
-    this.change()
-}
+// custom reducers
 
-Store.prototype.remove = function(value) {
-    var index = this.storage.indexOf(value)
-    if (index > -1) {
-        return this.storage.splice(index, 1)
+function markerReducer(state={markers: []}, action) {
+    switch (action.type) {
+        case 'MARKER_ADD':
+            return Object.assign({}, state, { markers: [...state.markers, action.marker] });
+        case 'MARKER_REMOVE':
+            const index = state.markers.indexOf(action.marker);
+            const newMarkers = [
+                ...state.markers.slice(0, index),
+                ...state.markers.slice(0, index + 1)
+            ]
+            return Object.assign({}, state, { markers: newMarkers });
     }
+    return state;
 }
 
-Store.prototype.get = function() {
-    return this.storage
-}
+reducers.markersState = markerReducer;
 
-Store.prototype.change = function() {
-    this.listeners.forEach((listener) => {
-        listener()
-    })
-}
-
-Store.prototype.bind = function (listener) {
-    this.listeners.push(listener)
-}
-
-Store.prototype.unbind = function (l) {
-}
-
-
-export default new Store()
+export default createStore(combineReducers(reducers));

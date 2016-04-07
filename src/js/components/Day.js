@@ -1,9 +1,8 @@
 import React from 'react'
 import Color from 'color'
 
-import asynchronous from '../asynchronous'
 import { Loading, Error, Style, Viewer, Section } from './'
-
+import { asynchronous } from '../asynchronous'
 
 
 class Day extends React.Component {
@@ -23,7 +22,7 @@ class Day extends React.Component {
     }
 
     renderSections(sections, markers) {
-        var color = this.props.day.color;
+        var color = this.props.day.data.color;
         return sections.map((section, key) => {
             var marker = section.args.marker !== undefined ? markers[section.args.marker] : undefined;
             return <Section {...section} marker={marker} key={key} color={color} location={this.props.location} />;
@@ -31,14 +30,13 @@ class Day extends React.Component {
     }
 
     render() {
-        const { dayFetch, params, trip, day } = this.props;
+        const { params, trip } = this.props;
+        const { isPending, isFulfilled, data } = this.props.day;
 
-        if (dayFetch.pending) {
+        if (isPending) {
             return <Loading />
-        } else if (dayFetch.rejected) {
-            return <Error error={dayFetch.reason} />
-        } else if (dayFetch.fulfilled) {
-            const { sections, media, markers } = dayFetch.value;
+        } else if (isFulfilled) {
+            const { sections, media, markers } = data;
             let viewer = null
             if (params.index !== undefined) {
                 const index = parseInt(params.index, 10)
@@ -71,11 +69,12 @@ function items(sections) {
         .reduce((next, section, []) => next.concat(section))
 }
 
-function transform(data) {
+function transform(data, props) {
+    data.color = props.trip.days[parseInt(props.params.day, 10) - 1].color;
     data.media = items(data.sections);
 
     data.sections.filter((section) => section.type === 'image')
-        .map((section) => {
+        .forEach((section) => {
             var ratio = 0;
             section.args.images.map(image => {
                 image.aspect_ratio = image.width / image.height;
@@ -86,10 +85,12 @@ function transform(data) {
             })
             section.args.ratio = ratio;
         });
-    console.log(data)
+    console.log(data, props);
     return data;
 }
 
-export default asynchronous(transform)(props => ({
-    dayFetch: `/data/trips/${props.params.name}/${props.params.day}.json`
-}))(Day)
+export default asynchronous({
+    key: 'day',
+    url: (props) => (`/data/trips/${props.params.name}/${props.params.day}.json`),
+    transform: transform
+})(Day)

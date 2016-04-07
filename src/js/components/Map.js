@@ -1,35 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-import store from '../store'
-
+import { connect } from 'react-redux'
 
 
-
-export default class Map extends React.Component {
+class Map extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {
-            markers: []
-        }
 
-        this.onchange = this.onchange.bind(this)
         this.map = undefined
         this.group = undefined
     }
 
-    onchange() {
-        this.setState({
-            markers: store.get()
-        })
+    componentWillReceiveProps(nextProps) {
     }
 
     componentDidMount() {
-        store.bind(this.onchange);
     }
 
     componentWillUnmount() {
-        store.unbind(this.onchange)
     }
 
     componentDidUpdate() {
@@ -50,7 +38,7 @@ export default class Map extends React.Component {
             this.group.clearLayers();
         }
 
-        var features = this.state.markers.map((marker) => marker.feature);
+        var features = this.props.markers.map((marker) => marker.feature);
 
         if (features.length > 0) {
             this.group = L.featureGroup(features).addTo(this.map)
@@ -62,3 +50,12 @@ export default class Map extends React.Component {
         return <div className="map"/>
     }
 }
+
+
+function mapStateToProps(state) {
+    return {
+        'markers': state.markersState.markers
+    }
+}
+
+export default connect(mapStateToProps)(Map);

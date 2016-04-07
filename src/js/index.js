@@ -1,11 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, Link } from 'react-router'
+import { Provider } from 'react-redux'
+import store from './store'
 
 import history from './history'
 import { Trips, Trip, Day, Viewer } from './components'
 
-ReactDOM.render((
+
+var router = (
             <Router history={history}>
                 <Route path="/" component={Trips}></Route>
                 <Route path="/:name" component={Trip}>
@@ -14,4 +17,6 @@ ReactDOM.render((
                     </Route>
                 </Route>
             </Router>
-            ), document.getElementById('root'));
+        );
+
+ReactDOM.render(<Provider store={store}>{router}</Provider>, document.getElementById('root'));
