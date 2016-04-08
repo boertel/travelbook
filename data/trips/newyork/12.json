@@ -1,373 +1,500 @@
 {
-    "blocks": [
+    "sections": [
         {
-            "type": "title",
             "args": {
-                "title": "Mercredi 3 Septembre",
-                "subtitle": "Québec"
-            }
+                "subtitle": "Qu\u00e9bec",
+                "title": "Mercredi 3 Septembre"
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Changement de décor avec la ville de Québec, petites routes pavées, centre piétionnier et maisons en pierre. Ça ressemble à une ville européenne. Notre hotel est dans la vielle ville, ça sera la première visite de la journée."
-            }
+                "text": "Changement de d\u00e9cor avec la ville de Qu\u00e9bec, petites routes pav\u00e9es, centre pi\u00e9tionnier et maisons en pierre. \u00c7a ressemble \u00e0 une ville europ\u00e9enne. Notre hotel est dans la vielle ville, \u00e7a sera la premi\u00e8re visite de la journ\u00e9e."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
+                        "src": {
+                            "farm": 2,
+                            "secret": "d235f4bfe3",
+                            "type": "flickr",
+                            "id": "25531499971",
+                            "server": "1580"
+                        },
+                        "credit": "Vieux-Qu\u00e9bec",
+                        "height": 1000,
                         "caption": "",
-                        "credit": "Vieux-Québec",
+                        "marker": 0,
                         "datetime": "2014:09:03 09:31:36",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -71.20671944444445,
-                                46.813719444444445
-                            ],
-                            "size": "small",
-                            "symbol": "religious-christian"
-                        },
-                        "src": {"farm": 2, "secret": "d235f4bfe3", "type": "flickr", "id": "25531499971", "server": "1580"},
                         "width": 750
                     },
                     {
+                        "src": {
+                            "farm": 2,
+                            "secret": "620565622d",
+                            "type": "flickr",
+                            "id": "24993668154",
+                            "server": "1529"
+                        },
+                        "credit": "Vieux-Qu\u00e9bec",
+                        "height": 1000,
                         "caption": "Vocabulaire",
-                        "credit": "Vieux-Québec",
+                        "marker": 1,
                         "datetime": "2014:09:03 09:43:20",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -71.20665,
-                                46.81615
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "620565622d", "type": "flickr", "id": "24993668154", "server": "1529"},
                         "width": 750
                     },
                     {
-                        "caption": "Gentrification même à Québec",
-                        "credit": "Vieux-Québec",
+                        "src": {
+                            "farm": 2,
+                            "secret": "0d6e21c3b1",
+                            "type": "flickr",
+                            "id": "24997456073",
+                            "server": "1458"
+                        },
+                        "credit": "Vieux-Qu\u00e9bec",
+                        "height": 1000,
+                        "caption": "Gentrification m\u00eame \u00e0 Qu\u00e9bec",
+                        "marker": 2,
                         "datetime": "2014:09:03 09:44:17",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -71.20646666666667,
-                                46.81613055555555
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "0d6e21c3b1", "type": "flickr", "id": "24997456073", "server": "1458"},
                         "width": 750
                     },
                     {
+                        "src": {
+                            "farm": 2,
+                            "secret": "ee69aea1d3",
+                            "type": "flickr",
+                            "id": "25505512402",
+                            "server": "1634"
+                        },
+                        "credit": "Vieux-Qu\u00e9bec",
+                        "height": 1000,
                         "caption": "",
-                        "credit": "Vieux-Québec",
+                        "marker": 3,
                         "datetime": "2014:09:03 10:10:17",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -71.20271944444444,
-                                46.812686111111105
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "ee69aea1d3", "type": "flickr", "id": "25505512402", "server": "1634"},
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
+                        "src": {
+                            "farm": 2,
+                            "secret": "5c4e159605",
+                            "type": "flickr",
+                            "id": "25256615629",
+                            "server": "1601"
+                        },
+                        "credit": "Vieux-Qu\u00e9bec",
+                        "height": 750,
                         "caption": "Frites",
-                        "credit": "Vieux-Québec",
+                        "marker": 4,
                         "datetime": "2014:09:03 09:54:04",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.20418611111111,
-                                46.81632222222222
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "5c4e159605", "type": "flickr", "id": "25256615629", "server": "1601"},
                         "width": 1000
                     },
                     {
+                        "src": {
+                            "farm": 2,
+                            "secret": "a3cd7943b4",
+                            "type": "flickr",
+                            "id": "25505510802",
+                            "server": "1639"
+                        },
+                        "credit": "Vieux-Qu\u00e9bec",
+                        "height": 750,
                         "caption": "",
-                        "credit": "Vieux-Québec",
+                        "marker": 5,
                         "datetime": "2014:09:03 10:13:18",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.20384166666668,
-                                46.812194444444444
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "a3cd7943b4", "type": "flickr", "id": "25505510802", "server": "1639"},
                         "width": 1000
                     },
                     {
-                        "caption": "Gros pigeons ou petite boîte de conserve ?",
-                        "credit": "Vieux-Québec",
-                        "datetime": "2014:09:03 10:18:36",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.2034,
-                                46.81081666666666
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "e032cf7ff7",
+                            "type": "flickr",
+                            "id": "25328531690",
+                            "server": "1514"
                         },
-                        "src": {"farm": 2, "secret": "e032cf7ff7", "type": "flickr", "id": "25328531690", "server": "1514"},
+                        "credit": "Vieux-Qu\u00e9bec",
+                        "height": 750,
+                        "caption": "Gros pigeons ou petite bo\u00eete de conserve ?",
+                        "marker": 6,
+                        "datetime": "2014:09:03 10:18:36",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Shopping",
-                        "credit": "Vieux-Québec",
-                        "datetime": "2014:09:03 10:00:27",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -71.20354444444445,
-                                46.81524722222222
-                            ],
-                            "size": "small",
-                            "symbol": "shop"
+                        "src": {
+                            "farm": 2,
+                            "secret": "54b682b4b3",
+                            "type": "flickr",
+                            "id": "24997453183",
+                            "server": "1638"
                         },
-                        "src": {"farm": 2, "secret": "54b682b4b3", "type": "flickr", "id": "24997453183", "server": "1638"},
+                        "credit": "Vieux-Qu\u00e9bec",
+                        "height": 1000,
+                        "caption": "Shopping",
+                        "marker": 7,
+                        "datetime": "2014:09:03 10:00:27",
                         "width": 678
                     },
                     {
-                        "caption": "",
-                        "credit": "Vieux-Québec",
-                        "datetime": "2014:09:03 10:19:05",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -71.20342222222223,
-                                46.810786111111106
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "a972a9e334",
+                            "type": "flickr",
+                            "id": "25256606849",
+                            "server": "1529"
                         },
-                        "src": {"farm": 2, "secret": "a972a9e334", "type": "flickr", "id": "25256606849", "server": "1529"},
+                        "credit": "Vieux-Qu\u00e9bec",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 8,
+                        "datetime": "2014:09:03 10:19:05",
                         "width": 627
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
+                        "src": {
+                            "farm": 2,
+                            "secret": "03d8df1fd0",
+                            "type": "flickr",
+                            "id": "24993661844",
+                            "server": "1701"
+                        },
+                        "credit": "Vieux-Qu\u00e9bec",
+                        "height": 750,
                         "caption": "",
-                        "credit": "Vieux-Québec",
+                        "marker": 9,
                         "datetime": "2014:09:03 10:07:51",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.20320000000001,
-                                46.81344166666666
-                            ],
-                            "size": "small",
-                            "symbol": "religious-christian"
-                        },
-                        "src": {"farm": 2, "secret": "03d8df1fd0", "type": "flickr", "id": "24993661844", "server": "1701"},
                         "width": 1000
                     },
                     {
+                        "src": {
+                            "farm": 2,
+                            "secret": "f91fbb6997",
+                            "type": "flickr",
+                            "id": "24993655404",
+                            "server": "1672"
+                        },
+                        "credit": "Fairmont le Chateau Frontenac",
+                        "height": 750,
                         "caption": "Nouvelle ville, nouvel animal",
-                        "credit": "Fairmont le Chateau Frontenac",
+                        "marker": 10,
                         "datetime": "2014:09:03 10:35:12",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.20449166666667,
-                                46.81236944444444
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "f91fbb6997", "type": "flickr", "id": "24993655404", "server": "1672"},
                         "width": 1000
                     },
                     {
-                        "caption": "Ceci n'est pas un chateau (c'est un hôtel)",
+                        "src": {
+                            "farm": 2,
+                            "secret": "ef8b62f4b9",
+                            "type": "flickr",
+                            "id": "25328528530",
+                            "server": "1561"
+                        },
                         "credit": "Fairmont le Chateau Frontenac",
+                        "height": 750,
+                        "caption": "Ceci n'est pas un chateau (c'est un h\u00f4tel)",
+                        "marker": 11,
                         "datetime": "2014:09:03 10:53:18",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.20423055555555,
-                                46.810424999999995
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "ef8b62f4b9", "type": "flickr", "id": "25328528530", "server": "1561"},
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
-                "images": [
-                ]
-            }
+                "images": []
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "On en entend tellement parler de la spécialité du Québec: la poutine. Après avoir gouté, je ne comprend pas vraiment le buzz autour de ça: c'est seulement des frites. Autre découverte d'un dessert: la tarte au sucre (avec surement du sirop d'érable)."
-            }
+                "text": "On en entend tellement parler de la sp\u00e9cialit\u00e9 du Qu\u00e9bec: la poutine. Apr\u00e8s avoir gout\u00e9, je ne comprend pas vraiment le buzz autour de \u00e7a: c'est seulement des frites. Autre d\u00e9couverte d'un dessert: la tarte au sucre (avec surement du sirop d'\u00e9rable)."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Poutine",
+                        "src": {
+                            "farm": 2,
+                            "secret": "99f1354c37",
+                            "type": "flickr",
+                            "id": "25531482381",
+                            "server": "1702"
+                        },
                         "credit": "Chez Ashton",
-                        "datetime": "2014:09:03 12:12:51",
                         "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.20824444444445,
-                                46.81319722222222
-                            ],
-                            "size": "small",
-                            "symbol": "restaurant"
-                        },
-                        "src": {"farm": 2, "secret": "99f1354c37", "type": "flickr", "id": "25531482381", "server": "1702"},
+                        "caption": "Poutine",
+                        "marker": 12,
+                        "datetime": "2014:09:03 12:12:51",
                         "width": 1000
                     },
                     {
-                        "caption": "Tarte au sucre",
-                        "credit": "Brynd",
-                        "datetime": "2014:09:03 13:05:50",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.21414166666666,
-                                46.816494444444444
-                            ],
-                            "size": "small",
-                            "symbol": "restaurant"
+                        "src": {
+                            "farm": 2,
+                            "secret": "08432d7ce7",
+                            "type": "flickr",
+                            "id": "25531481561",
+                            "server": "1633"
                         },
-                        "src": {"farm": 2, "secret": "08432d7ce7", "type": "flickr", "id": "25531481561", "server": "1633"},
+                        "credit": "Brynd",
+                        "height": 750,
+                        "caption": "Tarte au sucre",
+                        "marker": 13,
+                        "datetime": "2014:09:03 13:05:50",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "L'après-midi, on monte voir la Citadelle de Québec, puis le grand parc situé derrière."
-            }
+                "text": "L'apr\u00e8s-midi, on monte voir la Citadelle de Qu\u00e9bec, puis le grand parc situ\u00e9 derri\u00e8re."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "55d0abdf3e",
+                            "type": "flickr",
+                            "id": "25624165415",
+                            "server": "1465"
+                        },
                         "credit": "La gare",
-                        "datetime": "2014:09:03 13:43:28",
                         "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.21353055555556,
-                                46.81648611111111
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "55d0abdf3e", "type": "flickr", "id": "25624165415", "server": "1465"},
-                        "width": 1000
-                    },
-                    {
-                        "caption": "Sur les murailles de la citadelle",
-                        "credit": "la Citadelle",
-                        "datetime": "2014:09:03 11:25:13",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.21041111111111,
-                                46.807066666666664
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "60ddd0b19e", "type": "flickr", "id": "25531483551", "server": "1679"},
-                        "width": 1000
-                    },
-                    {
                         "caption": "",
-                        "credit": "Parc des Champs-de-Bataille",
-                        "datetime": "2014:09:03 15:00:43",
-                        "height": 1539,
-                        "marker": {
-                            "coordinates": [
-                                -71.22528055555556,
-                                46.79916111111111
-                            ],
-                            "size": "small",
-                            "symbol": "park2"
+                        "marker": 14,
+                        "datetime": "2014:09:03 13:43:28",
+                        "width": 1000
+                    },
+                    {
+                        "src": {
+                            "farm": 2,
+                            "secret": "60ddd0b19e",
+                            "type": "flickr",
+                            "id": "25531483551",
+                            "server": "1679"
                         },
-                        "src": {"farm": 2, "secret": "7ee1f54c55", "type": "flickr", "id": "24993647984", "server": "1560"},
+                        "credit": "la Citadelle",
+                        "height": 750,
+                        "caption": "Sur les murailles de la citadelle",
+                        "marker": 15,
+                        "datetime": "2014:09:03 11:25:13",
+                        "width": 1000
+                    },
+                    {
+                        "src": {
+                            "farm": 2,
+                            "secret": "7ee1f54c55",
+                            "type": "flickr",
+                            "id": "24993647984",
+                            "server": "1560"
+                        },
+                        "credit": "Parc des Champs-de-Bataille",
+                        "height": 1539,
+                        "caption": "",
+                        "marker": 16,
+                        "datetime": "2014:09:03 15:00:43",
                         "width": 2500
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
-                   {
-                        "caption": "Fin de journée",
-                        "credit": "Vieux-Québec",
-                        "datetime": "2014:09:03 13:53:15",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -71.21376111111111,
-                                46.815327777777775
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                    {
+                        "src": {
+                            "farm": 2,
+                            "secret": "332f7b3b6a",
+                            "type": "flickr",
+                            "id": "25598023636",
+                            "server": "1443"
                         },
-                        "src": {"farm": 2, "secret": "332f7b3b6a", "type": "flickr", "id": "25598023636", "server": "1443"},
+                        "credit": "Vieux-Qu\u00e9bec",
+                        "height": 750,
+                        "caption": "Fin de journ\u00e9e",
+                        "marker": 17,
+                        "datetime": "2014:09:03 13:53:15",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
+        }
+    ],
+    "markers": [
+        {
+            "symbol": "religious-christian",
+            "coordinates": [
+                -71.20671944444445,
+                46.813719444444445
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.20665,
+                46.81615
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.20646666666667,
+                46.81613055555555
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.20271944444444,
+                46.812686111111105
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.20418611111111,
+                46.81632222222222
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.20384166666668,
+                46.812194444444444
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.2034,
+                46.81081666666666
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "shop",
+            "coordinates": [
+                -71.20354444444445,
+                46.81524722222222
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.20342222222223,
+                46.810786111111106
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "religious-christian",
+            "coordinates": [
+                -71.20320000000001,
+                46.81344166666666
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.20449166666667,
+                46.81236944444444
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.20423055555555,
+                46.810424999999995
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "restaurant",
+            "coordinates": [
+                -71.20824444444445,
+                46.81319722222222
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "restaurant",
+            "coordinates": [
+                -71.21414166666666,
+                46.816494444444444
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.21353055555556,
+                46.81648611111111
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.21041111111111,
+                46.807066666666664
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "park2",
+            "coordinates": [
+                -71.22528055555556,
+                46.79916111111111
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -71.21376111111111,
+                46.815327777777775
+            ],
+            "size": "small"
         }
     ]
 }

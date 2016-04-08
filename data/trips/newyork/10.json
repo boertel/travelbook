@@ -1,134 +1,164 @@
 {
-    "blocks": [
+    "sections": [
         {
-            "type": "title",
             "args": {
-                "title": "Lundi 1er Septembre",
-                "subtitle": "En route pour Trois-Rivières"
-            }
+                "subtitle": "En route pour Trois-Rivi\u00e8res",
+                "title": "Lundi 1er Septembre"
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Départ le matin pour Trois-Rivières, ville à mi-chemin entre Montréal et Québec avec le parc de la Mauricie à côté."
-            }
+                "text": "D\u00e9part le matin pour Trois-Rivi\u00e8res, ville \u00e0 mi-chemin entre Montr\u00e9al et Qu\u00e9bec avec le parc de la Mauricie \u00e0 c\u00f4t\u00e9."
+            },
+            "type": "text"
         },
         {
-            "type": "title",
             "args": {
                 "subtitle": "Sport"
-            }
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Il y a des golfs à presque toutes les sorties d'autoroute, on décide donc d'aller taper des balles sur le driving range et on enchainera sur une séance de karting."
-            }
+                "text": "Il y a des golfs \u00e0 presque toutes les sorties d'autoroute, on d\u00e9cide donc d'aller taper des balles sur le driving range et on enchainera sur une s\u00e9ance de karting."
+            },
+            "type": "text"
         },
         {
-            "type": "video",
             "args": {
                 "videos": [
                     {
                         "url": "//player.vimeo.com/video/108855903",
                         "width": 500,
-                        "height": 889,
+                        "title": "Cyril",
                         "ratio": 0.4,
-                        "title": "Cyril"
+                        "height": 889
                     },
                     {
                         "url": "//player.vimeo.com/video/108855904",
                         "width": 500,
-                        "height": 889,
+                        "title": "Ben",
                         "ratio": 0.4,
-                        "title": "Ben"
+                        "height": 889
                     }
                 ]
-            }
+            },
+            "type": "video"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Tout ça nous change de notre sport quotidien: la marche. On arrive enfin à Trois-Rivières pour manger une bonne pièce de viande, se détendre dans la piscine de l'hôtel et regarder l'US Open evidemment."
-            }
+                "text": "Tout \u00e7a nous change de notre sport quotidien: la marche. On arrive enfin \u00e0 Trois-Rivi\u00e8res pour manger une bonne pi\u00e8ce de viande, se d\u00e9tendre dans la piscine de l'h\u00f4tel et regarder l'US Open evidemment."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
-                        "credit": "Trois-Rivières",
-                        "datetime": "2014:09:01 16:10:00",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -72.5425861111111,
-                                46.34213888888889
-                            ],
-                            "size": "small",
-                            "symbol": "beer"
+                        "src": {
+                            "farm": 2,
+                            "secret": "003f15a2bc",
+                            "type": "flickr",
+                            "id": "25624098135",
+                            "server": "1664"
                         },
-                        "src": {"farm": 2, "secret": "003f15a2bc", "type": "flickr", "id": "25624098135", "server": "1664"},
+                        "credit": "Trois-Rivi\u00e8res",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 0,
+                        "datetime": "2014:09:01 16:10:00",
                         "width": 750
                     },
                     {
-                        "caption": "Viande et frites après une après-midi sportive",
-                        "credit": "Trois-Rivières",
-                        "datetime": "2014:09:01 16:20:52",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -72.54259444444445,
-                                46.342175000000005
-                            ],
-                            "size": "small",
-                            "symbol": "restaurant"
+                        "src": {
+                            "farm": 2,
+                            "secret": "a089a0db5f",
+                            "type": "flickr",
+                            "id": "25328457230",
+                            "server": "1500"
                         },
-                        "src": {"farm": 2, "secret": "a089a0db5f", "type": "flickr", "id": "25328457230", "server": "1500"},
+                        "credit": "Trois-Rivi\u00e8res",
+                        "height": 750,
+                        "caption": "Viande et frites apr\u00e8s une apr\u00e8s-midi sportive",
+                        "marker": 1,
+                        "datetime": "2014:09:01 16:20:52",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Pire diner du voyage ?",
-                        "credit": "Tim Hortons",
-                        "datetime": "2014:09:01 21:22:56",
-                        "height": 490,
-                        "marker": {
-                            "coordinates": [
-                                -72.56441388888888,
-                                46.32475
-                            ],
-                            "size": "small",
-                            "symbol": "restaurant"
+                        "src": {
+                            "farm": 2,
+                            "secret": "c4f1dc82db",
+                            "type": "flickr",
+                            "id": "24993581664",
+                            "server": "1714"
                         },
-                        "src": {"farm": 2, "secret": "c4f1dc82db", "type": "flickr", "id": "24993581664", "server": "1714"},
+                        "credit": "Tim Hortons",
+                        "height": 490,
+                        "caption": "Pire diner du voyage ?",
+                        "marker": 2,
+                        "datetime": "2014:09:01 21:22:56",
                         "width": 1000
                     },
                     {
-                        "caption": "Y a-t-il quelqu'un dans cet hôtel ?",
-                        "credit": "Urbania",
-                        "datetime": "2014:09:01 21:47:03",
-                        "height": 980,
-                        "marker": {
-                            "coordinates": [
-                                -72.558425,
-                                46.32981388888889
-                            ],
-                            "size": "small",
-                            "symbol": "lodging"
+                        "src": {
+                            "farm": 2,
+                            "secret": "54fe49f764",
+                            "type": "flickr",
+                            "id": "25505431692",
+                            "server": "1660"
                         },
-                        "src": {"farm": 2, "secret": "54fe49f764", "type": "flickr", "id": "25505431692", "server": "1660"},
+                        "credit": "Urbania",
+                        "height": 980,
+                        "caption": "Y a-t-il quelqu'un dans cet h\u00f4tel ?",
+                        "marker": 3,
+                        "datetime": "2014:09:01 21:47:03",
                         "width": 708
                     }
                 ]
-            }
+            },
+            "type": "image"
+        }
+    ],
+    "markers": [
+        {
+            "symbol": "beer",
+            "coordinates": [
+                -72.5425861111111,
+                46.34213888888889
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "restaurant",
+            "coordinates": [
+                -72.54259444444445,
+                46.342175000000005
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "restaurant",
+            "coordinates": [
+                -72.56441388888888,
+                46.32475
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "lodging",
+            "coordinates": [
+                -72.558425,
+                46.32981388888889
+            ],
+            "size": "small"
         }
     ]
 }
