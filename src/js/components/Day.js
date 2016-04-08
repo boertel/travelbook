@@ -11,12 +11,12 @@ class Day extends React.Component {
     }
 
     getRules() {
-        var color = new Color(this.props.day.color),
-            borderColor = this.props.day.color,
+        var borderColor = this.props.day.data.color,
+            color = new Color(borderColor),
             backgroundColor = color.clearer(0.5).rgbString();
 
         return [
-            ".text:hover .hasMarker:before { background-color: " + this.props.day.color + " !important; }",
+            ".text:hover .hasMarker:before { background-color: " + borderColor + " !important; }",
             ".picture .hasMarker:before { border-color: " + borderColor + " !important; background-color: " + backgroundColor + " !important; }"
         ];
     }
