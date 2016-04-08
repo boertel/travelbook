@@ -23,10 +23,10 @@ export default class Viewer extends React.Component {
     }
 
     next(e) {
-        // TODO onEnter of viewer check if index if correct
-        e.preventDefault()
-        var index = (this.props.index + 1) % (this.props.media.length + 1)
+        e.preventDefault();
+        // TODO this.props.media.length + 1 to show "next..." section
         // and show next day or loop back at the end
+        var index = (this.props.index + 1) % (this.props.media.length)
         history.push(this.root() + '/' + index)
         return false;
     }

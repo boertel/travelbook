@@ -64,7 +64,6 @@ export default class Medium extends React.Component {
                 paddingLeft: '20px'
             };
         }
-        console.log(width, height);
 
         // FIXME BUG when navigating between images the previous one shows up
         return (

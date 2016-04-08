@@ -39,25 +39,59 @@ function threshold(width, height) {
 export default class Photo extends React.Component {
     constructor(props) {
         super(props);
+
+        var size = threshold(props.width, props.height);
         this.state = {
-            size: threshold(props.width, props.height)
+            loaded: false,
+            size: size
         };
     }
 
-    shouldcomponentupdate(nextprops, nextstate) {
-        return !_.isequal(nextprops.src, this.props.src) || nextprops.width !== this.props.width || nextprops.height !== this.props.height;
+    getUrl(props) {
+        props = props || this.props;
+        var url;
+        if (typeof props.src === 'string') {
+            url = props.src;
+        } else {
+            if (props.src.type === 'flickr') {
+                url = buildFlickrUrl(props.src, this.state.size);
+            }
+        }
+        return url;
+    }
+
+    loadImage() {
+        this.setState({
+            loaded: false
+        });
+        var image = new Image();
+        image.onload = () => {
+                this.setState({
+                    loaded: true
+                });
+        };
+        image.src = this.getUrl();
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        return this.state.loaded !== nextState.loaded;
+    }
+
+    componentDidMount() {
+        this.loadImage();
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if (this.getUrl(nextProps) !== this.getUrl()) {
+            this.loadImage();
+        }
     }
 
     render() {
-        var url;
-        if (typeof this.props.src === 'string') {
-            url = this.props.src;
+        if (this.state.loaded) {
+            return <img src={this.getUrl()} width={this.props.width} height={this.props.height} />
         } else {
-            if (this.props.src.type === 'flickr') {
-                url = buildFlickrUrl(this.props.src, this.state.size);
-            }
+            return <span></span>;
         }
-
-        return <img src={url} width={this.props.width} height={this.props.height} />
     }
 }
