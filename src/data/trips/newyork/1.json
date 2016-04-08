@@ -1,330 +1,451 @@
 {
-    "blocks": [
+    "sections": [
         {
-            "type": "title",
             "args": {
-                "title": "Samedi 23 Août",
-                "subtitle": "Attente"
-            }
+                "subtitle": "Attente",
+                "title": "Samedi 23 Ao\u00fbt"
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Départ 23h de SF, arrivée 8h du mat' à New York. Il faut maintenant que j'attende mon frère qui arrive à 12h. Question: que faire en attendant 4 heures à l'aéroport ?"
-            }
+                "text": "D\u00e9part 23h de SF, arriv\u00e9e 8h du mat' \u00e0 New York. Il faut maintenant que j'attende mon fr\u00e8re qui arrive \u00e0 12h. Question: que faire en attendant 4 heures \u00e0 l'a\u00e9roport ?"
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
                         "src": {
-                            "type": "flickr",
                             "farm": 2,
                             "secret": "86590dea9e",
+                            "type": "flickr",
                             "id": "25600848825",
                             "server": "1495"
                         },
-                        "caption": "1. se faire petit déjeuner de luxe",
-                        "credit": "JFK Terminal 7",
                         "width": 563,
                         "height": 1000,
-                        "marker": {
-                            "coordinates": [-73.7877805556, 40.6446583333],
-                            "title": "Airport",
-                            "size": "small",
-                            "symbol": "airport"
-                        }
+                        "credit": "JFK Terminal 7",
+                        "marker": 0,
+                        "caption": "1. se faire petit d\u00e9jeuner de luxe"
                     },
                     {
-                        "src": {"farm": 2, "secret": "59338ee5de", "type": "flickr", "id": "25233326369", "server": "1641"},
-                        "caption": "2. regarder des séries",
-                        "width": 750,
-                        "height": 1000
-                    },
-                    {
-                        "caption": "",
-                        "credit": "",
-                        "datetime": "2014:08:23 10:23:49",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.80670833333333,
-                                40.65416666666667
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "59338ee5de",
+                            "type": "flickr",
+                            "id": "25233326369",
+                            "server": "1641"
                         },
-                        "src": {"farm": 2, "secret": "b750142cc7", "type": "flickr", "id": "25482251032", "server": "1660"},
+                        "height": 1000,
+                        "width": 750,
+                        "caption": "2. regarder des s\u00e9ries"
+                    },
+                    {
+                        "src": {
+                            "farm": 2,
+                            "secret": "b750142cc7",
+                            "type": "flickr",
+                            "id": "25482251032",
+                            "server": "1660"
+                        },
+                        "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 1,
+                        "datetime": "2014:08:23 10:23:49",
                         "width": 750
                     },
                     {
-                        "caption": "",
-                        "credit": "mais à 8h, on sent un peu seul dans l'aéroport http://vimeo.com/97634383",
-                        "datetime": "2014:08:23 10:23:49",
+                        "src": {
+                            "farm": 2,
+                            "secret": "07d8e9311f",
+                            "type": "flickr",
+                            "id": "24970371034",
+                            "server": "1658"
+                        },
+                        "width": 563,
+                        "credit": "mais \u00e0 8h, on sent un peu seul dans l'a\u00e9roport http://vimeo.com/97634383",
                         "height": 1000,
-                        "src": {"farm": 2, "secret": "07d8e9311f", "type": "flickr", "id": "24970371034", "server": "1658"},
+                        "caption": "",
+                        "datetime": "2014:08:23 10:23:49"
+                    }
+                ]
+            },
+            "type": "image"
+        },
+        {
+            "args": {
+                "images": [
+                    {
+                        "src": {
+                            "farm": 2,
+                            "secret": "523b2b42a9",
+                            "type": "flickr",
+                            "id": "25233323929",
+                            "server": "1695"
+                        },
+                        "credit": "",
+                        "height": 735,
+                        "caption": "",
+                        "marker": 2,
+                        "datetime": "2014:08:23 10:31:20",
+                        "width": 1000
+                    },
+                    {
+                        "src": {
+                            "farm": 2,
+                            "secret": "7e42333a00",
+                            "type": "flickr",
+                            "id": "25574743056",
+                            "server": "1560"
+                        },
+                        "height": 735,
+                        "width": 1000
+                    },
+                    {
+                        "credit": "dans le LIRR (RER local)",
+                        "src": {
+                            "farm": 2,
+                            "secret": "b11aef8944",
+                            "type": "flickr",
+                            "id": "25600844715",
+                            "server": "1678"
+                        },
+                        "height": 1000,
+                        "caption": "Les retrouvailles",
                         "width": 563
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
-            "args": {
-                "images": [
-                    {
-                        "caption": "",
-                        "credit": "",
-                        "datetime": "2014:08:23 10:31:20",
-                        "height": 735,
-                        "marker": {
-                            "coordinates": [
-                                -73.78778055555556,
-                                40.64465833333333
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "523b2b42a9", "type": "flickr", "id": "25233323929", "server": "1695"},
-                        "width": 1000
-                    },
-                    {
-                        "src": {"farm": 2, "secret": "7e42333a00", "type": "flickr", "id": "25574743056", "server": "1560"},
-                        "width": 1000,
-                        "height": 735
-                    },
-                    {
-                        "src": {"farm": 2, "secret": "b11aef8944", "type": "flickr", "id": "25600844715", "server": "1678"},
-                        "width": 563,
-                        "height": 1000,
-                        "caption": "Les retrouvailles",
-                        "credit": "dans le LIRR (RER local)"
-                    }
-                ]
-            }
-        },
-        {
-            "type": "title",
             "args": {
                 "subtitle": "C'est parti !"
-            }
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Assez passé de temps dans l'aéroport, il est temps d'aller explorer la ville. Au programme de l'après midi: de la 33th st au sud de Central Park."
-            }
+                "text": "Assez pass\u00e9 de temps dans l'a\u00e9roport, il est temps d'aller explorer la ville. Au programme de l'apr\u00e8s midi: de la 33th st au sud de Central Park."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "ea32ca0bb7",
+                            "type": "flickr",
+                            "id": "25305245680",
+                            "server": "1556"
+                        },
                         "credit": "",
-                        "datetime": "2014:08:23 15:47:12",
                         "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.97827777777778,
-                                40.74619166666667
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "ea32ca0bb7", "type": "flickr", "id": "25305245680", "server": "1556"},
-                        "width": 1000
-                    },
-                    {
                         "caption": "",
-                        "credit": "Brian Park",
-                        "datetime": "2014:08:23 15:52:49",
-                        "height": 591,
-                        "marker": {
-                            "coordinates": [
-                                -73.98345277777779,
-                                40.75321666666667
-                            ],
-                            "size": "small",
-                            "symbol": "park2"
-                        },
-                        "src": {"farm": 2, "secret": "92d87cdf43", "type": "flickr", "id": "25574740756", "server": "1562"},
+                        "marker": 3,
+                        "datetime": "2014:08:23 15:47:12",
                         "width": 1000
                     },
                     {
-                        "caption": "On a retrouvé les Beattles",
-                        "credit": "",
-                        "datetime": "2014:08:23 16:34:11",
-                        "height": 2295,
-                        "marker": {
-                            "coordinates": [
-                                -73.9800861111111,
-                                40.760352777777776
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "92d87cdf43",
+                            "type": "flickr",
+                            "id": "25574740756",
+                            "server": "1562"
                         },
-                        "src": {"farm": 2, "secret": "bd4af7291c", "type": "flickr", "id": "25305243630", "server": "1591"},
+                        "credit": "Brian Park",
+                        "height": 591,
+                        "caption": "",
+                        "marker": 4,
+                        "datetime": "2014:08:23 15:52:49",
+                        "width": 1000
+                    },
+                    {
+                        "src": {
+                            "farm": 2,
+                            "secret": "bd4af7291c",
+                            "type": "flickr",
+                            "id": "25305243630",
+                            "server": "1591"
+                        },
+                        "credit": "",
+                        "height": 2295,
+                        "caption": "On a retrouv\u00e9 les Beattles",
+                        "marker": 5,
+                        "datetime": "2014:08:23 16:34:11",
                         "width": 3060
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "1a6552d542",
+                            "type": "flickr",
+                            "id": "24970356844",
+                            "server": "1455"
+                        },
                         "credit": "Rockefeller Center",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 6,
                         "datetime": "2014:08:23 16:54:06",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.97771388888889,
-                                40.758297222222225
-                            ],
-                            "size": "small",
-                            "symbol": "commercial"
-                        },
-                        "src": {"farm": 2, "secret": "1a6552d542", "type": "flickr", "id": "24970356844", "server": "1455"},
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "0fa61a5454",
+                            "type": "flickr",
+                            "id": "25508149371",
+                            "server": "1476"
+                        },
                         "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 7,
                         "datetime": "2014:08:23 17:15:50",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.97614166666666,
-                                40.763644444444445
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "0fa61a5454", "type": "flickr", "id": "25508149371", "server": "1476"},
                         "width": 750
                     },
                     {
+                        "src": {
+                            "farm": 2,
+                            "secret": "2b734a9b23",
+                            "type": "flickr",
+                            "id": "25508148391",
+                            "server": "1651"
+                        },
+                        "credit": "Apple Store sur la 5th",
+                        "height": 1000,
                         "caption": "",
-                        "credit": "Apple Store sur la 5th",
+                        "marker": 8,
                         "datetime": "2014:08:23 17:19:47",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.97541111111111,
-                                40.76365
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "2b734a9b23", "type": "flickr", "id": "25508148391", "server": "1651"},
                         "width": 750
                     },
                     {
-                        "caption": "Big Apple",
-                        "credit": "Apple Store sur la 5th",
-                        "datetime": "2014:08:23 17:24:58",
-                        "height": 475,
-                        "marker": {
-                            "coordinates": [
-                                -73.97286944444444,
-                                40.76401111111111
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "72619b0713",
+                            "type": "flickr",
+                            "id": "25233308209",
+                            "server": "1497"
                         },
-                        "src": {"farm": 2, "secret": "72619b0713", "type": "flickr", "id": "25233308209", "server": "1497"},
+                        "credit": "Apple Store sur la 5th",
+                        "height": 475,
+                        "caption": "Big Apple",
+                        "marker": 9,
+                        "datetime": "2014:08:23 17:24:58",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
-                        "credit": "",
-                        "datetime": "2014:08:23 17:34:29",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.97469444444445,
-                                40.764297222222226
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "b68d604bd2",
+                            "type": "flickr",
+                            "id": "25574727176",
+                            "server": "1642"
                         },
-                        "src": {"farm": 2, "secret": "b68d604bd2", "type": "flickr", "id": "25574727176", "server": "1642"},
+                        "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 10,
+                        "datetime": "2014:08:23 17:34:29",
                         "width": 750
                     },
                     {
-                        "caption": "",
-                        "credit": "",
-                        "datetime": "2014:08:23 17:42:05",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.97904166666667,
-                                40.76361111111111
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "3049218527",
+                            "type": "flickr",
+                            "id": "24974143903",
+                            "server": "1474"
                         },
-                        "src": {"farm": 2, "secret": "3049218527", "type": "flickr", "id": "24974143903", "server": "1474"},
+                        "credit": "",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 11,
+                        "datetime": "2014:08:23 17:42:05",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
                 "text": "Sur le chemin du retour, passage par Grand Central Terminal."
-            }
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
-                        "credit": "Grand Central Terminal",
-                        "datetime": "2014:08:23 18:32:31",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.9781888888889,
-                                40.75344722222222
-                            ],
-                            "size": "small",
-                            "symbol": "rail"
+                        "src": {
+                            "farm": 2,
+                            "secret": "4c4158e984",
+                            "type": "flickr",
+                            "id": "24970352424",
+                            "server": "1561"
                         },
-                        "src": {"farm": 2, "secret": "4c4158e984", "type": "flickr", "id": "24970352424", "server": "1561"},
+                        "credit": "Grand Central Terminal",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 12,
+                        "datetime": "2014:08:23 18:32:31",
                         "width": 1000
                     },
                     {
-                        "caption": "",
-                        "credit": "Grand Central Terminal",
-                        "datetime": "2014:08:23 18:36:31",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.97630277777778,
-                                40.75462777777778
-                            ],
-                            "size": "small",
-                            "symbol": "rail"
+                        "src": {
+                            "farm": 2,
+                            "secret": "99f897e62a",
+                            "type": "flickr",
+                            "id": "25508144411",
+                            "server": "1534"
                         },
-                        "src": {"farm": 2, "secret": "99f897e62a", "type": "flickr", "id": "25508144411", "server": "1534"},
+                        "credit": "Grand Central Terminal",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 13,
+                        "datetime": "2014:08:23 18:36:31",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
+        }
+    ],
+    "markers": [
+        {
+            "symbol": "airport",
+            "size": "small",
+            "coordinates": [
+                -73.7877805556,
+                40.6446583333
+            ],
+            "title": "Airport"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.80670833333333,
+                40.65416666666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.78778055555556,
+                40.64465833333333
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.97827777777778,
+                40.74619166666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "park2",
+            "coordinates": [
+                -73.98345277777779,
+                40.75321666666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.9800861111111,
+                40.760352777777776
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "commercial",
+            "coordinates": [
+                -73.97771388888889,
+                40.758297222222225
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.97614166666666,
+                40.763644444444445
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.97541111111111,
+                40.76365
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.97286944444444,
+                40.76401111111111
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.97469444444445,
+                40.764297222222226
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.97904166666667,
+                40.76361111111111
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "rail",
+            "coordinates": [
+                -73.9781888888889,
+                40.75344722222222
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "rail",
+            "coordinates": [
+                -73.97630277777778,
+                40.75462777777778
+            ],
+            "size": "small"
         }
     ]
 }

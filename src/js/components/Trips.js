@@ -1,27 +1,32 @@
 import React from 'react'
 import { Link } from 'react-router'
-import { connect } from 'react-refetch'
+import { connect, Provider } from 'react-redux'
 
 import { Loading } from '.'
+import { asynchronous } from '../asynchronous'
+
 
 
 class Trips extends React.Component {
     render() {
-        const { tripsFetch } = this.props;
-        if (tripsFetch.pending) {
+        console.log(this.props.trips);
+        const { data, isFulfilled, isPending } = this.props.trips;
+
+        if (isPending) {
             return <Loading />
-        } else if (tripsFetch.fulfilled) {
-            var trips = tripsFetch.value.map(function(trip, key) {
+        } else if (isFulfilled) {
+            var items = data.map(function(trip, key) {
                 var to = '/'  + trip.id + '/1';
                 return (<li key={key}><Link to={to}>{trip.title}</Link></li>);
             });
-            return <ul>{trips}</ul>
+            return <ul>{items}</ul>
         }
-
     }
 }
 
-export default connect(props => ({
-    tripsFetch: { url: '/data/trips/index.json' }
-}))(Trips)
 
+
+export default asynchronous({
+    url: '/data/trips/index.json',
+    key: 'trips'
+})(Trips)

@@ -1,168 +1,219 @@
 {
-    "blocks": [
+    "sections": [
         {
-            "type": "title",
             "args": {
-                "title": "Vendredi 29 août",
-                "subtitle": "Direction Canada"
-            }
+                "subtitle": "Direction Canada",
+                "title": "Vendredi 29 ao\u00fbt"
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "6/7 heures de route pour rejoindre New York à Montréal. Et une heure après être sorti de la banlieue de New York, on peut déjà dire au revoir à la bonne bouffe de la ville, Cyril se laisse tenter par du fried chicken de chez Popeyes."
-            }
+                "text": "6/7 heures de route pour rejoindre New York \u00e0 Montr\u00e9al. Et une heure apr\u00e8s \u00eatre sorti de la banlieue de New York, on peut d\u00e9j\u00e0 dire au revoir \u00e0 la bonne bouffe de la ville, Cyril se laisse tenter par du fried chicken de chez Popeyes."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "1ed8649643",
+                            "type": "flickr",
+                            "id": "24993389434",
+                            "server": "1562"
+                        },
                         "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 0,
                         "datetime": "2014:08:29 13:20:44",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.8535611111111,
-                                40.988025
-                            ],
-                            "size": "small",
-                            "symbol": "restaurant"
-                        },
-                        "src": {"farm": 2, "secret": "1ed8649643", "type": "flickr", "id": "24993389434", "server": "1562"},
                         "width": 750
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "f71f77a663",
+                            "type": "flickr",
+                            "id": "25256337329",
+                            "server": "1631"
+                        },
                         "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 1,
                         "datetime": "2014:08:29 13:24:05",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.85362222222221,
-                                40.98804166666667
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "f71f77a663", "type": "flickr", "id": "25256337329", "server": "1631"},
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "5 heures après, toujours dans la voiture et les routes américaines sont toutes droites même pas besoin de mains pour conduire."
-            }
+                "text": "5 heures apr\u00e8s, toujours dans la voiture et les routes am\u00e9ricaines sont toutes droites m\u00eame pas besoin de mains pour conduire."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "9835f6fe9e",
+                            "type": "flickr",
+                            "id": "24993387544",
+                            "server": "1555"
+                        },
                         "credit": "",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 2,
                         "datetime": "2014:08:29 18:50:27",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.49705555555556,
-                                44.53245833333333
-                            ],
-                            "size": "small",
-                            "symbol": "car"
-                        },
-                        "src": {"farm": 2, "secret": "9835f6fe9e", "type": "flickr", "id": "24993387544", "server": "1555"},
                         "width": 1000
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "3d0a89774c",
+                            "type": "flickr",
+                            "id": "24997174523",
+                            "server": "1550"
+                        },
                         "credit": "",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 3,
                         "datetime": "2014:08:29 18:50:59",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.499175,
-                                44.54145
-                            ],
-                            "size": "small",
-                            "symbol": "car"
-                        },
-                        "src": {"farm": 2, "secret": "3d0a89774c", "type": "flickr", "id": "24997174523", "server": "1550"},
                         "width": 1000
                     },
                     {
-                        "caption": "",
-                        "credit": "",
-                        "datetime": "2014:08:29 18:51:01",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.49925277777778,
-                                44.54172777777777
-                            ],
-                            "size": "small",
-                            "symbol": "car"
+                        "src": {
+                            "farm": 2,
+                            "secret": "023b5b7fdc",
+                            "type": "flickr",
+                            "id": "25256335239",
+                            "server": "1501"
                         },
-                        "src": {"farm": 2, "secret": "023b5b7fdc", "type": "flickr", "id": "25256335239", "server": "1501"},
+                        "credit": "",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 4,
+                        "datetime": "2014:08:29 18:51:01",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "title",
             "args": {
-                "subtitle": "Montréal"
-            }
+                "subtitle": "Montr\u00e9al"
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "C'est le festival du film à Montréal et avec notre super organisation, pas d'hôtels de réservé mais on trouvera un bed and breakfast assez atypique pour la nuit. Demain s'annonce une \"longue\" recherche d'hôtel."
-            }
+                "text": "C'est le festival du film \u00e0 Montr\u00e9al et avec notre super organisation, pas d'h\u00f4tels de r\u00e9serv\u00e9 mais on trouvera un bed and breakfast assez atypique pour la nuit. Demain s'annonce une \"longue\" recherche d'h\u00f4tel."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Tartare",
-                        "credit": "L'Assommoir Notre Dame",
-                        "datetime": "2014:08:29 21:46:51",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.55393888888888,
-                                45.503861111111114
-                            ],
-                            "size": "small",
-                            "symbol": "restaurant"
+                        "src": {
+                            "farm": 2,
+                            "secret": "dcaef064fe",
+                            "type": "flickr",
+                            "id": "25623896845",
+                            "server": "1578"
                         },
-                        "src": {"farm": 2, "secret": "dcaef064fe", "type": "flickr", "id": "25623896845", "server": "1578"},
+                        "credit": "L'Assommoir Notre Dame",
+                        "height": 1000,
+                        "caption": "Tartare",
+                        "marker": 5,
+                        "datetime": "2014:08:29 21:46:51",
                         "width": 750
                     },
-                 {
-                        "caption": "Un poulet dans mon verre de bière ?",
-                        "credit": "L'Assommoir Notre Dame",
-                        "datetime": "2014:08:29 22:49:59",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.55396388888889,
-                                45.50385
-                            ],
-                            "size": "small",
-                            "symbol": "restaurant"
+                    {
+                        "src": {
+                            "farm": 2,
+                            "secret": "a1f444d505",
+                            "type": "flickr",
+                            "id": "24993384814",
+                            "server": "1568"
                         },
-                        "src": {"farm": 2, "secret": "a1f444d505", "type": "flickr", "id": "24993384814", "server": "1568"},
+                        "credit": "L'Assommoir Notre Dame",
+                        "height": 1000,
+                        "caption": "Un poulet dans mon verre de bi\u00e8re ?",
+                        "marker": 6,
+                        "datetime": "2014:08:29 22:49:59",
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
+        }
+    ],
+    "markers": [
+        {
+            "symbol": "restaurant",
+            "coordinates": [
+                -73.8535611111111,
+                40.988025
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.85362222222221,
+                40.98804166666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "car",
+            "coordinates": [
+                -73.49705555555556,
+                44.53245833333333
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "car",
+            "coordinates": [
+                -73.499175,
+                44.54145
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "car",
+            "coordinates": [
+                -73.49925277777778,
+                44.54172777777777
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "restaurant",
+            "coordinates": [
+                -73.55393888888888,
+                45.503861111111114
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "restaurant",
+            "coordinates": [
+                -73.55396388888889,
+                45.50385
+            ],
+            "size": "small"
         }
     ]
 }

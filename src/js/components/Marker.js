@@ -1,6 +1,8 @@
 import React from 'react'
 import Color from 'color'
 
+import { connect } from 'react-redux'
+
 import store from '../store'
 
 
@@ -80,9 +82,22 @@ class Circle {
 
 }
 
+function addMarker(marker) {
+    return {
+        'type': 'MARKER_ADD',
+        'marker': marker
+    }
+}
+
+function removeMarker(marker) {
+    return {
+        'type': 'MARKER_REMOVE',
+        'marker': marker
+    }
+}
 
 
-export default class Marker extends React.Component {
+class Marker extends React.Component {
     constructor(props) {
         super(props);
         if (this.props.marker.type === 'circle') {
@@ -95,11 +110,13 @@ export default class Marker extends React.Component {
     }
 
     componentDidMount() {
-        store.push(this.marker)
+        const { dispatch } = this.props;
+        dispatch(addMarker(this.marker));
     }
 
     componentWillUnmount() {
-        store.remove(this.marker)
+        const { dispatch } = this.props;
+        dispatch(removeMarker(this.marker));
     }
 
     onMouseOver() {
@@ -116,3 +133,7 @@ export default class Marker extends React.Component {
         </div>)
     }
 }
+
+
+
+export default connect()(Marker)

@@ -1,468 +1,625 @@
 {
-    "blocks": [
+    "sections": [
         {
-            "type": "title",
             "args": {
-                "title": "Samedi 30 Août",
-                "subtitle": "World Press Photo"
-            }
+                "subtitle": "World Press Photo",
+                "title": "Samedi 30 Ao\u00fbt"
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Rencontré au hasard dans le Vieux-Montréal: une expo photo. Elle présente les gagnants d'un concours de photographie de presse."
-            }
+                "text": "Rencontr\u00e9 au hasard dans le Vieux-Montr\u00e9al: une expo photo. Elle pr\u00e9sente les gagnants d'un concours de photographie de presse."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
+                        "src": {
+                            "farm": 2,
+                            "secret": "ab859b48c2",
+                            "type": "flickr",
+                            "id": "24993475504",
+                            "server": "1670"
+                        },
+                        "credit": "March\u00e9 Bonsecours",
+                        "height": 750,
                         "caption": "",
-                        "credit": "Marché Bonsecours",
+                        "marker": 0,
                         "datetime": "2014:08:30 12:10:34",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.55272777777778,
-                                45.510222222222225
-                            ],
-                            "size": "small",
-                            "symbol": "camera"
-                        },
-                        "src": {"farm": 2, "secret": "ab859b48c2", "type": "flickr", "id": "24993475504", "server": "1670"},
                         "width": 1000
                     },
                     {
+                        "src": {
+                            "farm": 2,
+                            "secret": "d58febb299",
+                            "type": "flickr",
+                            "id": "25328347980",
+                            "server": "1675"
+                        },
+                        "credit": "March\u00e9 Bonsecours",
+                        "height": 750,
                         "caption": "US Open 2013",
-                        "credit": "Marché Bonsecours",
+                        "marker": 1,
                         "datetime": "2014:08:30 12:15:39",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.55291666666666,
-                                45.51005833333333
-                            ],
-                            "size": "small",
-                            "symbol": "camera"
-                        },
-                        "src": {"farm": 2, "secret": "d58febb299", "type": "flickr", "id": "25328347980", "server": "1675"},
                         "width": 1000
                     },
                     {
-                        "caption": "Livre d'or, nous aussi, on a bien aimé les photos",
-                        "credit": "Marché Bonsecours",
+                        "src": {
+                            "farm": 2,
+                            "secret": "1d337d884d",
+                            "type": "flickr",
+                            "id": "25597849796",
+                            "server": "1675"
+                        },
+                        "credit": "March\u00e9 Bonsecours",
+                        "height": 1000,
+                        "caption": "Livre d'or, nous aussi, on a bien aim\u00e9 les photos",
+                        "marker": 2,
                         "datetime": "2014:08:30 12:14:20",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.55281111111111,
-                                45.51015
-                            ],
-                            "size": "small",
-                            "symbol": "camera"
-                        },
-                        "src": {"farm": 2, "secret": "1d337d884d", "type": "flickr", "id": "25597849796", "server": "1675"},
                         "width": 750
                     },
                     {
+                        "src": {
+                            "farm": 2,
+                            "secret": "3876429e70",
+                            "type": "flickr",
+                            "id": "25328347280",
+                            "server": "1526"
+                        },
+                        "credit": "March\u00e9 Bonsecours",
+                        "height": 750,
                         "caption": "",
-                        "credit": "Marché Bonsecours",
+                        "marker": 3,
                         "datetime": "2014:08:30 12:18:43",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.55140555555555,
-                                45.508583333333334
-                            ],
-                            "size": "small",
-                            "symbol": "camera"
-                        },
-                        "src": {"farm": 2, "secret": "3876429e70", "type": "flickr", "id": "25328347280", "server": "1526"},
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "title",
             "args": {
-                "subtitle": "Vieux-Montréal"
-            }
+                "subtitle": "Vieux-Montr\u00e9al"
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Et maintenant à l'attaque de la ville. Premières impressions, les distances ne sont pas les mêmes qu'à New York et l'ambiance y est plus calme."
-            }
+                "text": "Et maintenant \u00e0 l'attaque de la ville. Premi\u00e8res impressions, les distances ne sont pas les m\u00eames qu'\u00e0 New York et l'ambiance y est plus calme."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Les pavets font la différence et donne une petite impression de ville européenne",
-                        "credit": "Vieux-Montréal",
+                        "src": {
+                            "farm": 2,
+                            "secret": "020973e270",
+                            "type": "flickr",
+                            "id": "25597846866",
+                            "server": "1535"
+                        },
+                        "credit": "Vieux-Montr\u00e9al",
+                        "height": 750,
+                        "caption": "Les pavets font la diff\u00e9rence et donne une petite impression de ville europ\u00e9enne",
+                        "marker": 4,
                         "datetime": "2014:08:30 12:21:59",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.55226111111111,
-                                45.508472222222224
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "020973e270", "type": "flickr", "id": "25597846866", "server": "1535"},
                         "width": 1000
                     },
                     {
-                        "caption": "L'intérieur de la basilique",
+                        "src": {
+                            "farm": 2,
+                            "secret": "7ef8f23d6c",
+                            "type": "flickr",
+                            "id": "24997260253",
+                            "server": "1604"
+                        },
                         "credit": "Basilique Notre-Dame",
+                        "height": 1000,
+                        "caption": "L'int\u00e9rieur de la basilique",
+                        "marker": 5,
                         "datetime": "2014:08:30 12:54:28",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.55705277777777,
-                                45.50474444444445
-                            ],
-                            "size": "small",
-                            "symbol": "religious-christian"
-                        },
-                        "src": {"farm": 2, "secret": "7ef8f23d6c", "type": "flickr", "id": "24997260253", "server": "1604"},
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "sur le parvis",
-                        "credit": "Basilique Notre-Dame",
-                        "datetime": "2014:08:30 13:03:18",
-                        "height": 922,
-                        "marker": {
-                            "coordinates": [
-                                -73.55766944444444,
-                                45.50436388888889
-                            ],
-                            "size": "small",
-                            "symbol": "religious-christian"
+                        "src": {
+                            "farm": 2,
+                            "secret": "b05688bed3",
+                            "type": "flickr",
+                            "id": "24997258833",
+                            "server": "1540"
                         },
-                        "src": {"farm": 2, "secret": "b05688bed3", "type": "flickr", "id": "24997258833", "server": "1540"},
+                        "credit": "Basilique Notre-Dame",
+                        "height": 922,
+                        "caption": "sur le parvis",
+                        "marker": 6,
+                        "datetime": "2014:08:30 13:03:18",
                         "width": 2500
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Après avoir traversé le Vieux-Montréal, nous faisons le chemin retour en longeant le Saint-Laurent."
-            }
+                "text": "Apr\u00e8s avoir travers\u00e9 le Vieux-Montr\u00e9al, nous faisons le chemin retour en longeant le Saint-Laurent."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Le long du Saint-Laurent",
-                        "credit": "",
-                        "datetime": "2014:08:30 13:28:35",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.55319166666666,
-                                45.50246944444444
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "92eec81858",
+                            "type": "flickr",
+                            "id": "25505314792",
+                            "server": "1549"
                         },
-                        "src": {"farm": 2, "secret": "92eec81858", "type": "flickr", "id": "25505314792", "server": "1549"},
+                        "credit": "",
+                        "height": 750,
+                        "caption": "Le long du Saint-Laurent",
+                        "marker": 7,
+                        "datetime": "2014:08:30 13:28:35",
                         "width": 1000
                     },
                     {
-                        "caption": "Au sommet de la Tour de l'Horloge après une ascension de 192 marches",
-                        "credit": "Quai de l'horloge",
-                        "datetime": "2014:08:30 14:09:19",
-                        "height": 937,
-                        "marker": {
-                            "coordinates": [
-                                -73.54563055555555,
-                                45.512122222222224
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "d539f226f5",
+                            "type": "flickr",
+                            "id": "25531293901",
+                            "server": "1444"
                         },
-                        "src": {"farm": 2, "secret": "d539f226f5", "type": "flickr", "id": "25531293901", "server": "1444"},
+                        "credit": "Quai de l'horloge",
+                        "height": 937,
+                        "caption": "Au sommet de la Tour de l'Horloge apr\u00e8s une ascension de 192 marches",
+                        "marker": 8,
+                        "datetime": "2014:08:30 14:09:19",
                         "width": 2500
                     },
                     {
-                        "caption": "",
-                        "credit": "Quai de l'horloge",
-                        "datetime": "2014:08:30 14:13:35",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.54575277777778,
-                                45.51227222222222
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "ab502fed74",
+                            "type": "flickr",
+                            "id": "24993458904",
+                            "server": "1707"
                         },
-                        "src": {"farm": 2, "secret": "ab502fed74", "type": "flickr", "id": "24993458904", "server": "1707"},
+                        "credit": "Quai de l'horloge",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 9,
+                        "datetime": "2014:08:30 14:13:35",
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
-                        "credit": "Quai de l'horloge",
-                        "datetime": "2014:08:30 14:13:47",
-                        "height": 1128,
-                        "marker": {
-                            "coordinates": [
-                                -73.54575277777778,
-                                45.512283333333336
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "19dde94898",
+                            "type": "flickr",
+                            "id": "24997246623",
+                            "server": "1698"
                         },
-                        "src": {"farm": 2, "secret": "19dde94898", "type": "flickr", "id": "24997246623", "server": "1698"},
+                        "credit": "Quai de l'horloge",
+                        "height": 1128,
+                        "caption": "",
+                        "marker": 10,
+                        "datetime": "2014:08:30 14:13:47",
                         "width": 2800
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "852de91684",
+                            "type": "flickr",
+                            "id": "24993433654",
+                            "server": "1706"
+                        },
                         "credit": "Quai de l'horloge",
-                        "datetime": "2014:08:30 14:16:42",
                         "height": 900,
-                        "marker": {
-                            "coordinates": [
-                                -73.5467,
-                                45.51231388888889
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "852de91684", "type": "flickr", "id": "24993433654", "server": "1706"},
-                        "width": 1000
-                    }
-                ]
-            }
-        },
-        {
-            "type": "image",
-            "args": {
-                "images": [
-                    {
-                        "caption": "Ô Canada",
-                        "credit": "Vieux-Port",
-                        "datetime": "2014:08:30 14:14:36",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.54560833333333,
-                                45.51229166666667
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "3124ce85b1", "type": "flickr", "id": "24997241093", "server": "1513"},
-                        "width": 1000
-                    },
-                    {
                         "caption": "",
-                        "credit": "Vieux-Port",
-                        "datetime": "2014:08:30 14:24:35",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.55039166666667,
-                                45.509727777777776
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "3d32c27896", "type": "flickr", "id": "25328325070", "server": "1545"},
-                        "width": 750
-                    },
-                    {
-                        "caption": "On oublierait presque qu'il fait froid en hiver",
-                        "credit": "Vieux-Montréal",
-                        "datetime": "2014:08:30 14:28:33",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.55316111111111,
-                                45.50947222222222
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "50e64c7e95", "type": "flickr", "id": "25623963175", "server": "1713"},
-                        "width": 750
+                        "marker": 11,
+                        "datetime": "2014:08:30 14:16:42",
+                        "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
-            "args": {
-                "text": "Il est que le milieu de l'après-midi, et il nous semble avoir parcouru l'essentiel de la ville, un pause Place des Arts s'impose."
-            }
-        },
-        {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Nouvelle ville, nouveau Cartoville",
-                        "credit": "Place des Arts",
-                        "datetime": "2014:08:30 15:25:12",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.56713888888889,
-                                45.507197222222224
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "3124ce85b1",
+                            "type": "flickr",
+                            "id": "24997241093",
+                            "server": "1513"
                         },
-                        "src": {"farm": 2, "secret": "e2a6c236e8", "type": "flickr", "id": "25328322360", "server": "1673"},
+                        "credit": "Vieux-Port",
+                        "height": 750,
+                        "caption": "\u00d4 Canada",
+                        "marker": 12,
+                        "datetime": "2014:08:30 14:14:36",
                         "width": 1000
                     },
                     {
-                        "caption": "Chorégraphie des fontaines",
-                        "credit": "Place des Arts",
-                        "datetime": "2014:08:30 15:25:12",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.56713888888889,
-                                45.507197222222224
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "3d32c27896",
+                            "type": "flickr",
+                            "id": "25328325070",
+                            "server": "1545"
                         },
-                        "src":  {"farm": 2, "secret": "098c5cc955", "type": "flickr", "id": "24997221663", "server": "1483", "extension": "gif"},
+                        "credit": "Vieux-Port",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 13,
+                        "datetime": "2014:08:30 14:24:35",
+                        "width": 750
+                    },
+                    {
+                        "src": {
+                            "farm": 2,
+                            "secret": "50e64c7e95",
+                            "type": "flickr",
+                            "id": "25623963175",
+                            "server": "1713"
+                        },
+                        "credit": "Vieux-Montr\u00e9al",
+                        "height": 1000,
+                        "caption": "On oublierait presque qu'il fait froid en hiver",
+                        "marker": 14,
+                        "datetime": "2014:08:30 14:28:33",
+                        "width": 750
+                    }
+                ]
+            },
+            "type": "image"
+        },
+        {
+            "args": {
+                "text": "Il est que le milieu de l'apr\u00e8s-midi, et il nous semble avoir parcouru l'essentiel de la ville, un pause Place des Arts s'impose."
+            },
+            "type": "text"
+        },
+        {
+            "args": {
+                "images": [
+                    {
+                        "src": {
+                            "farm": 2,
+                            "secret": "e2a6c236e8",
+                            "type": "flickr",
+                            "id": "25328322360",
+                            "server": "1673"
+                        },
+                        "credit": "Place des Arts",
+                        "height": 750,
+                        "caption": "Nouvelle ville, nouveau Cartoville",
+                        "marker": 15,
+                        "datetime": "2014:08:30 15:25:12",
+                        "width": 1000
+                    },
+                    {
+                        "src": {
+                            "extension": "gif",
+                            "farm": 2,
+                            "server": "1483",
+                            "secret": "098c5cc955",
+                            "type": "flickr",
+                            "id": "24997221663"
+                        },
+                        "credit": "Place des Arts",
+                        "height": 750,
+                        "caption": "Chor\u00e9graphie des fontaines",
+                        "marker": 16,
+                        "datetime": "2014:08:30 15:25:12",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "title",
             "args": {
                 "subtitle": "Mont Royal"
-            }
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Et après avoir repris des forces, direction le Mont Royal, LE parc de la ville où il y a une superbe vue."
-            }
+                "text": "Et apr\u00e8s avoir repris des forces, direction le Mont Royal, LE parc de la ville o\u00f9 il y a une superbe vue."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
-                     {
-                        "caption": "",
-                        "credit": "Mont Royal",
-                        "datetime": "2014:08:30 16:47:51",
-                        "height": 948,
-                        "marker": {
-                            "coordinates": [
-                                -73.58666944444444,
-                                45.503525
-                            ],
-                            "size": "small",
-                            "symbol": "park2"
+                    {
+                        "src": {
+                            "farm": 2,
+                            "secret": "4621e8786b",
+                            "type": "flickr",
+                            "id": "25597812786",
+                            "server": "1464"
                         },
-                        "src": {"farm": 2, "secret": "4621e8786b", "type": "flickr", "id": "25597812786", "server": "1464"},
+                        "credit": "Mont Royal",
+                        "height": 948,
+                        "caption": "",
+                        "marker": 17,
+                        "datetime": "2014:08:30 16:47:51",
                         "width": 2276
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
-                        "credit": "Mont Royal",
-                        "datetime": "2014:08:30 16:52:42",
-                        "height": 1105,
-                        "marker": {
-                            "coordinates": [
-                                -73.58718055555555,
-                                45.503658333333334
-                            ],
-                            "size": "small",
-                            "symbol": "park2"
+                        "src": {
+                            "farm": 2,
+                            "secret": "786e1e94e7",
+                            "type": "flickr",
+                            "id": "25531279481",
+                            "server": "1585"
                         },
-                        "src": {"farm": 2, "secret": "786e1e94e7", "type": "flickr", "id": "25531279481", "server": "1585"},
+                        "credit": "Mont Royal",
+                        "height": 1105,
+                        "caption": "",
+                        "marker": 18,
+                        "datetime": "2014:08:30 16:52:42",
                         "width": 2500
                     },
                     {
-                        "caption": "",
-                        "credit": "Mont Royal",
-                        "datetime": "2014:08:30 17:15:14",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.587775,
-                                45.50890277777778
-                            ],
-                            "size": "small",
-                            "symbol": "park2"
+                        "src": {
+                            "farm": 2,
+                            "secret": "6e17c0eb15",
+                            "type": "flickr",
+                            "id": "25597816446",
+                            "server": "1690"
                         },
-                        "src": {"farm": 2, "secret": "6e17c0eb15", "type": "flickr", "id": "25597816446", "server": "1690"},
+                        "credit": "Mont Royal",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 19,
+                        "datetime": "2014:08:30 17:15:14",
                         "width": 750
                     },
                     {
-                        "caption": "Le stade olympique au fond",
-                        "credit": "Mont Royal",
-                        "datetime": "2014:08:30 17:20:47",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.5916361111111,
-                                45.51001388888889
-                            ],
-                            "size": "small",
-                            "symbol": "park2"
+                        "src": {
+                            "farm": 2,
+                            "secret": "a1809898a4",
+                            "type": "flickr",
+                            "id": "25597815196",
+                            "server": "1507"
                         },
-                        "src": {"farm": 2, "secret": "a1809898a4", "type": "flickr", "id": "25597815196", "server": "1507"},
+                        "credit": "Mont Royal",
+                        "height": 750,
+                        "caption": "Le stade olympique au fond",
+                        "marker": 20,
+                        "datetime": "2014:08:30 17:20:47",
                         "width": 1000
                     },
                     {
-                        "caption": "Autre parc, autre faune",
-                        "credit": "Mont Royal",
-                        "datetime": "2014:08:30 17:21:52",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.59202499999999,
-                                45.51034166666667
-                            ],
-                            "size": "small",
-                            "symbol": "park2"
+                        "src": {
+                            "farm": 2,
+                            "secret": "a113cb7399",
+                            "type": "flickr",
+                            "id": "25256388699",
+                            "server": "1521"
                         },
-                        "src": {"farm": 2, "secret": "a113cb7399", "type": "flickr", "id": "25256388699", "server": "1521"},
+                        "credit": "Mont Royal",
+                        "height": 750,
+                        "caption": "Autre parc, autre faune",
+                        "marker": 21,
+                        "datetime": "2014:08:30 17:21:52",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
+        }
+    ],
+    "markers": [
+        {
+            "symbol": "camera",
+            "coordinates": [
+                -73.55272777777778,
+                45.510222222222225
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "camera",
+            "coordinates": [
+                -73.55291666666666,
+                45.51005833333333
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "camera",
+            "coordinates": [
+                -73.55281111111111,
+                45.51015
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "camera",
+            "coordinates": [
+                -73.55140555555555,
+                45.508583333333334
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.55226111111111,
+                45.508472222222224
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "religious-christian",
+            "coordinates": [
+                -73.55705277777777,
+                45.50474444444445
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "religious-christian",
+            "coordinates": [
+                -73.55766944444444,
+                45.50436388888889
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.55319166666666,
+                45.50246944444444
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.54563055555555,
+                45.512122222222224
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.54575277777778,
+                45.51227222222222
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.54575277777778,
+                45.512283333333336
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.5467,
+                45.51231388888889
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.54560833333333,
+                45.51229166666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.55039166666667,
+                45.509727777777776
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.55316111111111,
+                45.50947222222222
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.56713888888889,
+                45.507197222222224
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.56713888888889,
+                45.507197222222224
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "park2",
+            "coordinates": [
+                -73.58666944444444,
+                45.503525
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "park2",
+            "coordinates": [
+                -73.58718055555555,
+                45.503658333333334
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "park2",
+            "coordinates": [
+                -73.587775,
+                45.50890277777778
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "park2",
+            "coordinates": [
+                -73.5916361111111,
+                45.51001388888889
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "park2",
+            "coordinates": [
+                -73.59202499999999,
+                45.51034166666667
+            ],
+            "size": "small"
         }
     ]
 }

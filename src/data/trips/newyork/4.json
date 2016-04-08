@@ -1,917 +1,1238 @@
 {
-    "blocks": [
+    "sections": [
         {
-            "type": "title",
             "args": {
-                "title": "Mardi 26 Août"
-            }
+                "title": "Mardi 26 Ao\u00fbt"
+            },
+            "type": "title"
         },
         {
-            "type": "link",
             "args": {
                 "href": "http://soundcityproject.com/",
+                "type": "audio",
                 "name": "Sound City Project",
-                "description": "Pour avoir les oreilles à New York",
-                "type": "audio"
-            }
+                "description": "Pour avoir les oreilles \u00e0 New York"
+            },
+            "type": "link"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Le grand événement de la journée, c'est: le baptême d'hélicoptère. Ensuite pas d'itinéraire prévu, juste la découverte du sud de Manhattan. Et comme chaque matin maintenant, le métro avec cette découverte: une plateforme qui se retracte pour laisser passer le métro dans le virage."
-            }
+                "text": "Le grand \u00e9v\u00e9nement de la journ\u00e9e, c'est: le bapt\u00eame d'h\u00e9licopt\u00e8re. Ensuite pas d'itin\u00e9raire pr\u00e9vu, juste la d\u00e9couverte du sud de Manhattan. Et comme chaque matin maintenant, le m\u00e9tro avec cette d\u00e9couverte: une plateforme qui se retracte pour laisser passer le m\u00e9tro dans le virage."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "1f112edff7",
+                            "type": "flickr",
+                            "id": "25327702340",
+                            "server": "1515"
+                        },
+                        "width": 1000,
                         "credit": "",
-                        "datetime": "2014:08:26 00:50:28",
                         "height": 750,
-                        "src": {"farm": 2, "secret": "1f112edff7", "type": "flickr", "id": "25327702340", "server": "1515"},
-                        "width": 1000
+                        "caption": "",
+                        "datetime": "2014:08:26 00:50:28"
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "5ae1e5219f",
+                            "type": "flickr",
+                            "id": "25327701810",
+                            "server": "1498"
+                        },
                         "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 0,
                         "datetime": "2014:08:26 09:45:01",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.98429166666666,
-                                40.74308333333333
-                            ],
-                            "size": "small",
-                            "symbol": "rail-metro"
-                        },
-                        "src": {"farm": 2, "secret": "5ae1e5219f", "type": "flickr", "id": "25327701810", "server": "1498"},
                         "width": 750
                     },
                     {
-                        "caption": "",
-                        "credit": "",
-                        "datetime": "2014:08:26 09:47:58",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.98431388888889,
-                                40.743069444444444
-                            ],
-                            "size": "small",
-                            "symbol": "rail-metro"
+                        "src": {
+                            "farm": 2,
+                            "secret": "8f230cdcc9",
+                            "type": "flickr",
+                            "id": "25623341215",
+                            "server": "1699"
                         },
-                        "src": {"farm": 2, "secret": "8f230cdcc9", "type": "flickr", "id": "25623341215", "server": "1699"},
+                        "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 1,
+                        "datetime": "2014:08:26 09:47:58",
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "title",
             "args": {
-                "subtitle": "Hélicoptère"
-            }
+                "subtitle": "H\u00e9licopt\u00e8re"
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Vrai attraction touristique du moment, les touristes n'arrêtent pas de circuler dans l'héliport. Le vol consistera à aller survoler la statue de Liberté, remonter l'Hudson River à l'ouest de manhattan puis de faire demi-tour au niveau de Central Park."
-            }
+                "text": "Vrai attraction touristique du moment, les touristes n'arr\u00eatent pas de circuler dans l'h\u00e9liport. Le vol consistera \u00e0 aller survoler la statue de Libert\u00e9, remonter l'Hudson River \u00e0 l'ouest de manhattan puis de faire demi-tour au niveau de Central Park."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
-                        "credit": "",
-                        "datetime": "2014:08:26 10:51:19",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.05201435089111,
-                                40.684413144240374
-                            ],
-                            "size": "small",
-                            "symbol": "heliport"
+                        "src": {
+                            "farm": 2,
+                            "secret": "eff86420e5",
+                            "type": "flickr",
+                            "id": "25255778889",
+                            "server": "1555"
                         },
-                        "src": {"farm": 2, "secret": "eff86420e5", "type": "flickr", "id": "25255778889", "server": "1555"},
+                        "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 2,
+                        "datetime": "2014:08:26 10:51:19",
                         "width": 750
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "05b12d96c4",
+                            "type": "flickr",
+                            "id": "24996614253",
+                            "server": "1602"
+                        },
+                        "width": 1000,
                         "credit": "",
-                        "datetime": "2014:08:26 11:00:22",
                         "height": 750,
-                        "src": {"farm": 2, "secret": "05b12d96c4", "type": "flickr", "id": "24996614253", "server": "1602"},
-                        "width": 1000
+                        "caption": "",
+                        "datetime": "2014:08:26 11:00:22"
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "a93225ac5e",
+                            "type": "flickr",
+                            "id": "25623339715",
+                            "server": "1688"
+                        },
                         "credit": "",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 3,
                         "datetime": "2014:08:26 11:02:23",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -74.00811195373535,
-                                40.701203324046986
-                            ],
-                            "size": "small",
-                            "symbol": "heliport"
-                        },
-                        "src": {"farm": 2, "secret": "a93225ac5e", "type": "flickr", "id": "25623339715", "server": "1688"},
                         "width": 1000
                     },
                     {
-                        "caption": "",
-                        "credit": "",
-                        "datetime": "2014:08:26 11:03:57",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -74.00811195373535,
-                                40.701203324046986
-                            ],
-                            "size": "small",
-                            "symbol": "heliport"
+                        "src": {
+                            "farm": 2,
+                            "secret": "2bc787946a",
+                            "type": "flickr",
+                            "id": "25255777429",
+                            "server": "1683"
                         },
-                        "src": {"farm": 2, "secret": "2bc787946a", "type": "flickr", "id": "25255777429", "server": "1683"},
+                        "credit": "",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 4,
+                        "datetime": "2014:08:26 11:03:57",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "title",
             "args": {
                 "subtitle": "Ferry"
-            }
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "On a commencé par le métro, puis l'hélicoptère, pourquoi s'arrêter en si bon chemin, le ferry pour Staten Island est juste à côté. On passe à côté de la statue de la Liberté, cette fois-ci sur l'eau. Une fois arrivé à Staten Island, course dans le port pour prendre le ferry qui repart dans l'autre sens sur Manhattan."
-            }
+                "text": "On a commenc\u00e9 par le m\u00e9tro, puis l'h\u00e9licopt\u00e8re, pourquoi s'arr\u00eater en si bon chemin, le ferry pour Staten Island est juste \u00e0 c\u00f4t\u00e9. On passe \u00e0 c\u00f4t\u00e9 de la statue de la Libert\u00e9, cette fois-ci sur l'eau. Une fois arriv\u00e9 \u00e0 Staten Island, course dans le port pour prendre le ferry qui repart dans l'autre sens sur Manhattan."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "5184375c50",
+                            "type": "flickr",
+                            "id": "24992826234",
+                            "server": "1529"
+                        },
                         "credit": "Staten Island Ferry",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 5,
                         "datetime": "2014:08:26 11:38:39",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -74.02107222222222,
-                                40.696861111111104
-                            ],
-                            "size": "small",
-                            "symbol": "ferry"
-                        },
-                        "src": {"farm": 2, "secret": "5184375c50", "type": "flickr", "id": "24992826234", "server": "1529"},
                         "width": 1000
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "1bf22a3026",
+                            "type": "flickr",
+                            "id": "25530656261",
+                            "server": "1707"
+                        },
                         "credit": "Staten Island Ferry",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 6,
                         "datetime": "2014:08:26 11:47:22",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.053725,
-                                40.66014444444444
-                            ],
-                            "size": "small",
-                            "symbol": "ferry"
-                        },
-                        "src": {"farm": 2, "secret": "1bf22a3026", "type": "flickr", "id": "25530656261", "server": "1707"},
                         "width": 750
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "489b5963da",
+                            "type": "flickr",
+                            "id": "25623336335",
+                            "server": "1639"
+                        },
                         "credit": "Staten Island Ferry",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 7,
                         "datetime": "2014:08:26 12:20:47",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.02326944444444,
-                                40.695227777777774
-                            ],
-                            "size": "small",
-                            "symbol": "ferry"
-                        },
-                        "src": {"farm": 2, "secret": "489b5963da", "type": "flickr", "id": "25623336335", "server": "1639"},
                         "width": 750
                     },
                     {
-                        "caption": "",
-                        "credit": "Staten Island Ferry",
-                        "datetime": "2014:08:26 12:22:18",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -74.01712777777777,
-                                40.69763611111111
-                            ],
-                            "size": "small",
-                            "symbol": "ferry"
+                        "src": {
+                            "farm": 2,
+                            "secret": "efe5b4b6da",
+                            "type": "flickr",
+                            "id": "25597201806",
+                            "server": "1694"
                         },
-                        "src": {"farm": 2, "secret": "efe5b4b6da", "type": "flickr", "id": "25597201806", "server": "1694"},
+                        "credit": "Staten Island Ferry",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 8,
+                        "datetime": "2014:08:26 12:22:18",
                         "width": 1000
                     },
                     {
-                        "caption": "",
-                        "credit": "Staten Island Ferry",
-                        "datetime": "2014:08:26 12:26:38",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -74.01341111111111,
-                                40.700183333333335
-                            ],
-                            "size": "small",
-                            "symbol": "ferry"
+                        "src": {
+                            "farm": 2,
+                            "secret": "7e1214604a",
+                            "type": "flickr",
+                            "id": "24992823744",
+                            "server": "1540"
                         },
-                        "src": {"farm": 2, "secret": "7e1214604a", "type": "flickr", "id": "24992823744", "server": "1540"},
+                        "credit": "Staten Island Ferry",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 9,
+                        "datetime": "2014:08:26 12:26:38",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "title",
             "args": {
                 "subtitle": ""
-            }
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Après avoir aperçu les gratte-ciels les jours précédents et notamment le One World Trade Center, remplaçant les Twins Towers, c'est enfin le moment de s'y rapprocher. Mais aussi de gouter au premier burger new yorkais."
-            }
+                "text": "Apr\u00e8s avoir aper\u00e7u les gratte-ciels les jours pr\u00e9c\u00e9dents et notamment le One World Trade Center, rempla\u00e7ant les Twins Towers, c'est enfin le moment de s'y rapprocher. Mais aussi de gouter au premier burger new yorkais."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "957d19ff0b",
+                            "type": "flickr",
+                            "id": "25623334205",
+                            "server": "1492"
+                        },
                         "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 10,
                         "datetime": "2014:08:26 12:57:16",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.01055833333334,
-                                40.708175000000004
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "957d19ff0b", "type": "flickr", "id": "25623334205", "server": "1492"},
                         "width": 750
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "611c14e4d4",
+                            "type": "flickr",
+                            "id": "25530651831",
+                            "server": "1546"
+                        },
                         "credit": "One World Trade Center",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 11,
                         "datetime": "2014:08:26 13:03:53",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.01190833333334,
-                                40.70964444444445
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "611c14e4d4", "type": "flickr", "id": "25530651831", "server": "1546"},
                         "width": 750
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "d5cfedcf80",
+                            "type": "flickr",
+                            "id": "24996605943",
+                            "server": "1448"
+                        },
                         "credit": "Shack Shake",
-                        "datetime": "2014:08:26 13:32:15",
                         "height": 666,
-                        "marker": {
-                            "coordinates": [
-                                -74.014825,
-                                40.715244444444444
-                            ],
-                            "size": "small",
-                            "symbol": "fast-food"
-                        },
-                        "src": {"farm": 2, "secret": "d5cfedcf80", "type": "flickr", "id": "24996605943", "server": "1448"},
+                        "caption": "",
+                        "marker": 12,
+                        "datetime": "2014:08:26 13:32:15",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Premier burger new yorkais",
+                        "src": {
+                            "farm": 2,
+                            "secret": "c0fbac92ca",
+                            "type": "flickr",
+                            "id": "25255770779",
+                            "server": "1537"
+                        },
                         "credit": "Shack Shake",
+                        "height": 750,
+                        "caption": "Premier burger new yorkais",
+                        "marker": 13,
                         "datetime": "2014:08:26 13:28:28",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -74.0150388888889,
-                                40.71501666666667
-                            ],
-                            "size": "small",
-                            "symbol": "fast-food"
-                        },
-                        "src": {"farm": 2, "secret": "c0fbac92ca", "type": "flickr", "id": "25255770779", "server": "1537"},
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "fe93c1300e",
+                            "type": "flickr",
+                            "id": "24996605383",
+                            "server": "1501"
+                        },
                         "credit": "One World Trade Center",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 14,
                         "datetime": "2014:08:26 13:53:13",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.01371666666667,
-                                40.71272777777778
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "fe93c1300e", "type": "flickr", "id": "24996605383", "server": "1501"},
                         "width": 750
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "e53706ee8b",
+                            "type": "flickr",
+                            "id": "25530647531",
+                            "server": "1688"
+                        },
                         "credit": "One World Trade Center",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 15,
                         "datetime": "2014:08:26 14:06:42",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.01493055555555,
-                                40.713750000000005
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "e53706ee8b", "type": "flickr", "id": "25530647531", "server": "1688"},
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Au pied de la One World Trade Center Tower, Ground Zero, 2 grandes fontaines représentant les tours tombées le 11 septembre. "
-            }
+                "text": "Au pied de la One World Trade Center Tower, Ground Zero, 2 grandes fontaines repr\u00e9sentant les tours tomb\u00e9es le 11 septembre. "
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "7ecbed06cc",
+                            "type": "flickr",
+                            "id": "25504669052",
+                            "server": "1578"
+                        },
                         "credit": "Ground Zero",
-                        "datetime": "2014:08:26 13:55:47",
                         "height": 384,
-                        "marker": {
-                            "coordinates": [
-                                -74.01398333333333,
-                                40.712161111111115
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "7ecbed06cc", "type": "flickr", "id": "25504669052", "server": "1578"},
+                        "caption": "",
+                        "marker": 16,
+                        "datetime": "2014:08:26 13:55:47",
                         "width": 1000
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "b1403b0964",
+                            "type": "flickr",
+                            "id": "25504668032",
+                            "server": "1504"
+                        },
                         "credit": "Ground Zero",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 17,
                         "datetime": "2014:08:26 14:02:42",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.013275,
-                                40.71138333333334
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "b1403b0964", "type": "flickr", "id": "25504668032", "server": "1504"},
                         "width": 750
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "813aae9431",
+                            "type": "flickr",
+                            "id": "24992819004",
+                            "server": "1679"
+                        },
                         "credit": "Ground Zero",
-                        "datetime": "2014:08:26 14:02:06",
                         "height": 282,
-                        "marker": {
-                            "coordinates": [
-                                -74.01304722222223,
-                                40.71131944444445
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "813aae9431", "type": "flickr", "id": "24992819004", "server": "1679"},
+                        "caption": "",
+                        "marker": 18,
+                        "datetime": "2014:08:26 14:02:06",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "À deux pas de là, Wall Street."
-            }
+                "text": "\u00c0 deux pas de l\u00e0, Wall Street."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "5442f493d8",
+                            "type": "flickr",
+                            "id": "25255766079",
+                            "server": "1513"
+                        },
                         "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 19,
                         "datetime": "2014:08:26 14:12:10",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.01091111111111,
-                                40.708850000000005
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "5442f493d8", "type": "flickr", "id": "25255766079", "server": "1513"},
                         "width": 750
                     },
                     {
+                        "src": {
+                            "farm": 2,
+                            "secret": "c004592c5a",
+                            "type": "flickr",
+                            "id": "25504665642",
+                            "server": "1486"
+                        },
+                        "credit": "Wall Street",
+                        "height": 1000,
                         "caption": "Argent sale",
-                        "credit": "Wall Street",
+                        "marker": 20,
                         "datetime": "2014:08:26 14:30:36",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.0122,
-                                40.70946388888889
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "c004592c5a", "type": "flickr", "id": "25504665642", "server": "1486"},
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "317a32f1d4",
+                            "type": "flickr",
+                            "id": "25504661182",
+                            "server": "1703"
+                        },
                         "credit": "Wall Street",
-                        "datetime": "2014:08:26 14:37:52",
                         "height": 348,
-                        "marker": {
-                            "coordinates": [
-                                -74.01052777777778,
-                                40.70691388888889
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "317a32f1d4", "type": "flickr", "id": "25504661182", "server": "1703"},
+                        "caption": "",
+                        "marker": 21,
+                        "datetime": "2014:08:26 14:37:52",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "56b83bc69c",
+                            "type": "flickr",
+                            "id": "25504664802",
+                            "server": "1578"
+                        },
                         "credit": "Wall Street",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 22,
                         "datetime": "2014:08:26 14:32:24",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.01040555555555,
-                                40.70698055555556
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "56b83bc69c", "type": "flickr", "id": "25504664802", "server": "1578"},
                         "width": 750
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "68c0f622e9",
+                            "type": "flickr",
+                            "id": "25623325395",
+                            "server": "1601"
+                        },
                         "credit": "Wall Street",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 23,
                         "datetime": "2014:08:26 14:35:51",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.0117861111111,
-                                40.70715277777778
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "68c0f622e9", "type": "flickr", "id": "25623325395", "server": "1601"},
                         "width": 750
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "e2c2d0f384",
+                            "type": "flickr",
+                            "id": "25255762239",
+                            "server": "1706"
+                        },
                         "credit": "Wall Street",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 24,
                         "datetime": "2014:08:26 14:36:11",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.01035277777778,
-                                40.7072
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "e2c2d0f384", "type": "flickr", "id": "25255762239", "server": "1706"},
                         "width": 750
                     },
                     {
-                        "caption": "Quartier ultra sécurisé",
+                        "src": {
+                            "farm": 2,
+                            "secret": "95990b85de",
+                            "type": "flickr",
+                            "id": "24996595683",
+                            "server": "1456"
+                        },
                         "credit": "Wall Street",
+                        "height": 1000,
+                        "caption": "Quartier ultra s\u00e9curis\u00e9",
+                        "marker": 25,
                         "datetime": "2014:08:26 14:41:02",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.011725,
-                                40.706
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "95990b85de", "type": "flickr", "id": "24996595683", "server": "1456"},
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Il est temps de remonter progressivement sur l'hotel en passant par le décevant Chinatown et..."
-            }
+                "text": "Il est temps de remonter progressivement sur l'hotel en passant par le d\u00e9cevant Chinatown et..."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "9f748c8d63",
+                            "type": "flickr",
+                            "id": "25623321255",
+                            "server": "1607"
+                        },
                         "credit": "Starbucks",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 26,
                         "datetime": "2014:08:26 15:39:48",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -74.01126111111111,
-                                40.70508055555556
-                            ],
-                            "size": "small",
-                            "symbol": "cafe"
-                        },
-                        "src": {"farm": 2, "secret": "9f748c8d63", "type": "flickr", "id": "25623321255", "server": "1607"},
                         "width": 1000
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "cf92d2f243",
+                            "type": "flickr",
+                            "id": "25255758139",
+                            "server": "1507"
+                        },
                         "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 27,
                         "datetime": "2014:08:26 15:47:53",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.01171944444444,
-                                40.70765277777778
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "cf92d2f243", "type": "flickr", "id": "25255758139", "server": "1507"},
                         "width": 750
                     },
                     {
+                        "src": {
+                            "farm": 2,
+                            "secret": "0a258bf3f8",
+                            "type": "flickr",
+                            "id": "25504658252",
+                            "server": "1449"
+                        },
+                        "credit": "",
+                        "height": 1000,
                         "caption": "Guerre des journaux:\nWall Street Journal vs. New York Times",
-                        "credit": "",
+                        "marker": 28,
                         "datetime": "2014:08:26 16:06:53",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.00170833333334,
-                                40.71528888888889
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "0a258bf3f8", "type": "flickr", "id": "25504658252", "server": "1449"},
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Même les feux de signalisation font du skateboard",
+                        "src": {
+                            "farm": 2,
+                            "secret": "ea279f1265",
+                            "type": "flickr",
+                            "id": "25530636631",
+                            "server": "1658"
+                        },
                         "credit": "Chinatown",
+                        "height": 1000,
+                        "caption": "M\u00eame les feux de signalisation font du skateboard",
+                        "marker": 29,
                         "datetime": "2014:08:26 16:08:51",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -74.00047222222223,
-                                40.714486111111114
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "ea279f1265", "type": "flickr", "id": "25530636631", "server": "1658"},
                         "width": 750
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "92b4e62e5d",
+                            "type": "flickr",
+                            "id": "24992805264",
+                            "server": "1555"
+                        },
                         "credit": "Chinatown",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 30,
                         "datetime": "2014:08:26 16:10:36",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.99970277777778,
-                                40.71433888888889
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "92b4e62e5d", "type": "flickr", "id": "24992805264", "server": "1555"},
                         "width": 750
                     },
                     {
+                        "src": {
+                            "farm": 2,
+                            "secret": "1bf840bbae",
+                            "type": "flickr",
+                            "id": "25623315815",
+                            "server": "1501"
+                        },
+                        "credit": "Chinatown",
+                        "height": 1000,
                         "caption": "Signalisation en chinois ?",
-                        "credit": "Chinatown",
+                        "marker": 31,
                         "datetime": "2014:08:26 16:15:02",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.99790833333333,
-                                40.714286111111115
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "1bf840bbae", "type": "flickr", "id": "25623315815", "server": "1501"},
                         "width": 750
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "deac99e935",
+                            "type": "flickr",
+                            "id": "24996588013",
+                            "server": "1693"
+                        },
                         "credit": "Chinatown",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 32,
                         "datetime": "2014:08:26 16:17:14",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.99786388888889,
-                                40.71393611111112
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "deac99e935", "type": "flickr", "id": "24996588013", "server": "1693"},
                         "width": 1000
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "03a2b65e32",
+                            "type": "flickr",
+                            "id": "25327671500",
+                            "server": "1527"
+                        },
                         "credit": "Chinatown",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 33,
                         "datetime": "2014:08:26 16:19:12",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.99691111111112,
-                                40.71476666666667
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "03a2b65e32", "type": "flickr", "id": "25327671500", "server": "1527"},
                         "width": 750
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "... East Village, quartier multi culturel et un peu bordélique..."
-            }
+                "text": "... East Village, quartier multi culturel et un peu bord\u00e9lique..."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "de1ca7250a",
+                            "type": "flickr",
+                            "id": "24996585553",
+                            "server": "1594"
+                        },
                         "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 34,
                         "datetime": "2014:08:26 16:42:30",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.996475,
-                                40.72115277777778
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "de1ca7250a", "type": "flickr", "id": "24996585553", "server": "1594"},
                         "width": 750
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "9295719cac",
+                            "type": "flickr",
+                            "id": "24992799644",
+                            "server": "1554"
+                        },
                         "credit": "Chrome Shop",
-                        "datetime": "2014:08:26 16:52:22",
                         "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.99431666666666,
-                                40.71996388888889
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "9295719cac", "type": "flickr", "id": "24992799644", "server": "1554"},
+                        "caption": "",
+                        "marker": 35,
+                        "datetime": "2014:08:26 16:52:22",
                         "width": 1000
                     },
                     {
-                        "caption": "",
-                        "credit": "East Village",
-                        "datetime": "2014:08:26 17:05:12",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.99495,
-                                40.724786111111115
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "6e1fd6232e",
+                            "type": "flickr",
+                            "id": "24996584113",
+                            "server": "1455"
                         },
-                        "src": {"farm": 2, "secret": "6e1fd6232e", "type": "flickr", "id": "24996584113", "server": "1455"},
+                        "credit": "East Village",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 36,
+                        "datetime": "2014:08:26 17:05:12",
                         "width": 750
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "e0228e4b18",
+                            "type": "flickr",
+                            "id": "25530627571",
+                            "server": "1545"
+                        },
                         "credit": "East Village",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 37,
                         "datetime": "2014:08:26 17:21:04",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.99371388888889,
-                                40.7275
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "e0228e4b18", "type": "flickr", "id": "25530627571", "server": "1545"},
                         "width": 1000
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "4755da3747",
+                            "type": "flickr",
+                            "id": "25255747159",
+                            "server": "1599"
+                        },
                         "credit": "East Village",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 38,
                         "datetime": "2014:08:26 17:28:40",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.99211944444444,
-                                40.72903055555556
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "4755da3747", "type": "flickr", "id": "25255747159", "server": "1599"},
                         "width": 1000
                     },
                     {
-                        "caption": "",
+                        "src": {
+                            "farm": 2,
+                            "secret": "4d359fb418",
+                            "type": "flickr",
+                            "id": "25623307695",
+                            "server": "1481"
+                        },
                         "credit": "East Village",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 39,
                         "datetime": "2014:08:26 17:30:55",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.99015833333334,
-                                40.72946666666667
-                            ],
-                            "size": "small",
-                            "symbol": ""
-                        },
-                        "src": {"farm": 2, "secret": "4d359fb418", "type": "flickr", "id": "25623307695", "server": "1481"},
                         "width": 1000
                     },
                     {
-                        "caption": "",
-                        "credit": "East Village",
-                        "datetime": "2014:08:26 17:34:04",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.98790833333334,
-                                40.72861944444445
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "fe96658aac",
+                            "type": "flickr",
+                            "id": "25597172446",
+                            "server": "1628"
                         },
-                        "src": {"farm": 2, "secret": "fe96658aac", "type": "flickr", "id": "25597172446", "server": "1628"},
+                        "credit": "East Village",
+                        "height": 750,
+                        "caption": "",
+                        "marker": 40,
+                        "datetime": "2014:08:26 17:34:04",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "La vadrouille de la journée s'arrêtera ici. Place à la pause qui se fera dans un bar: Proletariat avec des bières inconnues et repas: chez Momofuku pour manger du ramen."
-            }
+                "text": "La vadrouille de la journ\u00e9e s'arr\u00eatera ici. Place \u00e0 la pause qui se fera dans un bar: Proletariat avec des bi\u00e8res inconnues et repas: chez Momofuku pour manger du ramen."
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "Pre-dinner beer",
-                        "credit": "Proletariat",
-                        "datetime": "2014:08:26 17:48:30",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.985275,
-                                40.72759166666667
-                            ],
-                            "size": "small",
-                            "symbol": "beer"
+                        "src": {
+                            "farm": 2,
+                            "secret": "a8a166668f",
+                            "type": "flickr",
+                            "id": "25327663330",
+                            "server": "1536"
                         },
-                        "src": {"farm": 2, "secret": "a8a166668f", "type": "flickr", "id": "25327663330", "server": "1536"},
+                        "credit": "Proletariat",
+                        "height": 750,
+                        "caption": "Pre-dinner beer",
+                        "marker": 41,
+                        "datetime": "2014:08:26 17:48:30",
                         "width": 1000
                     },
                     {
-                        "caption": "Ramen",
-                        "credit": "Momofuku",
-                        "datetime": "2014:08:26 19:37:07",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.985275,
-                                40.72759166666667
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "farm": 2,
+                            "secret": "2ffe7b2630",
+                            "type": "flickr",
+                            "id": "25504642132",
+                            "server": "1563"
                         },
-                        "src": {"farm": 2, "secret": "2ffe7b2630", "type": "flickr", "id": "25504642132", "server": "1563"},
+                        "credit": "Momofuku",
+                        "height": 1000,
+                        "caption": "Ramen",
+                        "marker": 42,
+                        "datetime": "2014:08:26 19:37:07",
                         "width": 750
                     },
                     {
-                        "caption": "Post-dinner beer",
-                        "credit": "Proletariat",
-                        "datetime": "2014:08:26 17:55:47",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.985275,
-                                40.72759166666667
-                            ],
-                            "size": "small",
-                            "symbol": "beer"
+                        "src": {
+                            "farm": 2,
+                            "secret": "fd03c0e9fd",
+                            "type": "flickr",
+                            "id": "25530622291",
+                            "server": "1616"
                         },
-                        "src": {"farm": 2, "secret": "fd03c0e9fd", "type": "flickr", "id": "25530622291", "server": "1616"},
+                        "credit": "Proletariat",
+                        "height": 750,
+                        "caption": "Post-dinner beer",
+                        "marker": 43,
+                        "datetime": "2014:08:26 17:55:47",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "iframe",
             "args": {
                 "src": "https://embed.spotify.com/?uri=spotify:track:0mMvdkwnF5PannienCx3DD",
                 "title": "Musique entendue au Proletariat"
-            }
+            },
+            "type": "iframe"
+        }
+    ],
+    "markers": [
+        {
+            "symbol": "rail-metro",
+            "coordinates": [
+                -73.98429166666666,
+                40.74308333333333
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "rail-metro",
+            "coordinates": [
+                -73.98431388888889,
+                40.743069444444444
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "heliport",
+            "coordinates": [
+                -74.05201435089111,
+                40.684413144240374
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "heliport",
+            "coordinates": [
+                -74.00811195373535,
+                40.701203324046986
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "heliport",
+            "coordinates": [
+                -74.00811195373535,
+                40.701203324046986
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "ferry",
+            "coordinates": [
+                -74.02107222222222,
+                40.696861111111104
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "ferry",
+            "coordinates": [
+                -74.053725,
+                40.66014444444444
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "ferry",
+            "coordinates": [
+                -74.02326944444444,
+                40.695227777777774
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "ferry",
+            "coordinates": [
+                -74.01712777777777,
+                40.69763611111111
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "ferry",
+            "coordinates": [
+                -74.01341111111111,
+                40.700183333333335
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.01055833333334,
+                40.708175000000004
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.01190833333334,
+                40.70964444444445
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "fast-food",
+            "coordinates": [
+                -74.014825,
+                40.715244444444444
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "fast-food",
+            "coordinates": [
+                -74.0150388888889,
+                40.71501666666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.01371666666667,
+                40.71272777777778
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.01493055555555,
+                40.713750000000005
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.01398333333333,
+                40.712161111111115
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.013275,
+                40.71138333333334
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.01304722222223,
+                40.71131944444445
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.01091111111111,
+                40.708850000000005
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.0122,
+                40.70946388888889
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.01052777777778,
+                40.70691388888889
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.01040555555555,
+                40.70698055555556
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.0117861111111,
+                40.70715277777778
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.01035277777778,
+                40.7072
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.011725,
+                40.706
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "cafe",
+            "coordinates": [
+                -74.01126111111111,
+                40.70508055555556
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.01171944444444,
+                40.70765277777778
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.00170833333334,
+                40.71528888888889
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -74.00047222222223,
+                40.714486111111114
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99970277777778,
+                40.71433888888889
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99790833333333,
+                40.714286111111115
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99786388888889,
+                40.71393611111112
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99691111111112,
+                40.71476666666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.996475,
+                40.72115277777778
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99431666666666,
+                40.71996388888889
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99495,
+                40.724786111111115
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99371388888889,
+                40.7275
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99211944444444,
+                40.72903055555556
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.99015833333334,
+                40.72946666666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.98790833333334,
+                40.72861944444445
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "beer",
+            "coordinates": [
+                -73.985275,
+                40.72759166666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -73.985275,
+                40.72759166666667
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "beer",
+            "coordinates": [
+                -73.985275,
+                40.72759166666667
+            ],
+            "size": "small"
         }
     ]
 }
-

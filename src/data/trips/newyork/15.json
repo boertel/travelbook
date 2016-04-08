@@ -1,141 +1,179 @@
 {
-    "blocks": [
+    "sections": [
         {
-            "type": "title",
             "args": {
-                "title": "Samedi 6 Septembre",
-                "subtitle": "Départ"
-            }
+                "subtitle": "D\u00e9part",
+                "title": "Samedi 6 Septembre"
+            },
+            "type": "title"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Même vivant aux États-Unis, il faut finir ces vacances dans les règles de l'art et s'imprégner totalement des US: Starbucks + Mac Donald's"
-            }
+                "text": "M\u00eame vivant aux \u00c9tats-Unis, il faut finir ces vacances dans les r\u00e8gles de l'art et s'impr\u00e9gner totalement des US: Starbucks + Mac Donald's"
+            },
+            "type": "text"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
-                        "credit": "Starbucks",
-                        "datetime": "2014:09:06 08:43:43",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -72.65918055555557,
-                                41.69218333333333
-                            ],
-                            "size": "small",
-                            "symbol": "restaurant"
+                        "src": {
+                            "farm": 2,
+                            "secret": "5902d4022a",
+                            "type": "flickr",
+                            "id": "25505730272",
+                            "server": "1478"
                         },
-                        "src": {"farm": 2, "secret": "5902d4022a", "type": "flickr", "id": "25505730272", "server": "1478"},
+                        "credit": "Starbucks",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 0,
+                        "datetime": "2014:09:06 08:43:43",
                         "width": 750
                     },
                     {
-                        "caption": "Étude de Hamburgerologie",
-                        "credit": "Mac Donald's",
-                        "datetime": "2014:09:06 12:35:26",
-                        "height": 750,
-                        "marker": {
-                            "coordinates": [
-                                -73.78765,
-                                40.64002222222222
-                            ],
-                            "size": "small",
-                            "symbol": "restaurant"
+                        "src": {
+                            "farm": 2,
+                            "secret": "18c9bfb4fc",
+                            "type": "flickr",
+                            "id": "24993880494",
+                            "server": "1674"
                         },
-                        "src": {"farm": 2, "secret": "18c9bfb4fc", "type": "flickr", "id": "24993880494", "server": "1674"},
+                        "credit": "Mac Donald's",
+                        "height": 750,
+                        "caption": "\u00c9tude de Hamburgerologie",
+                        "marker": 1,
+                        "datetime": "2014:09:06 12:35:26",
                         "width": 1000
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "image",
             "args": {
                 "images": [
                     {
-                        "caption": "",
-                        "credit": "",
-                        "datetime": "2014:09:06 08:43:43",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -72.65918055555557,
-                                41.69218333333333
-                            ],
-                            "size": "small",
-                            "symbol": ""
+                        "src": {
+                            "extension": "gif",
+                            "farm": 2,
+                            "server": "1690",
+                            "secret": "dce0fdc9f4",
+                            "type": "flickr",
+                            "id": "24993883274"
                         },
-                        "src": {"farm": 2, "secret": "dce0fdc9f4", "type": "flickr", "id": "24993883274", "server": "1690", "extension": "gif"},
+                        "credit": "",
+                        "height": 1000,
+                        "caption": "",
+                        "marker": 2,
+                        "datetime": "2014:09:06 08:43:43",
                         "width": 750
                     },
                     {
-                        "caption": "Retour à la case départ",
-                        "credit": "JFK Airport",
-                        "datetime": "2014:09:06 13:37:31",
-                        "height": 1000,
-                        "marker": {
-                            "coordinates": [
-                                -73.78353888888888,
-                                40.64837222222222
-                            ],
-                            "size": "small",
-                            "symbol": "airport"
+                        "src": {
+                            "farm": 2,
+                            "secret": "ef138ae55f",
+                            "type": "flickr",
+                            "id": "25624393665",
+                            "server": "1605"
                         },
-                        "src": {"farm": 2, "secret": "ef138ae55f", "type": "flickr", "id": "25624393665", "server": "1605"},
+                        "credit": "JFK Airport",
+                        "height": 1000,
+                        "caption": "Retour \u00e0 la case d\u00e9part",
+                        "marker": 3,
+                        "datetime": "2014:09:06 13:37:31",
                         "width": 612
                     },
                     {
-                        "caption": "US Open jusqu'au bout",
-                        "credit": "On the plane",
-                        "datetime": "2014:09:06 13:37:31",
-                        "height": 1136,
-                        "marker": {
-                            "coordinates": [
-                                -73.78353888888888,
-                                40.64837222222222
-                            ],
-                            "size": "small",
-                            "symbol": "airport"
+                        "src": {
+                            "farm": 2,
+                            "secret": "55f900a531",
+                            "type": "flickr",
+                            "id": "25505727132",
+                            "server": "1695"
                         },
-                        "src": {"farm": 2, "secret": "55f900a531", "type": "flickr", "id": "25505727132", "server": "1695"},
+                        "credit": "On the plane",
+                        "height": 1136,
+                        "caption": "US Open jusqu'au bout",
+                        "marker": 4,
+                        "datetime": "2014:09:06 13:37:31",
                         "width": 640
                     }
                 ]
-            }
+            },
+            "type": "image"
         },
         {
-            "type": "text",
             "args": {
-                "text": "Les deux semaines sont passées bien vite: découvrir de nouvelles villes et un nouveau pays, manger pleins de bons choses, boires des bières inconnues, essayer un nouveau système de transport, assister à l'US Open et pleins d'autres choses. C'était génial. J'éspère que ces quinzes pages virtuelles vous auront aussi fait voyager."
-            }
+                "text": "Les deux semaines sont pass\u00e9es bien vite: d\u00e9couvrir de nouvelles villes et un nouveau pays, manger pleins de bons choses, boires des bi\u00e8res inconnues, essayer un nouveau syst\u00e8me de transport, assister \u00e0 l'US Open et pleins d'autres choses. C'\u00e9tait g\u00e9nial. J'\u00e9sp\u00e8re que ces quinzes pages virtuelles vous auront aussi fait voyager."
+            },
+            "type": "text"
         },
         {
-            "type": "link",
             "args": {
-                "type": "photo",
                 "href": "http://grimchtour.wordpress.com",
+                "type": "photo",
                 "name": "GrimchTour",
-                "description": "Pour encore plus de photos, allez visiter les photos de mon frère"
-            }
+                "description": "Pour encore plus de photos, allez visiter les photos de mon fr\u00e8re"
+            },
+            "type": "link"
         },
         {
-            "type": "title",
             "args": {
-                "title": "Thank You, Merci",
-                "subtitle": "à mon frère pour ce voyage",
-                "style": "center"
-            }
+                "style": "center",
+                "subtitle": "\u00e0 mon fr\u00e8re pour ce voyage",
+                "title": "Thank You, Merci"
+            },
+            "type": "title"
         },
         {
-            "type": "title",
             "args": {
-                "subtitle": "– FIN –",
-                "style": "center"
-            }
+                "style": "center",
+                "subtitle": "\u2013 FIN \u2013"
+            },
+            "type": "title"
+        }
+    ],
+    "markers": [
+        {
+            "symbol": "restaurant",
+            "coordinates": [
+                -72.65918055555557,
+                41.69218333333333
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "restaurant",
+            "coordinates": [
+                -73.78765,
+                40.64002222222222
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "",
+            "coordinates": [
+                -72.65918055555557,
+                41.69218333333333
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "airport",
+            "coordinates": [
+                -73.78353888888888,
+                40.64837222222222
+            ],
+            "size": "small"
+        },
+        {
+            "symbol": "airport",
+            "coordinates": [
+                -73.78353888888888,
+                40.64837222222222
+            ],
+            "size": "small"
         }
     ]
 }
