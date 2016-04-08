@@ -85,7 +85,6 @@ function transform(data, props) {
             })
             section.args.ratio = ratio;
         });
-    console.log(data, props);
     return data;
 }
 

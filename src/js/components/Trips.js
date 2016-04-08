@@ -9,7 +9,6 @@ import { asynchronous } from '../asynchronous'
 
 class Trips extends React.Component {
     render() {
-        console.log(this.props.trips);
         const { data, isFulfilled, isPending } = this.props.trips;
 
         if (isPending) {
